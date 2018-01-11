@@ -1,0 +1,715 @@
+/*****************************************************************
+    Stilurile personalizate pentru Msign. 
+    Necesar de conectat in cod si mstyle.css !!!
+******************************************************************/
+
+/*logo*/
+.main-navbar .navbar-brand{
+    background-size: 100px;
+    padding-left: 110px;
+}
+
+/*** main menu addons ***/
+#main-menu .navbar-nav li:first-child, 
+#main-menu .navbar-nav li:nth-child(2) {font-weight: bold;}
+
+/*section intro*/
+.section-intro h3,
+.section-intro h2,
+.section-intro h1{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.section-intro p{margin-bottom: 15px;}
+.section-intro .breadcrumb{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*capcha image block*/
+.confirm-list{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0 30px;
+}
+.confirm-list li{
+    position: relative;
+    padding: 0;
+    float: left;
+}
+.confirm-list li:first-child span{
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 2.8em;
+}
+.confirm-list li:first-child img{
+    vertical-align: top;
+    margin: 0 15px;
+}
+.confirm-list li:first-child a{
+    float: right;
+    margin: 10px 0 0 15px;
+}
+.confirm-list li:nth-child(2){line-height: 2.63em;}
+.confirm-list li:nth-child(2) form{float: right;}
+.confirm-list li:nth-child(2) label{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.confirm-list li:nth-child(2) label a{color: #ccc;}
+.confirm-list li:nth-child(2) input{
+    width: 140px;
+    margin-left: 15px;
+    border: 1px solid #aaa;
+}
+.confirm-list li:nth-child(2) input:focus{
+    border-color: #333;
+    outline: none;
+    padding-left: 10px;
+}
+
+/*tooltip view*/
+.tooltip-view{
+	background: transparent;
+    border: none;
+    padding: 0;
+    color: #ccc;
+}
+.tooltip-view:focus{outline: none;}
+
+/*alert danger*/
+.alert-danger{margin-bottom: 30px;}
+
+
+/*** index.html ***/
+.center-content h1{
+	line-height: 1.1em;
+	margin-bottom: 20px;
+}
+.center-content h4 {
+    line-height: 1.714em;
+    font-weight: 300;
+}
+.msign-description {padding-top: 28px;}
+.msign-description .three-column {margin-bottom: 28px;}
+.msign-description .three-column p{margin: 0 0 10px}
+.msign-description .three-column h4{margin: 34px 0 10px 0;}
+.msign-description .three-column ol {
+    line-height: 1.714em;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+
+/*** semnare_select.html ***/
+/*upload file section*/
+.download-section {
+    border: 1px solid #ccc;
+    padding: 0;
+}
+.download-section .form-group{
+    padding: 0 30px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    float: left;
+}
+.download-section .form-group label{ 
+    float: left;
+    font-weight: 400;
+    color: #666;
+    margin-top: 10px;
+}
+.download-section .form-control{
+    max-width: 370px;
+    margin-bottom: 30px;
+}
+.input-group .form-control {
+    background: transparent;
+    border: none;
+    color: #3c763d;
+    font-weight: 400;
+    padding-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.input-group .form-control.inputed {
+    background: url(../images/input_bg.png);
+    background-repeat: no-repeat;
+    background-position: 20px 50%;
+}
+.download-section .drag_drop{
+    color: #666;
+    background: #DFF0D8;
+    display: inline-block;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    outline: 1px dashed #666;
+    outline-offset: -5px;
+
+}
+.drag_drop span{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+}
+.description ol{
+    padding-left: 15px;
+    color: #666;
+    line-height: 1,714em;
+    margin-bottom: 20px;
+}
+.description ol>li>a>sup{color: #666;}
+.download-section .confirm-list li:last-of-type form .btn{background: transparent;}
+.btn-file {
+    overflow: hidden;
+    margin: 30px 0 0 30px;
+    display: block;
+}
+.download-section .btn-primary{margin: 0 0 30px 30px;}
+
+/*** autorizare.html ***/
+.authentification-list{
+	display: inline-block;
+	width: 100%;
+}
+.aditional-links li{margin-right: 25px;}
+.aditional-links li.pull-right{
+	margin-right: 0;
+	padding: 0;
+}
+
+/*** semnare.html ***/
+.title{margin-bottom: 30px;}
+
+/*procesul semnarii*/
+.sign-step{
+    border: 1px solid #ccc;
+    padding: 25px 30px;
+}
+.sign-step h4{
+    line-height: 1.7143em;
+    margin: 15px 0;
+}
+.verify-code{
+    color: #3c763d;
+    font-weight: 700;
+}
+#verifyBlock{
+    width: 120px;
+    height: 70px;
+    background-color: #dff0d8;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 0;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+.sign-step .alert-info{
+    margin-bottom: 0;
+    position: relative;
+    padding: 15px 20px 15px 55px;
+}
+.red-info:after{
+    content: "\f06a";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #cc3333;
+}
+.red-info p{
+    color: #666;
+    line-height: 1.714em;
+    margin: 0;
+}
+.red-info p b{color: #cc3333;}
+/*descriere*/
+.description.alert-info { padding-bottom: 1px;}
+.description.alert-info h4{ margin-bottom: 5px;}
+.alert-info {
+    position: relative;
+    padding: 18px 20px;
+}
+.alert-info ol{margin: 10px 0;}
+.alert-info i{margin-bottom: 0;}
+.alert-info h4{margin-bottom: 15px;}
+
+/*** document_semnat.html ***/
+.succes-sign{
+    position: relative;
+    float: left;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 30px 30px 0 30px;
+}
+.succes-sign h1{
+    color: #3c763d;
+    line-height: 44px;
+    background-color: #dff0d8;
+    padding: 10px 18px;
+    margin: 0;
+    border-radius: 3px;
+}
+.succes-sign h4{
+    width: 250px;
+    display: inline-block;
+    line-height: 1.714em;
+    margin: 0;
+}
+.succes-sign .descripiton{
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    color: #666;
+    line-height: 1.714em;
+}
+.succes-sign .descripiton p{margin: 0;}
+.succes-sign .descripiton b{color: #cc3333}
+.succes-sign .btn{
+	width: 95%;
+	margin-bottom: 30px;
+}
+.succes-sign .controls{float: left;}
+.succes-sign .alert-info{
+    max-width: 50%;
+    margin: 0;
+    padding: 10px 20px;
+}
+.succes-sign .alert-info.red-info:after{display: none;}
+
+/*send bill to email block*/
+#emailCollapse form{
+	display: inline-block;
+	width: 100%;
+}
+#emailCollapse .form-group{ 
+	margin-bottom: 30px;
+	padding: 0;
+}
+#emailCollapse .form-group input[type=email]{
+	float: right;
+	margin-left: 30px;
+	width: 270px;
+}
+#emailCollapse .form-group label{
+	font-weight: 400;
+	line-height: 2.857em;
+	margin: 0;
+}
+#emailCollapse .form-group textarea{max-width: 100%;}
+#emailCollapse .capcha-block.confirm-list{
+	padding: 0 0 25px 0;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #eee;
+}
+#emailCollapse .capcha-block li:first-child span{margin: 10px 30px 0 0;}
+#emailCollapse .capcha-block li:first-child img{margin-right: 25px;}
+/*email resopnd text*/
+.respond-alert {
+    display: none;
+    position: absolute;
+    bottom: -10px;
+    left: 15px;
+}
+
+/*** document_rezultat.html ***/
+.valid-text{color: #3c763d;}
+.unvalid-text{color: #cc3333;}
+
+.table-results>thead>tr>th{ 
+    color: #333;
+    padding: 15px 0;
+}
+.table-results>thead>tr>th b{
+    display: block;
+    line-height: 1.714em;
+}
+.table-results .table-nr{
+    width: 8.6% !important;
+    max-width: 100px;
+    min-width: 100%;
+    padding-top: 20px;
+    vertical-align: text-top !important;
+}
+.table-results .user-info{
+    width: 18.9%;
+    max-width: 220px;
+    min-width: 100%;
+}
+.table-results .org-info{
+    width: 41.1%;
+    max-width: 480px;
+    min-width: 100%;
+}
+.table-results .status-info{
+    width: 15.4%;
+    max-width: 180px;
+    min-width: 100%;
+}
+.table-results .time-info{
+    width: 16%;
+    max-width: 190px;
+    min-width: 100%;
+}
+.table-results tbody tr{
+    position: relative;
+    color: #666;
+}
+.table-results tbody tr.withDivider{ 
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.table-results tbody tr td{
+    line-height: 1.714em;
+    padding: 22px 0 !important;
+}
+.table-results tbody tr span{
+    display: block;
+    line-height: 1.714em !important;
+}
+.table-results tbody tr span.status{
+    display: inline-block;
+    color: #3c763d;
+    line-height: 3.143em;
+    font-weight: bold;
+    background: #dff0d8;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+.controls .btn{margin-right: 25px;}
+
+
+/*** semnare_lipsa_hsm.html ***/
+.request-block{
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 25px 28px 30px 28px;
+    margin-bottom: 30px;
+}
+.request-block .title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 25px 30px;
+}
+.request-form{padding-top: 74px;}
+
+.request-form .form-group{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+.request-form .form-group label{
+    width: 200px;
+    text-align: right;
+    margin-right: 25px;
+}
+.request-form .form-group .form-control{
+    width: calc(100% - 235px);
+    margin-left: 0;
+}
+.request-form .form-group .input-group-addon{
+    top: 0;
+    right: 5px;
+}
+
+.request-form .checkbox{
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+    line-height: 1.714em;
+}
+.request-form .checkbox label{
+    height: auto;
+    line-height: 1.714em;
+}
+.request-form hr{margin-top: 0;}
+
+/*******************************************************************
+            stilurile p/u dispozitivele mobile
+********************************************************************/
+
+/* -----Phones----- */
+
+/* Portrait */
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    /*logo*/
+    .main-navbar .navbar-brand{background-size: 75px;}
+
+    /*** index.html ***/
+	.big-bg{height: 100vh;}
+	.big-bg .center-content .btn{margin-bottom: 30px;}
+	
+	/*** semnare_select.html ***/
+    .download-section .btn-file{
+    	margin-bottom: 0;
+    	width: calc(100% - 60px);
+    }
+    .drag_drop span{
+        top: auto;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transform: translate(0);
+    }
+    .download-section .form-control{margin: 0 0 0 30px;}
+    .download-section .confirm-list,
+    .download-section .form-group{
+        padding: 0 15px;
+        float: left;
+        margin-top: 0;
+    }
+    .download-section .confirm-list li:first-of-type span{margin-right: 10px;}
+    .download-section .confirm-list li{
+        display: block;
+        float: none !important;
+        margin-bottom: 20px;
+    }
+    .download-section{margin-bottom: 30px;}
+    .upload-info{margin-bottom: 30px;}
+
+    /*** autorizare.html ***/
+    .aditional-links{text-align: center;}
+    .aditional-links li{margin-bottom: 20px;}
+    .succes-sign{margin-bottom: 60px;}
+    .succes-sign h1{
+        width: 100%;
+        text-align: center;
+    }
+    .succes-sign h4{margin: 0;}
+    .succes-sign .descripiton{margin: 0 0 30px 0;}
+    .succes-sign .btn{
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+    .succes-sign .alert-info{
+    	max-width: 100%;
+    	margin-bottom: 30px;
+    }
+    #emailCollapse .form-group{
+		width: 100%;
+		display: inline-block;
+	}
+	#emailCollapse .capcha-block.confirm-list{margin-bottom: 0;}
+
+ 	/*** document_rezultat.html ***/
+ 	.table-responsive{margin-bottom: 30px;}
+ 	.controls{text-align: center;}
+ 	.controls .btn{margin-bottom: 30px;}
+
+
+ 	/*** semnare_lipsa_hsm.html ***/
+    .request-form{padding-top: 100px;}
+    .request-form .form-group .form-control{width: 100%;}
+    .request-form .form-group label{width: inherit;}
+    .request-form .form-group .input-group-addon{top: 38px;}
+	.request-block{margin-bottom: 30px;}
+
+	.download-section .btn-primary{
+		margin-left: 30px;
+		margin-bottom: 30px;
+		width: calc(100% - 60px);
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+
+    /*respond alerts*/
+    .respond-alert{
+        position: relative;
+        left: auto;
+        bottom: 15px;
+    }
+
+}
+
+
+/* Landscape */
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    /*logo*/
+    .main-navbar .navbar-brand{background-size: 85px;}
+    /*** index.html ***/
+	.big-bg{height: 150vh;}
+	.big-bg .center-content{top: 60%;}
+	.big-bg .center-content .btn{margin-bottom: 30px;}
+	
+	/*** semnare_select.html ***/
+	.breadcrumb.withCheck li{display: block;}
+	.download-section .drag_drop{margin-bottom: 25px;}
+    .download-section .btn-file{margin-bottom: 0;}
+    .download-section .form-control.pull-right{width: 100%;}
+    .download-section .confirm-list,
+    .download-section .form-group{
+        padding: 0 25px;
+        float: left;
+        margin: 0;
+    }
+    .download-section .confirm-list li{
+        display: block;
+        float: none !important;
+        margin-bottom: 20px;
+    }
+    .download-section .btn_important{
+        width: 90%;
+        margin: 30px auto;
+        display: block;
+    }
+    .download-section{margin-bottom: 30px;}
+    .upload-info{margin-bottom: 30px;}
+    
+    /*** autorizare.html ***/
+	.authentification-list{
+		text-align: center;
+		margin-top: 0;
+	}
+    .authentification-list li{width: 48%;}
+    .aditional-links{
+    	float: left;
+    	margin-bottom: 30px;
+    }
+    .aditional-links li.pull-right{margin-top: 20px;}
+	.controls{margin-bottom: 30px;}
+
+	/*** succes-sign.html ***/
+    .succes-sign{margin-bottom: 30px;}
+    .succes-sign h4{margin: 0 0 0 25px;}
+    .succes-sign .descripiton{margin: 20px 0 0 0;}
+    .succes-sign .btn{
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .succes-sign .alert-info{
+    	max-width: 100%;
+    	margin-bottom: 30px;
+    }
+    #emailCollapse{
+    	margin-bottom: 30px;
+    	float: left;
+    }
+    #emailCollapse .capcha-block li:first-child img{margin-right: 0;}
+    .confirm-list li:first-child a{margin-right: 15px;}
+	#emailCollapse .capcha-block li:first-child span{margin: 0 10px 0 0;}
+
+	/*** semnare_lipsa_hsm.html ***/
+	.request-form{padding-top: 100px;}
+    .request-form .form-group .form-control{width: 100%;}
+    .request-form .form-group label{width: inherit;}
+    .request-form .form-group .input-group-addon{top: 38px;}
+	.request-block{margin-bottom: 30px;}
+
+    /*respond alerts*/
+    .respond-alert{
+        position: relative;
+        top: 20px;
+        left: auto;
+        bottom: auto;
+    }
+
+}
+
+
+/* -----Tablets------ */
+
+/* Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait){
+    
+    /* autorizare.html */
+    .aditional-links{
+    	float: left;
+    	margin-bottom: 30px;
+    	width: 100%;
+    }
+
+    /*** document_rezultat.html ***/
+    .table>thead>tr>th{
+        line-height: 20px;
+        vertical-align: text-top;
+    }
+    .request-block{margin-bottom: 30px;}
+
+	/*** semnare_select.html ***/
+    .download-section{margin-bottom: 30px;}
+    .upload-info{margin-bottom: 30px;}
+
+	/*** semnare_lipsa_hsm.html ***/
+    .request-form .form-group .input-group-addon{top: 0;}
+    .request-form .checkbox label{height: 10px;}
+    
+}
+
+/* Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: landscape){
+	
+	/*** index.html ***/
+	.big-bg .center-content .btn{margin-bottom: 30px;}
+
+	/*** autorizare.html ***/
+	.aditional-links{
+		float: left;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.controls{margin-bottom: 30px;}
+
+	/*** document_semnat.html ***/
+	.succes-sign, .sign-step{margin-bottom: 30px;}
+	.succes-sign .btn{
+		margin-right: 0;
+		width: 100%;
+	}
+
+    /*** verificare_semnare.html ***/
+    .drag_drop span{transform: translate(0);}
+    .drag_drop.input-group .form-control{width: 50%;}
+    
+	/*** semnare_select.html ***/
+	.download-section{margin-bottom: 30px;}
+	.confirm-list li:first-child span{margin-right: 0;}
+	.confirm-list li:first-child img{margin: 0;}
+	.confirm-list li:nth-child(2) input{width: 110px;}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

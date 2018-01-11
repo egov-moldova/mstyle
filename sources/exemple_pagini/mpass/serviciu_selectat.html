@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+    
+    <title>Serviciul Selectat MPass</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/mpass.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Serviciul de autentificare și control al accesului
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="login.html">Autentificare<span class="sr-only">(current)</span></a></li>
+                  <li><a href="services.html">Servicii disponibile</a></li>
+                  <li><a href="#">Despre MPass</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="faq.html">Întrebări frecvente</a></li>
+                  <li><a href="terms_conditions.html">Termeni și condiții</a></li>
+                  <li><a href="#">Contacte</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+      <!-- continutul paginii -->
+      <main>
+        <div class="container">
+          <!-- section-intro -->
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <h2>
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                Acord de autentificare
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12 section-intro">
+                <ol class="breadcrumb withCheck">
+                  <li class="checked"><a href="servicesV2.html">1. Selectare serviciu</a></li>
+                  <li class="checked"><a href="login.html">2. Modalitatea de achitare</a></li>
+                  <li class="active"><span>3. Acord de autentificare</span></li>
+                  <li><span>4. Accesare serviciu</span></li>
+                </ol>
+              </div>
+          </div>
+          <!-- /.section-intro -->
+          <div class="row">
+            <!-- logo serviciului ales -->
+            <div class="col-md-3 col-sm-3 service-selected-info">
+              <div class="service-selected-wrapp">
+                <div class="service-bg" data-bg="images/e-report.png"></div>
+                <hr class="divider">
+                <p>
+                  Urmează să vă autentificați în serviciul <b>e-Raportare</b>
+                </p>
+              </div>
+            </div>
+            <!-- /.logo serviciului ales -->
+            <!-- datele personale transmise serviciului -->
+            <div class="col-md-9 col-sm-9 personalInfo-blk">
+              <div class="personalInfo-blk-wrapp">
+                <h4>Datele care vor fi transmise de către MPay:</h4>
+                <ul class="list-unstyled info-list">
+                    <li>
+                      <span>CNP:</span>
+                      <span class="pull-right text-left">2540042160039</span>
+                    </li>
+                    <li>
+                      <span>Prenume:</span>
+                      <span class="pull-right text-left">Ion</span>
+                    </li>
+                    <li>
+                      <span>Nume:</span>
+                      <span class="pull-right text-left">Popescu</span>
+                    </li>
+                    <li>
+                      <span>Data nașterii:</span>
+                      <span class="pull-right text-left">1984-02-13</span>
+                    </li>
+                    <li>
+                      <span>Adresa e-mail:</span>
+                      <span class="pull-right text-left">ion@rt.md</span>
+                    </li>
+                    <li>
+                      <span>Limba:</span>
+                      <span class="pull-right text-left">Română</span>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-default edit_btn pull-right">
+                  <i class="fa fa-pencil" aria-hidden="true"></i>
+                  Editare date personale
+                </a>
+                <div class="clearfix"></div>
+                <hr class="divider">
+                <div class="checkbox">
+                  <label class="pull-left">
+                    <input type="checkbox"> 
+                  </label>
+                  <p>
+                    Nu mă mai întreba pentru acest serviciu
+                  </p>
+                </div>
+                <a href="#" class="btn btn-primary pull-right">
+                  <i class="fa fa-check"></i>
+                  Accesare serviciu
+                </a>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+            <!-- /.datele personale transmise serviciului -->
+          </div>
+        </div>
+      </main>
+      <!-- /.continutul paginii -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-4">
+              <h5 class="text-uppercase">Centru de asistență</h5>
+              <span>servicii publice electronice</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-left">
+                <a href="tel:+37322820000" class="contact-tel"><span>022 </span><b>820 000</b></a>
+            </div>
+            <div class="col-md-offset-2 col-md-5 text-right copyright col-sm-4">
+                <a href="terms_conditions.html">Termeni și condiții</a> <br>
+                <span>
+                  &copy;&nbsp;2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> Toate drepturile rezervate
+                </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,879 @@
+/*****************************************************************
+    Stilurile personalizate pentru MPass. 
+    Necesar de conectat in cod si mstyle.css !!!
+******************************************************************/
+
+/*** index.html */
+
+/*logo*/
+.main-navbar .navbar-brand{
+    background-size: 100px;
+    padding-left: 110px;
+}
+
+/*header*/
+.navbar-default .navbar-nav>li:first-child>a,
+.navbar-default .navbar-nav>li:nth-child(2)>a{font-weight: bold;}
+.center-content h4 {
+    line-height: 1.714em;
+    color: #fff;
+    margin: 10px 0 20px 0 !important;
+    font-weight: 400;
+}
+/* description blocks */
+.description-row{
+    padding-top: 30px;
+    margin-bottom: 28px;
+}
+.information{
+    width: 100%;
+    height: 175px;
+    border: 1px solid #ccc;
+    padding: 29px 30px 28px;
+}
+.information .fa{ font-size: 36px;}
+.information h4{
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+.information p{
+    color: #666;
+    line-height: 24px;
+}
+
+.introduction.three-column{
+    color: #666;
+    border: 1px solid #ccc;
+    padding: 25px 30px 15px 30px;
+    margin-bottom: 30px;
+}
+.three-column p{
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+.three-column ol{
+    margin-bottom: 25px;
+    padding-left: 15px;
+    line-height: 24px;
+}
+
+/*** services.html ***/
+
+/*section-intro*/
+.section-intro h3,
+.section-intro h2,
+.section-intro h1{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.section-intro p{margin-bottom: 15px;}
+.section-intro .breadcrumb{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+/*** login.html ***/
+
+/*authentification blocks*/
+.authentification-block.small_blk{ height: 290px;}
+.aditional-links{margin-bottom: 25px;}
+.aditional-links li{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 25px;
+}
+.aditional-links li.pull-right{margin-right: 0;}
+
+
+/*** semnare.html ***/
+
+/*sign title*/
+.title{
+    margin-top: 0;
+    margin-bottom: 28px;
+}
+/*sign step*/
+.sign-step{ padding: 30px;}
+
+.sign-step h4{ 
+    line-height: 1.33em;
+    margin: 15px 0;
+}
+.verify-code{
+    color: #3c763d;
+    font-weight: 700;
+}
+#verifyBlock{
+    width: 120px;
+    height: 70px;
+    background-color: #dff0d8;
+    text-align: center;
+    line-height: 2.1em;
+    margin-top: 0;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: default;
+}
+
+/*sign step info block with alert*/
+.sign-step .alert-info{
+    position: relative;
+    padding: 15px 20px 15px 55px;
+}
+.sign-step .red-info:after{
+    content: "\f06a";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #cc3333;
+}
+.sign-step .red-info p b{color: #cc3333;}
+
+/*description with info*/
+.description.alert-info p:last-of-type{margin: 0;}
+
+
+/*** serviciu_selectat.html ***/
+
+/*logo serviciului ales*/
+.service-selected-info{ padding-right: 0; }
+.service-selected-info .service-selected-wrapp{
+    border: 1px solid #ccc;
+    padding: 30px;
+}
+.service-selected-info .service-bg{
+    width: 100%;
+    height: 50px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+/*datele personale transmise serviciului*/
+.personalInfo-blk{padding-left: 0;}
+.personalInfo-blk-wrapp{
+    padding: 25px 30px ;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #666;
+}
+.personalInfo-blk-wrapp h4{
+    margin: 0 0  20px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.personalInfo-blk-wrapp .info-list{
+    max-width: 350px;
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.personalInfo-blk-wrapp .info-list li{line-height: 30px;}
+.personalInfo-blk-wrapp .info-list li span.pull-right{width: 105px;}
+.personalInfo-blk-wrapp .edit_btn{margin-top: 10px;}
+.personalInfo-blk-wrapp .checkbox{
+    width: 70%;
+    display: inline-block;
+}
+.personalInfo-blk-wrapp .checkbox p{margin: 0;}
+.personalInfo-blk-wrapp .btn{margin-bottom: 0;}
+
+
+/*** inregistrare.html ***/
+
+/*alert-info*/
+.alert h4{margin-bottom: 15px;}
+.alert .close{
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    color: #3366cc;
+    text-shadow: none;
+    opacity: 1;
+}
+.alert .close:hover{color: #333;}
+.alert .close:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/*form-intro*/
+.form-intro h3{
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 16px 30px;
+}
+
+/*formularul de inregistrare*/
+.reg-form{
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    padding: 25px 30px;
+    display: inline-block;
+    width: 100%;
+}
+.reg-form hr{margin: 0 0 30px 0;}
+.reg-form .form-group{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.reg-form .form-group .form-control{
+    width: calc(100% - 235px);
+    margin-left: 30px;
+    padding: 0 10px;
+}
+
+/*radio-check buttons*/
+.reg-form .form-group.radioCheck span,
+.reg-form .form-group.radioCheck2 span{margin-right: 30px;}
+.reg-form .form-group.radioCheck label{width: auto;}
+.reg-form .form-group label.radio-inline{margin-right: 30px;}
+
+.reg-form .form-group span{ line-height: 1.714em; }
+
+/*labels*/
+.reg-form .form-group label {
+    font-weight: 400;
+    line-height: 1.714em;
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+}
+/*dropdown select*/
+.form-group.selections span.withMargin{
+    font-weight: 400;
+    margin-right: 0;
+    width: 200px;
+    text-align: right;
+    display: inline-block;
+}
+.reg-form .select2-container{
+    min-width: auto;
+    margin-left: 30px;
+}
+.reg-form .daySelect{min-width: 120px;}
+.reg-form .monthSelect{min-width: 260px;}
+.reg-form .yearSelect{min-width: 125px;}
+.reg-form .lngSelect,
+.reg-form .notificationSelect{min-width: calc(100% - 235px);}
+/*input with labels*/
+.reg-form .form-group .input-group-addon{
+    position: absolute;
+    left: 29%;
+    top: 0;
+    line-height: 2em;
+    background: transparent;
+    color: #666;
+    border: none;
+    width: 30px;
+}
+/*capcha image block*/
+.confirm-list{
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+.confirm-list li{
+    position: relative;
+    padding: 0;
+    float: left;
+}
+.confirm-list li:first-child span{
+    max-width: 90px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.confirm-list li:first-child img{
+    vertical-align: top;
+    margin-right: 5px;
+}
+.confirm-list li:first-child a{
+    float: right;
+    margin: 10px 0 0 15px;
+}
+.confirm-list li:nth-child(2){line-height: 2.63em;}
+.confirm-list li:nth-child(2) label{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.confirm-list li:nth-child(2) label a{color: #ccc;}
+.confirm-list li:nth-child(2) input{
+    width: 140px;
+    margin-left: 15px;
+    border: 1px solid #aaa;
+}
+.confirm-list li:nth-child(2) input:focus{
+    border-color: #333;
+    outline: none;
+    padding-left: 10px;
+}
+
+.reg-form .confirm-list{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.reg-form .confirm-list li:first-child span{
+    max-width: 100%;
+    line-height: 2.857em;
+    margin-right: 20px;
+}
+.reg-form .confirm-list li:nth-child(2) input{width: 310px;}
+
+/*terms checkbox*/
+.reg-form .checkbox{
+    margin-bottom: 15px;
+    padding-left: 225px;
+}
+/*butoane de acces*/
+.reg-form .controls .btn{margin-top: 30px;}
+
+/*** pasword1.html ***/
+
+/*titles*/
+.password-row-title h1{
+    margin-top: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+.password-row-title h3{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+/*reset passwor block*/
+.reset-section{
+    border: 1px solid #ccc;
+    padding: 25px 30px 30px;
+}
+.reset-section .form-group label{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.reset-section .form-group .form-control{
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+.reset-section .confirm-list li:nth-child(2) input{width: 110px;}
+
+/*** password2.html (creare parola noua) ***/
+.new-password{padding-right: 0}
+.new-password .form-group{
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+}
+.new-password .form-group .form-control{
+    max-width: 240px;
+    margin-bottom: 0;
+}
+.new-password .confirm-list{padding-right: 28px;}
+.new-password hr{margin-right: 30px;}
+.new-password .btn{margin-right: 30px;}
+
+
+/*** contul_meu.html ***/
+.personal-data{margin: 0;}
+.personal-data.bordered{ border-right: 1px solid #eee; }
+.personal-data li{line-height: 2.143em;}
+.personal-data li:first-of-type{
+    line-height: 100%;
+    margin-bottom: 12px;
+}
+.personal-data li span{
+    display: inline-block;
+    width: 50%;
+}
+.personal-data li span.pull-right{
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+/*** contul_meu_v2.html ***/
+.controls ul{margin: 0;}
+.controls .btn{margin-bottom: 20px;}
+.personal-data hr{border-color: #ccc;}
+
+
+/*** history_acces.html ***/
+.history-table>tbody>tr {border-bottom: 1px solid #eee;}
+.history-table>tbody>tr:last-child{border-bottom: none;}
+.history-table>tbody>tr>th{line-height: 2.857em;}
+
+
+
+/*******************************************************************
+            stilurile p/u dispozitivele mobile
+********************************************************************/
+
+/*Phones*/
+
+/* Portrait */
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+
+    /*logo*/
+    .main-navbar .navbar-brand {
+        background-size: 75px;
+        padding-left: 100px;
+    }
+
+    /*** index.html ***/
+    .information{
+        margin-bottom: 30px;
+        height: 200px;
+    }
+    
+    /*** services.html ***/
+    .services-list li,
+    .authentification-list li{width: 100%;}
+    .services-list li{
+        padding: 0 15px;
+        float: none;
+        margin: 0 0 25px 0;
+        height: 255px;
+    }
+    .services-list li .service-block .btn{width: 100%;}
+    
+    /*** login.html ***/
+    .aditional-links li.pull-right{
+        float: left !important;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .aditional-links li.pull-right .btn{width: 100%;}
+
+    /*** semnare.html ***/
+    #verifyBlock{width: 100%;}
+    .description.alert-info{margin-bottom: 30px;}
+
+    /*serviciu_selectat.html*/
+    .service-selected-info{padding-right: 15px;}
+    .service-selected-info .service-selected-wrapp{
+        height: 210px !important;
+        border-bottom: none;
+    }
+    .personalInfo-blk{ padding-left: 15px;}
+    .personalInfo-blk-wrapp{
+        border-left: 1px solid #ccc;
+        margin-bottom: 30px;
+    }
+    .personalInfo-blk-wrapp .btn{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .personalInfo-blk-wrapp .checkbox{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /*** history_acces.html ***/
+    .table-responsive{margin-bottom: 30px;}
+    .history-table>thead>tr>th,
+    .history-table>tbody>tr>th{padding-left: 20px;}
+    a[href="contul_meu.html"]{margin-bottom: 30px;}
+
+    /*** inregistrare.html ***/
+    .breadcrumb.withCheck li{
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .reg-form .form-group.radioCheck{
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .reg-form .form-group.radioCheck li{
+        margin-bottom: 15px;
+        float: left !important;
+    }
+    .reg-form .form-group label,
+    .form-group.selections span.withMargin{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .reg-form .checkbox{padding-left: 0;}
+    .reg-form .form-group .form-control{
+        margin-left: 0;
+        width: 100%;
+    }
+    .reg-form .form-group span{
+        display: block;
+        margin-right: 0 !important;
+    }
+    .reg-form .demo-select{min-width: 100%;}
+    .reg-form .select2-container{
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .reg-form .form-group .input-group-addon{
+        left: 0px;
+        top: 33px;
+        width: 30px;
+        padding: 6px 10px;
+    }
+    .reg-form .form-group.radioCheck2{padding-left: 0;}
+    .reg-form .form-group.radioCheck2 span{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .reg-form .form-group.radioCheck2 label{margin-right: 20px;}
+    .reg-form .checkbox label{line-height: 1.714em;}
+    .reg-form .confirm-list li{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .reg-form .confirm-list li:nth-child(2) input{
+        margin-left: 0;
+        width: 100%;
+    }
+    .reg-form .confirm-list li:nth-child(2) label{top: 38px;}
+    .reg-form .confirm-list li:nth-child(2) form{
+        float: left !important;
+        width: 100%;
+    }
+    .reg-form .controls{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .reg-form .confirm-list li:first-child span{margin-right: 2%;}
+    .reg-form .btn{
+        margin-bottom: 30px;
+        margin-left: 0 !important;
+        width: 100%;
+    }
+    .alert-info.fade{margin-bottom: 30px;}
+
+    /*** password1.html ***/
+    .reset-section{
+        margin-bottom: 30px;
+        padding: 20px 20px 0 20px;
+    }
+    .reset-section .confirm-list li{ 
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .reset-section .confirm-list li:first-child a{margin: 12px 0 0 3px;}
+    .reset-section .confirm-list li:nth-child(2) input{
+         border: 1px solid #ccc;
+         float: right;
+    }
+    .reset-section .btn{
+        margin-bottom: 20px;
+        margin-right: 10px;
+    }
+    .reset-instruction.alert-info{margin-bottom: 30px;}
+
+    /*** password2.html ***/
+    .new-password .form-group{ 
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .reset-section .form-group label{margin-bottom: 10px;}
+    .reset-section .form-group .form-control{max-width: 100% !important;}
+    .new-password .confirm-list{padding-right: 0;}
+    .reset-section .confirm-list li:first-child span{margin-right: 0}
+    .new-password hr{margin-right: 0;}
+    
+    /*** contul_meu.html ***/
+    .controls{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .controls a{
+        float: none !important;
+        width: 100%;
+    }
+    .personal-data{margin-bottom: 30px;}
+
+}
+
+
+/* Landscape */
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+    /*logo*/
+    .main-navbar .navbar-brand {
+        background-size: 100px;
+        padding-left: 130px;
+        width: 300px;
+    }
+    
+    /*** index.html ***/
+    .information{margin-bottom: 30px;}
+    .big-bg{height: 110vh;}
+    .big-bg .center-content{top: 55%;}
+    
+    /*** services.html ***/
+    .authentification-list li{width: 100%;}
+    .services-list{text-align: center;}
+    .services-list li{
+        float: none;
+        height: 255px;
+    }
+    .services-list li .service-block .btn{width: 100%;}
+
+    /*** login.html ***/
+    .aditional-links li{display: block;}
+    .aditional-links li.pull-right{
+        margin-bottom: 30px;
+        text-align: center;
+        width: 100%;
+    }
+    /*** semnare.html ***/
+    .description.alert-info{margin-bottom: 30px;}
+
+    /*serviciu_selectat.html*/
+    .service-selected-info{padding-right: 15px;}
+    .service-selected-info .service-bg{background-size: contain;}
+    .service-selected-info .service-selected-wrapp{
+        height: 210px !important;
+        border-bottom: none;
+    }
+    .personalInfo-blk{ padding-left: 15px;}
+    .personalInfo-blk-wrapp{
+        border-left: 1px solid #ccc;
+        margin-bottom: 30px;
+    }
+    .personalInfo-blk-wrapp .checkbox{width: 60%;}
+
+    /*** history_acces.html ***/
+    .table-responsive{margin-bottom: 30px;}
+    .history-table>thead>tr>th,
+    .history-table>tbody>tr>th{padding-left: 20px;}
+    a[href="contul_meu.html"]{margin-bottom: 30px;}
+
+    /*** inregistrare.html ***/
+    .breadcrumb.withCheck li{margin-bottom: 5px;}
+    .reg-form{ padding: 20px;}
+    .reg-form:after{display: none;}
+    .reg-form .form-title{border-bottom: 1px solid #ccc;}
+    .reg-form .form-group,
+    .reg-form .form-group .form-control{
+        width: 100%;
+        margin-left: 0;
+    }
+    .reg-form .form-group.radioCheck{display: inline-block;}
+    .reg-form .form-group.radioCheck li{
+        float: left !important;
+        margin-bottom: 15px;
+    }
+    .reg-form .form-group label{text-align: left;}
+    .reg-form .form-group .input-group-addon{
+        left: 0px;
+        top: 25px;
+        width: 30px;
+        padding: 6px 10px;
+    }
+    .form-group.selections span.withMargin{
+        width: 100%;
+        text-align: left;
+    }
+    .reg-form .checkbox{padding-left: 0;}
+    .reg-form .daySelect{min-width: 15%;}
+    .reg-form .monthSelect{min-width: 40%;}
+    .reg-form .yearSelect{min-width: 20%;}
+    .reg-form .notificationSelect{min-width: 90%;}
+    .reg-form .lngSelect{min-width: 90%;}
+
+    .reg-form .checkbox label{line-height: 1.714em;}
+    .reg-form .confirm-list li,
+    .reg-form .confirm-list li:first-child span,
+    .reg-form .confirm-list li:nth-child(2) span{margin-bottom: 10px;}
+    .reg-form .confirm-list li:nth-child(2) input{
+        width: 100%;
+        margin: 0;
+        border: 1px solid #ccc;
+    }
+    .reg-form .confirm-list li:first-child span{
+        max-width: 250px;
+        margin-right: 15px;
+    }
+    .reg-form .confirm-list li:nth-child(2) label{top: 3px;}
+    .reg-form .confirm-list{width: 100%;}
+    .reg-form .confirm-list li{width: 100%;}
+    .alert-info.fade{margin-bottom: 30px;}
+
+    /*** password1.html ***/
+    .reset-section{margin-bottom: 30px;}
+    .reset-section .confirm-list li{ 
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .reset-section .confirm-list li:nth-child(2) input{
+         border: 1px solid #ccc;
+         float: right;
+    }
+    .reset-instruction.alert-info{margin-bottom: 30px;}
+    /*** contul_meu.html ***/
+    .controls{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .personal-data{margin-bottom: 30px;}
+
+}
+
+/**** Tablets ****/
+/* Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait){
+    
+    /*** index.html ***/
+    .information{height: 270px;}
+
+    /*** services.html ***/
+    .services-list li .service-block .btn{width: 100%;}
+
+    /*** login.html***/
+    .aditional-links li{margin-right: 15px;}
+
+    /*** semnare.html ***/
+    .description.alert-info{margin-bottom: 30px;}
+
+    /*** inregistrare.html ***/
+    .breadcrumb.withCheck li{
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+    .reg-form .form-group.radioCheck,
+    .reg-form .form-group.radioCheck2 {text-align: center;}
+    .reg-form .form-group.radioCheck span,
+    .reg-form .form-group.radioCheck2 span{display: block;}
+    .reg-form .select2-container{margin-left: 30px;}
+    .reg-form .daySelect{min-width: 10.5%;}
+    .reg-form .monthSelect{min-width: 30%;}
+    .reg-form .yearSelect{min-width: 13%;}
+    .reg-form .form-group.radioCheck{text-align: center;}
+    .reg-form .form-group .input-group-addon{
+        left: 35%;
+        top: 0;
+        width: 30px;
+    } 
+    .reg-form .checkbox label{line-height: 1.714em;}
+    .reg-form .confirm-list li{ width: 100%;}
+    .reg-form .confirm-list li:first-child{ margin-bottom: 20px;}
+    .alert-info.fade{margin-bottom: 30px;}
+    .reg-form .confirm-list li:first-child a {
+        float: none;
+        margin-left: 30px;
+    }
+
+    /*** password2.html ***/
+    .reset-section{margin-bottom: 30px;}
+
+    /*elements*/
+    .personalInfo-blk-wrapp .checkbox{width: 60%;}
+    .sign-step{margin-bottom: 30px;}
+    
+}
+
+/* Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: landscape){
+    
+    /*** services.html ***/
+    .services-list{margin: 0 -30px 0 0;}
+    .services-list li{
+        padding: 0;
+        float: none;
+        margin: 0 26px 25px 0;
+    }
+    .services-list li:last-child{margin-right: 30px;}
+    .services-list li .service-block .btn{width: 100%;}
+
+    /*** serviciu_selectat.html ***/
+    .personalInfo-blk{margin-bottom: 30px;}
+
+    /*contul_meu.html*/
+    .controls .col-md-4{width: 45%;}
+    .controls .col-md-8{width: 55%;}
+    
+    /*** inregistrare.html ***/
+    .reg-form .checkbox label{line-height: 1.714em;}
+    .reg-form .form-group label.radio-inline{margin-right: 15px;}
+    .reg-form .confirm-list li:first-child{ margin-bottom: 20px;}
+    .reg-form .confirm-list li:first-child a{
+        float: none;
+        margin-left: 30px;
+    }
+    .reg-form .select2-container{margin-left: 30px;}
+    .reg-form .daySelect{min-width: 10.5%;}
+    .reg-form .monthSelect{min-width: 30%;}
+    .reg-form .yearSelect{min-width: 12%;}
+    .reg-form .form-group .input-group-addon{
+        left: 36%;
+        width: 30px;
+    }
+
+
+    /*** password1.html ***/
+    .reset-section{margin-bottom: 30px;}
+    .reset-section .confirm-list li{ 
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .reset-section .confirm-list li:nth-child(2) input{
+         border: 1px solid #ccc;
+         float: right;
+    }
+
+    /*** password2.html ***/
+    .new-password{margin-bottom: 30px;}
+    .new-password .form-group{
+        width: 45%;
+        margin-right: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

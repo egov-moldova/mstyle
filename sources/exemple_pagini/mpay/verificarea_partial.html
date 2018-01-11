@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+
+    <title>Verificarea Statutului</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- select2 stylesheets -->
+    <link href="css/select2.css" rel="stylesheet">
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/mpay.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Serviciul Guvernamental de Plăți Electronice
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a href="services.html">Achitare serviciu<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li><a href="verificarea.html">Verificare notă</a></li>
+                  <li><a href="#">Despre MPay</a></li>
+                  <li><a href="#">Întrebări frecvente</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="#">Parteneri de implementare </a></li>
+                  <li><a href="#">Contacte</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+      <!-- continutul paginii -->
+      <main>
+        <div class="container">
+          <!-- section-intro -->
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <h1>Verificarea statutului notei de plată </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <ol class="breadcrumb withCheck">
+                  <li class="checked"><a href="#">1. Introducerea numărului notei de plată </a></li>
+                  <li class="active"><span>2. Primirea confirmării</span></li>
+              </ol>
+            </div>
+          </div>
+          <!-- /.section-intro -->
+          <div class="row">
+            <!-- bill section -->
+            <div class="col-md-6">
+              <div class="bill-section">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="billNr">Numărul notei de plată MPay
+                      <button type="button" class="tooltip-view" data-toggle="tooltip" 
+                              data-placement="bottom" title="<img src='images/hint.jpg'/>">
+                          Vezi exemplu
+                      </button>
+                    </label>
+                    <div class="input-group">
+                      <input type="text" class="form-control pull-right" id="billNr" maxlength="14" placeholder="00 1234 5678 9012">
+                      <div class="input-group-addon">
+                        <button type="button" class="tooltip-view" data-toggle="tooltip" data-placement="bottom" title="Numărul notei de plată">
+                          <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="clearfix"></div>
+                <ul class="list-inline confirm-list capcha-block">
+                  <li>
+                    <span>Cod imagine de verificare:</span>
+                    <img src="images/capcha.jpg" title="captcha" alt="captcha-img">
+                    <a href="#"><i class="fa fa-refresh"></i></a>
+                  </li>
+                  <li class="pull-right">
+                    <div class="form-inline">
+                      <span>Cod:</span>
+                      <input type="text" class="form-control" maxlength="6">
+                      <label for="verify-code">
+                        <button type="button" class="tooltip-view" data-toggle="tooltip" data-placement="bottom" title="Introdu codul de verificare din imagine">
+                          <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </button>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+                <button id="verifyNote"  class="btn disabled">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Verificare statut notă de plată MPay
+                </button>
+              </div>
+            </div>
+            <!-- /.bill section -->
+
+            <div class="col-md-6">
+              <!-- loading circle -->
+              <div class="loading-img text-center">
+                <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+              </div>
+              <!-- /.loading circle -->
+              <!-- bill status -->
+              <div class="bill-status none" id="partialpayedBill">
+                <h3>Statutul notei de plată 
+                 <span id="noteNr">00 1234 5678 9012:</span>
+                 </h3>
+                <h1 class="pull-right partial-pay">
+                  <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                  Achitat parțial
+                </h1>
+                <div class="clearfix"></div>
+                <hr class="divider">
+                <ul class="list-unstyled">
+                  <li>
+                    <span>Plata pentru:</span>
+                    <span class="pull-right text-left">Serviciu Fiscal</span>
+                  </li>
+                  <li>
+                    <span>Serviciu:</span>
+                    <span class="pull-right text-left">Impozit Bunuri Imobiliare</span>
+                  </li>
+                  <li>
+                    <span>Număr cerere:</span>
+                    <span class="pull-right text-left">123456789</span>
+                  </li>
+                  <li>
+                    <span>Suma totală:</span>
+                    <span class="pull-right text-left">117,19 MDL</span>
+                  </li>
+                  <li>
+                    <span>Neachitat:</span>
+                    <span class="pull-right text-left important">50,00 MDL</span>
+                  </li>
+                  <li>
+                    <button class="view-more btn-link" role="button" data-toggle="collapse" data-target="#collapseList"   aria-expanded="false" aria-controls="collapseList">
+                      Vezi toate detaliile tranzacțiilor(2)
+                    </button>
+                  </li>
+                </ul>
+                <button class="btn btn-primary pull-right">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Descarcă confirmare
+                </button>
+                <button class="btn btn-default pull-right" type="button" data-toggle="collapse"  data-target="#emailCollapse" aria-expanded="false" aria-controls="#emailCollapse">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    Trimite prin e-mail
+                </button>
+              </div>
+              <!-- /.bill status -->
+            </div>
+          </div>
+          <!-- tranzaction details -->
+          <div class="collapse" id="collapseList">
+            <div class="tranzactie-blk">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>Tranzacție nr. 1</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 bordered">
+                  <ul class="list-unstyled">
+                    <li>
+                        <span>Data și ora</span>
+                        <span class="pull-right text-left">20 mai 2016, 12:09:12</span>
+                      </li>
+                      <li>
+                        <span>Suma achitată:</span>
+                        <span class="pull-right text-left">17,19 MDL</span>
+                      </li>
+                      <li>
+                        <span>Card:</span>
+                        <span class="pull-right text-left">XXXX XXXX XXXX 8723</span>
+                    </li>
+                    <li>
+                      <span>@Destination:</span>
+                      <span class="pull-right text-left">Servicii Vamale GUTU LILIAN, Pentru vămuire</span>
+                    </li>
+                    <li>
+                      <span>Beneficiar:</span>
+                      <span class="pull-right text-left">(R)MF - TREZORERIA DE STAT</span>
+                    </li>
+                    <li>
+                      <span>Cod banca:</span>
+                      <span class="pull-right text-left">TREZMDX2X</span>
+                    </li>
+                    <li>
+                      <span>Cod fiscal:</span>
+                      <span class="pull-right text-left">2001007021294</span>
+                    </li>
+                    <li>
+                      <span>Cod fiscal banca:</span>
+                      <span class="pull-right text-left">1006601000037</span>
+                    </li>
+                    <li>
+                      <span>Cont beneficiar:</span>
+                      <span class="pull-right text-left">MD77TRPAAA5183000A01344AA</span>
+                    </li>
+                    <li>
+                      <span>Cont trezorial:</span>
+                      <span class="pull-right text-left"> - </span>
+                    </li>
+                    <li>
+                      <span>Detalii - bon de plată:</span>
+                      <span class="pull-right text-left">BON DE PLATĂ, nr.:312188 din data 14.09.2016</span>
+                    </li>
+                    <li>
+                      <span>Document ID:</span>
+                      <span class="pull-right text-left">7766648</span>
+                    </li>
+                    <li>
+                      <span>GlobalNumber</span>
+                      <span class="pull-right text-left">00864068794815</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <span>HO:CustomCode:</span>
+                      <span class="pull-right text-left">2011</span>
+                    </li>
+                    <li>
+                      <span>HO:CustomDirection:</span>
+                      <span class="pull-right text-left">2011</span>
+                    </li>
+                    <li>
+                      <span>HO:CustomName:</span>
+                      <span class="pull-right text-left"> - </span>
+                    </li>
+                    <li>
+                      <span>HO:PayerResident:</span>
+                      <span class="pull-right text-left">Rezident</span>
+                    </li>
+                    <li>
+                      <span>HO:Vehicle:</span>
+                      <span class="pull-right text-left">null null</span>
+                    </li>
+                    <li>
+                      <span>HO:WhoPayerCode:</span>
+                      <span class="pull-right text-left">GUTU IULIAN</span>
+                    </li>
+                    <li>
+                      <span>HO:WhoPayerRezident:</span>
+                      <span class="pull-right text-left">Rezident</span>
+                    </li>
+                    <li>
+                      <span>MainData:</span>
+                      <span class="pull-right text-left">Plați vamale</span>
+                    </li>
+                    <li>
+                      <span>NPP:</span>
+                      <span class="pull-right text-left">GUTU IULIAN</spa>
+                    </li>
+                    <li>
+                      <span>ServiceData:</span>
+                      <span class="pull-right text-left">10065183001</span>
+                    </li>
+                    <li>
+                      <span>Status:</span>
+                      <span class="pull-right text-left">Active</span>
+                    </li>
+                    <li>
+                      <span>TrezReason:</span>
+                      <span class="pull-right text-left">/S2035242/A312188/HB/, Pentru vămuire</span>
+                    </li>
+                    <li>
+                      <span>ViewReason</span>
+                      <span class="pull-right text-left">Pentru vămuire</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tranzactie-blk">
+              <div class="row">
+                <div class="col-md-12">
+                  <h3>Tranzacție nr. 2</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 bordered">
+                  <ul class="list-unstyled">
+                    <li>
+                        <span>Data și ora</span>
+                        <span class="pull-right text-left">18 mai 2016, 10:29:43</span>
+                      </li>
+                      <li>
+                        <span>Suma achitată:</span>
+                        <span class="pull-right text-left">50,00 MDL</span>
+                      </li>
+                      <li>
+                        <span>Card:</span>
+                        <span class="pull-right text-left">XXXX XXXX XXXX 8723</span>
+                    </li>
+                    <li>
+                      <span>@Destination:</span>
+                      <span class="pull-right text-left">Servicii Vamale GUTU LILIAN, Pentru vămuire</span>
+                    </li>
+                    <li>
+                      <span>Beneficiar:</span>
+                      <span class="pull-right text-left">(R)MF - TREZORERIA DE STAT</span>
+                    </li>
+                    <li>
+                      <span>Cod banca:</span>
+                      <span class="pull-right text-left">TREZMDX2X</span>
+                    </li>
+                    <li>
+                      <span>Cod fiscal:</span>
+                      <span class="pull-right text-left">2001007021294</span>
+                    </li>
+                    <li>
+                      <span>Cod fiscal banca:</span>
+                      <span class="pull-right text-left">1006601000037</span>
+                    </li>
+                    <li>
+                      <span>Cont beneficiar:</span>
+                      <span class="pull-right text-left">MD77TRPAAA5183000A01344AA</span>
+                    </li>
+                    <li>
+                      <span>Cont trezorial:</span>
+                      <span class="pull-right text-left"> - </span>
+                    </li>
+                    <li>
+                      <span>Detalii - bon de plată:</span>
+                      <span class="pull-right text-left">BON DE PLATĂ, nr.:312188 din data 14.09.2016</span>
+                    </li>
+                    <li>
+                      <span>Document ID:</span>
+                      <span class="pull-right text-left">7766648</span>
+                    </li>
+                    <li>
+                      <span>GlobalNumber</span>
+                      <span class="pull-right text-left">00864068794815</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="list-unstyled">
+                    <li>
+                      <span>HO:CustomCode:</span>
+                      <span class="pull-right text-left">2011</span>
+                    </li>
+                    <li>
+                      <span>HO:CustomDirection:</span>
+                      <span class="pull-right text-left">2011</span>
+                    </li>
+                    <li>
+                      <span>HO:CustomName:</span>
+                      <span class="pull-right text-left"> - </span>
+                    </li>
+                    <li>
+                      <span>HO:PayerResident:</span>
+                      <span class="pull-right text-left">Rezident</span>
+                    </li>
+                    <li>
+                      <span>HO:Vehicle:</span>
+                      <span class="pull-right text-left">null null</span>
+                    </li>
+                    <li>
+                      <span>HO:WhoPayerCode:</span>
+                      <span class="pull-right text-left">GUTU IULIAN</span>
+                    </li>
+                    <li>
+                      <span>HO:WhoPayerRezident:</span>
+                      <span class="pull-right text-left">Rezident</span>
+                    </li>
+                    <li>
+                      <span>MainData:</span>
+                      <span class="pull-right text-left">Plați vamale</span>
+                    </li>
+                    <li>
+                      <span>NPP:</span>
+                      <span class="pull-right text-left">GUTU IULIAN</spa>
+                    </li>
+                    <li>
+                      <span>ServiceData:</span>
+                      <span class="pull-right text-left">10065183001</span>
+                    </li>
+                    <li>
+                      <span>Status:</span>
+                      <span class="pull-right text-left">Active</span>
+                    </li>
+                    <li>
+                      <span>TrezReason:</span>
+                      <span class="pull-right text-left">/S2035242/A312188/HB/, Pentru vămuire</span>
+                    </li>
+                    <li>
+                      <span>ViewReason</span>
+                      <span class="pull-right text-left">Pentru vămuire</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.tranzaction details -->
+          <div class="row">
+            <div class="col-md-offset-6 col-md-6">
+              <div class="collapse withMargin" id="emailCollapse">
+                <form action="#" onsubmit="return false">
+                  <div class="form-group text-right">
+                    <label for="email">Adresa utilizatorului:</label> 
+                    <input class="form-control" type="email" placeholder="Email" id="email"> 
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" cols="10" id="textarea" placeholder="Comentariu..." ></textarea>
+                  </div>
+                  <div class="form-group">
+                    <ul class="list-inline capcha-block confirm-list">
+                      <li>
+                        <span>Cod imagine de verificare:</span>
+                        <img src="images/capcha.jpg" title="captcha" alt="captcha-img">
+                        <a href="#"><i class="fa fa-refresh"></i></a>
+                      </li>
+                      <li class="pull-right">
+                        <span>Cod:</span>
+                        <form> 
+                          <input type="text" name="verify-code" id="verify-code" class="form-control pull-right" maxlength="6">
+                          <label for="verify-code">
+                            <a href="#" data-toggle="tooltip" title="" data-original-title="Introdu codul de verificare din imagine!">
+                              <i class="fa fa-info-circle" aria-hidden="true"></i>
+                            </a>
+                          </label>
+                        </form>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-default pull-right" id="sendEmail">
+                      <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                      Trimite
+                    </button>
+                  </div>
+                </form>
+                <!-- mesajul de raspuns la email send -->
+                <div class="alert alert-success respond-alert">
+                  <ul class="fa-ul">
+                    <li>
+                      <i class="fa fa-check fa-lg fa-li" aria-hidden="true"></i>
+                      Email-ul dumneavoastră a fost expediat cu succes !!!
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.mesajul de raspuns la email send -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.container -->
+      </main>
+      <!-- continutul paginii -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-4">
+              <h5 class="text-uppercase">Centru de asistență</h5>
+              <span>servicii publice electronice</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-left">
+                <a href="tel:+37322820000" class="contact-tel"><span>022 </span><b>820 000</b></a>
+            </div>
+            <div class="col-md-offset-2 col-md-5 text-right copyright col-sm-4">
+              <a href="terms_conditions.html">Termeni și condiții</a> <br>
+              <span>
+                &copy;&nbsp;2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> Toate drepturile rezervate
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>

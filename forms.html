@@ -1,0 +1,2368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+
+    <title>Formulare - Ghid de stil servicii electronice guvernamentale</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <!-- Select2 plugin styles -->
+    <link href="css/select2.css" rel="stylesheet">
+
+    <!-- checkboxes styles -->
+    <link rel="stylesheet" href="css/checkbox.css">
+
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- start pagina -->
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Ghid de stil servicii electronice guvernamentale
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="grila.html">Grilă<span class="sr-only">(current)</span></a></li>
+                  <li><a href="colors.html">Culori</a></li>
+                  <li><a href="text.html">Text și pictograme</a></li>
+                  <li><a href="nav.html">Navigare</a></li>
+                  <li class="active"><a href="forms.html">Formulare și tabele</a></li>
+                  <li><a href="elements.html">Alte elemente</a></li>
+                  <li><a href="performance.html">Tehnic</a></li>
+                  <li><a href="examples.html">Exemple</a></li>
+                  <li><a href="sources/downloads/ghid.zip" class="btn btn-download" download>Descarcă</a></li>
+                  <li class="hidden-sm hidden-md hidden-lg font_control">
+                    <span id="fontChange2">Mărire / micșorare text</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+      <!-- continutul paginii -->
+      <main>
+        <div class="container">
+        <!-- FORMULARE -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="intro">
+                <h2>
+                  <i class="fa fa-list-alt" aria-hidden="true"></i>
+                  Formulare
+                </h2>
+                <hr>
+                <p>
+                  <i>Elementele formularelor pentru o mai bună uzabilitate vor fi interactive și cu ajutorul culorilor și mesajelor / etichetelor vor ajuta la întroducerea corectă și validarea datelor.
+                  </i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--************************ inputs ************************-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Input
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <!-- Implicit -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="input-group default-state">
+                  <input class="form-control" type="text" placeholder="Implicit">
+                  <span class="input-group-addon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group default-state</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text" placeholder="Implicit"&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;span class="<b>input-group-addon</b>"&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-info-circle</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/span&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                   /* stilul implicit din bootstrap */
+                   <b>.input-group-addon </b>{ <br>
+                          &nbsp;&nbsp;position: absolute; <br>
+                          &nbsp;&nbsp;background: transparent; <br>
+                          &nbsp;&nbsp;border: none; <br>
+                          &nbsp;&nbsp;right: 15px; <br>
+                          &nbsp;&nbsp;top: 0px; <br>
+                          &nbsp;&nbsp;line-height: 2.143em; <br>
+                          &nbsp;&nbsp;color: #ccc; <br>
+                          &nbsp;&nbsp;z-index: 5; <br>
+                      } <br>
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- Activ (focused) -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="input-group focused-state">
+                  <input class="form-control" type="text" placeholder="Activ (focused)">
+                  <span class="input-group-addon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group focused-state</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text" placeholder="Activ (focusat)"&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;span class="<b>input-group-addon</b>"&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-info-circle</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/span&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.focused-state .form-control</b>, <br>
+                  <b>.form-control:focus</b>{ <br>
+                    &nbsp;&nbsp;border-color: #333; <br>
+                    &nbsp;&nbsp;color: #333; <br>
+                  }
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- Completat -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="input-group completed-state">
+                  <input class="form-control" type="text" placeholder="Completat">
+                  <span class="input-group-addon"><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group completed-state</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text" placeholder="Completat"&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;span class="<b>input-group-addon</b>"&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-info-circle</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/span&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.completed-state .form-control</b>{ <br>
+                    &nbsp;&nbsp;border-color: #ccc; <br>
+                    &nbsp;&nbsp;color: #333; <br>
+                  }
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- Eroare -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h6>Input cu mesajul erorii in tooltip</h6> <br>
+                <div class="input-group has-error">
+                  <input class="form-control" type="text" placeholder="Eroare">
+                  <button class="input-group-addon" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Mesajul erorii">
+                    <i class="fa fa-info-circle"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group has-error"</b>&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text" placeholder="Eroare"&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;span class="<b>input-group-addon</b>"&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-info-circle</b>" aria-hidden="true" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Mesajul erorii"&gt;&lt;/i&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/span&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.has-error .input-group-addon</b> {color: #cc3333 } <br>
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- Eroare ver. alternativa -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="input-group has-error has-error2">
+                  <input class="form-control" type="text" placeholder="Eroare (versiunea alternativa)">
+                  <span class="input-group-addon"><i class="fa fa-times" aria-hidden="true"></i></span>
+                </div>
+                <p class="error-message">Mesajul erorii vine aici</p>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group has-error2</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text" placeholder="Eroare (versiunea alternativa)"&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;span class="<b>input-group-addon</b>"&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-times</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/span&gt; <br>
+                  &lt;/div&gt; <br>
+                  &lt;p class="<b>error-message</b>"&gt;Mesajul erorii vine aici&lt;/p&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.has-error2 .form-control</b>{ <br>
+                    &nbsp;&nbsp;background-color: #ffcccc; <br>
+                  } <br>
+                  <b>p.error-message</b>{ <br>
+                    &nbsp;&nbsp;line-height: 1.714em; <br>
+                    &nbsp;&nbsp;color: #cc3333; <br>
+                  } <br>
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- Succes -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="input-group has-success">
+                  <input class="form-control" type="text" placeholder="Succes">
+                  <span class="input-group-addon"><i class="fa fa-check" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group has-success</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text" placeholder="Succes"&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;span class="<b>input-group-addon</b>"&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-check</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/span&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.has-success .input-group-addon</b> {color: #3c763d; }
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- Inactiv -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="input-group">
+                  <input class="form-control" type="text" placeholder="Inactiv" disabled>
+                  <span class="input-group-addon"><i class="fa fa-ban" aria-hidden="true"></i></span>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text" placeholder="Inactiv disabled"&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;span class="<b>input-group-addon</b>"&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-ban</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&lt;/span&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.form-control[disabled]</b>{ <br>
+                    background-color: #eee; <br>
+                  }
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- Read Only -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="input-group readonly-state">
+                  <input class="form-control" type="text" placeholder="Numai citire ..." readonly>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group readonly-state</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text" placeholder="Numai citire" readonly&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.form-control[readonly]</b>{ <br>
+                    background-color: #eee; <br>
+                  }
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- Implicit -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>Input field obligatoriu</h5> <br>
+                <div class="input-group required default-state">
+                  <label class="control-label">Nume</label>
+                  <input class="form-control" type="text">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group required default-state</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input class="<b>form-control</b>" type="text"&gt; <br>
+                    &nbsp;&nbsp;&lt;label class="control-label"&gt;Nume&lt;/label&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                <b>.input-group.required .control-label:after</b>{ <br>
+                     content:"*";<br>
+                     color:#cc3333; ;<br>
+                  } <br>
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- inputuri cu marimi -->
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>Inputuri cu diferite mărimi</h5> <br>
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control" placeholder="Titlu" >
+                </div>
+                  <br>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Nume">
+                </div>
+                  <br>
+                <div class="input-group input-group-sm">
+                  <input type="text" class="form-control" placeholder="Telefon">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group input-group-lg</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;input type="text" class="<b>form-control</b>" placeholder="Titlu" &gt; <br>
+                  &lt;/div&gt;
+                    <br>
+                  &lt;div class="<b>input-group</b>"&lt;<br>
+                    &lt;input type="text" class="<b>form-control</b>" placeholder="Nume"&lt;<br>
+                  &lt;/div&lt;
+                    <br>
+                  &lt;div class="<b>input-group input-group-sm</b>"&gt; <br>
+                    &lt;input type="text" class="<b>form-control</b>" placeholder="Telefon"&gt; <br>
+                  &lt;/div&gt; <br>
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">Info</h5>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Stilurile sunt implicite
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <!-- inputs with labels -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Input cu etichetă
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="form-group">
+                  <label for="label1">Etichetă sus</label>
+                  <input type="text" class="form-control" id="label1">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class=<b>"form-group"</b>&gt; <br>
+                    &nbsp;&nbsp;&lt;label for="label1"&gt;Etichetă sus&lt;/label&gt; <br>
+                    &nbsp;&nbsp;&lt;input type="text" class=<b>"form-control"</b> id=<b>"label1"</b>&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  
+                </code>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label for="label2">Etichetă stînga</label>
+                    <input type="text" class="form-control pull-right" id="label2">
+                  </div>
+                </form>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;form class=<b>"form-inline"</b>&gt; <br>
+                    &nbsp;&lt;div class=<b>"form-group"</b>&gt; <br>
+                      &nbsp;&nbsp;&lt;label for="label2"&gt;Etichetă stînga&lt;/label&gt; <br>
+                      &nbsp;&nbsp;&lt;input type="text" class=<b>"form-control pull-right"</b> id=<b>"label2"</b>&gt; <br>
+                    &nbsp;&lt;/div&gt; <br>
+                  &lt;/form&gt; <br>
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.form-inline label</b>{ <br>
+                    &nbsp;&nbsp;margin: 0; <br>
+                    &nbsp;&nbsp;line-height: 2.857em;<br>
+                  } <br>
+                  <b>.form-inline .form-control</b>{ <br>
+                   &nbsp;&nbsp;width: calc(100% - 100px); <br>
+                  }
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- /.inputs with labels -->
+
+            <!-- input with extralabel-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Input cu etichetă fixă
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="input-group">
+                  <span class="input-group-addon fixed" id="basic-addon1">Telefon</span>
+                  <input type="text" class="form-control" placeholder="022 123 456" aria-describedby="basic-addon1">
+                </div>
+                <br>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="89.90" aria-describedby="basic-addon2">
+                  <span class="input-group-addon fixed" id="basic-addon2">Suma</span>
+                </div>
+                <br>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">html</h5>
+                <code>
+                  &lt;div class="<b>input-group</b>"&gt;<br>
+                    &nbsp;&lt;span class="<b>input-group-addon fixed</b>" id="basic-addon1"&gt;Telefon&lt;/span&gt; <br>
+                    &nbsp;&lt;input type="text" class="<b>form-control</b>" placeholder="022 123 456" <br>aria-describedby="basic-addon1"&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="<b>input-group</b>"&gt; <br>
+                    &nbsp;&lt;input type="text" class="<b>form-control</b>" placeholder="89.90" aria-describedby="basic-addon2"&gt; <br>
+                    &nbsp;&lt;span class="<b>input-group-addon fixed</b>" id="basic-addon2"&gt; <br>Suma&lt;/span&gt; <br>
+                  &lt;/div&gt; <br>
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">css</h5>
+                <code>
+                  <b>.input-group-addon.fixed</b>{ <br>
+                    &nbsp;&nbsp;position: static; <br>
+                    &nbsp;&nbsp;border: 1px solid #aaa; <br>
+                    &nbsp;&nbsp;background: #fcfcf4; <br>
+                    &nbsp;&nbsp;line-height: 1; <br>
+                  }
+                </code>
+              </div>
+            </div>
+            <br>
+            <!-- /.input with extralabel-->
+
+            <!-- file input -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    File Input
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>Implicit</h5> <br>
+                <input type="file">
+                <br>
+                <h5>Stilizat</h5> 
+                <br>
+                <div class="input-group">
+                  <label for="fileInput2" class="btn btn-file btn-default pull-left">
+                    <i class="fa fa-upload" aria-hidden="true"></i>
+                    Încarcă fișierul .PDF
+                    <input type="file" id="fileInput2" style="display:none">
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5>HTML</h5>
+                <code>
+                  <b>Implicit</b> 
+                  <br>
+                  &lt;input type="file"&gt;
+                  <br> <br>
+                  <b>Stilizat</b>
+                  <br>
+                  &lt;div class="input-group"&gt; <br>
+                    &nbsp;&lt;label for="fileInput2" class="<b>btn btn-file btn-default pull-left</b>"&gt; <br>
+                      &nbsp;&nbsp;&lt;i class="<b>fa fa-upload</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                      &nbsp;&nbsp;Încarcă fișierul .PDF <br>
+                      &nbsp;&nbsp;&lt;input type="file" id="fileInput2" style="display:none"&gt; <br>
+                    &nbsp;&lt;/label&gt; <br>
+                  &lt;/div&gt; <br>
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>Info</h5>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Stilurile sunt implicite
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <!-- /.file input -->
+          <!--************************ /.inputs ************************-->  
+
+          <!--************************ textarea ************************-->
+            
+            <!-- textarea standard -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Textarea standard
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="form-group">
+                  <textarea class="form-control" placeholder="Comentariu..." ></textarea>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5>HTML</h5>
+                <code>
+                  &lt;div class="<b>form-group</b>"&gt;<br>
+                   &nbsp;&nbsp; &lt;textarea class="<b>form-control</b>" placeholder="Comentariu..." &gt; &nbsp;&nbsp;&nbsp;&lt;/textarea&gt;<br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+               <h5>CSS</h5>
+                <code>
+
+                </code>
+              </div>
+            </div>
+            <!-- /.textarea standard -->
+
+            <!-- textarea fixed width -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Textarea lungime fixă
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="form-group">
+                  <textarea class="form-control fixedWidth" placeholder="Comentariu..." ></textarea>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5>HTML</h5>
+                <code>
+                  &lt;div class="<b>form-group</b>"&gt;<br>
+                   &nbsp;&nbsp; &lt;textarea class="<b>form-control fixedWidth</b>" placeholder="Comentariu..." &gt; &nbsp;&nbsp;&nbsp;&lt;/textarea&gt;<br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>CSS</h5>
+                <code>
+                  <b>.form-group textarea.fixedWidth</b> {<br> 
+                   &nbsp; width: 250px; (ca exemplu) <br>
+                  &nbsp; resize: vertical; <br>
+                  }
+                </code>
+              </div>
+            </div>
+            <!-- /.textarea fixed width -->
+
+            <!-- textarea fixed width -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Textarea înălțime fixă
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="form-group">
+                  <textarea class="form-control fixedHeight" placeholder="Comentariu..." ></textarea>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5>HTML</h5>
+                <code>
+                  &lt;div class="<b>form-group</b>"&gt;<br>
+                   &nbsp;&nbsp; &lt;textarea class="<b>form-control fixedHeight</b>" placeholder="Comentariu..." &gt; &nbsp;&nbsp;&nbsp;&lt;/textarea&gt;<br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>CSS</h5>
+                <code>
+                  <b>.form-group textarea.fixedHeight</b> {<br> 
+                   &nbsp; height: 250px; (ca exemplu) <br>
+                   &nbsp; min-height: 250px; (ca exemplu) <br>
+                   &nbsp; max-height: 250px; (ca exemplu) <br>
+                  }
+                </code>
+              </div>
+            </div>
+            <!-- /.textarea fixed width -->
+            <br>
+            <!-- textarea autoresize -->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Textarea autoresize după content
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <div class="form-group autoresize">
+                  <textarea class="form-control" placeholder="Comentariu..." ></textarea>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5>HTML</h5>
+                <code>
+                  &lt;div class="<b>form-group autoresize</b>"&gt;<br>
+                   &nbsp;&nbsp; &lt;textarea class="<b>form-control</b>" placeholder="Comentariu..." &gt; &nbsp;&nbsp;&nbsp;&lt;/textarea&gt;<br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>JavaScript</h5>
+                <code>
+                  $('<b>.form-group.autoresize</b>').on( 'change keyup keydown paste cut', 'textarea', function (){
+                      $(this).height(0).height(this.scrollHeight);
+                  }).find( 'textarea' ).change();
+                </code>
+              </div>
+            </div>
+            <!-- /.textarea autoresize -->
+            <br>
+          <!--************************ /.textarea ************************-->
+
+          <!--************************ checkboxuri ***************-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Checkboxuri
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>Stări</h5>
+                <div class="checkbox">
+                  <input id="checkbox1" class="styled" type="checkbox">
+                  <label for="checkbox1">
+                    Default
+                  </label>
+                </div>
+                <div class="checkbox checkbox-primary">
+                  <input id="checkbox2" class="styled" type="checkbox">
+                  <label for="checkbox2">
+                    Important
+                  </label>
+                </div>
+                <div class="checkbox checkbox-success">
+                  <input id="checkbox3" class="styled" type="checkbox">
+                  <label for="checkbox3">
+                    Succes
+                  </label>
+                </div>
+                <div class="checkbox checkbox-info">
+                  <input id="checkbox4" class="styled" type="checkbox">
+                  <label for="checkbox4">
+                    Info
+                  </label>
+                </div>
+                <div class="checkbox checkbox-warning">
+                  <input id="checkbox5" type="checkbox" class="styled">
+                  <label for="checkbox5">
+                    Atenționare
+                  </label>
+                </div>
+                <div class="checkbox checkbox-danger">
+                  <input id="checkbox6" type="checkbox" class="styled">
+                    <label for="checkbox6">
+                      Eroare
+                    </label>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5>HTML</h5>
+                <code>
+                  &lt;div class="<b>checkbox</b>"&gt;<br>
+                    &nbsp;&lt;input id="<b>checkbox1</b>" class="<b>styled</b>" type="checkbox"&gt;<br>
+                    &nbsp;&lt;label for="checkbox1"&gt;<br>
+                      &nbsp;&nbsp;Default <br>
+                    &nbsp;&lt;/label&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="<b>checkbox checkbox-primary</b>"&gt;<br>
+                    &nbsp;... <br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="<b>checkbox checkbox-success</b>"&gt;<br>
+                    &nbsp;... <br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="<b>checkbox checkbox-info</b>"&gt;<br>
+                    &nbsp;... <br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="<b>checkbox checkbox-warning</b>"&gt;<br>
+                    &nbsp;... <br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="<b>checkbox checkbox-danger</b>"&gt;<br>
+                    &nbsp;... <br>
+                  &lt;/div&gt;<br>
+                </code>
+              </div>
+              <div class="col-md-3 co-sm-4">
+                <h5>Info</h5>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Informație utilă. Pentru utilizarea "<b>checkboxurilor și a radio butoanelor</b>" stilizate folosim stilurile personalizate pentru acestea. Stilurile sunt in file-ul <i>checkbox.css</i> din mapa <b>css</b>. 
+                        <br>
+                        Pentru a nu crea conflicte pe viitor cu versiunile mai noi ale acestui plugin folositi versiunea care este salvata <a href="sources/lib/checkbox_styled/" target="_blank">in acest folder</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          <!--************************ /.checkboxuri ***************-->
+          
+          <!--************************ radio buttons ***************-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Radio buttons
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5>Stări</h5>
+                  <div class="radio">
+                    <input type="radio" name="radio1" id="radio2" value="" checked>
+                      <label for="radio2">
+                        Default
+                      </label>
+                  </div>
+                  <div class="radio radio-primary">
+                    <input type="radio" name="radio1" id="radio3" value="">
+                      <label for="radio3">
+                        Important
+                      </label>
+                  </div>
+                  <div class="radio radio-success">
+                    <input type="radio" name="radio1" id="radio4" value="">
+                      <label for="radio4">
+                        Succes
+                      </label>
+                  </div>
+                  <div class="radio radio-info">
+                    <input type="radio" name="radio1" id="radio5" value="">
+                      <label for="radio5">
+                        Info
+                      </label>
+                  </div>
+                  <div class="radio radio-danger">
+                    <input type="radio" name="radio1" id="radio6" value="">
+                    <label for="radio6">
+                      Eroare
+                    </label>
+                  </div>
+                  <p>Butoane radio inline </p>
+                  <div class="radio radio-inline">
+                    <input type="radio" id="inlineRadio1" value="option1" name="radioInline" checked>
+                    <label for="inlineRadio1"> Inline Unu </label>
+                  </div>
+                  <div class="radio radio-inline">
+                    <input type="radio" id="inlineRadio2" value="option2" name="radioInline">
+                    <label for="inlineRadio2"> Inline Doi </label>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5>HTML</h5>
+                <code>
+                  &lt;div class="<b>radio</b>"&gt;<br>
+                    &nbsp;&lt;input type="radio" name="radio1" id="<b>radio2</b>" value=""&gt;<br>
+                    &nbsp;&lt;label for="radio2"&gt;Text&lt;/label&gt;<br>
+                  &lt;/div&gt;<br>
+                  &lt;div class="<b>radio radio-primary</b>"&gt; <br>
+                    ... <br>
+                  &lt;/div&gt; 
+                  <br>
+                  &lt;div class="<b>radio radio-inline</b>"&gt;<br>
+                    &nbsp;&lt;input type="radio" id="<b>inlineRadio1</b>" value="option1" name="radioInline" checked&gt; <br>
+                    &nbsp;&lt;label for="inlineRadio1"&gt; Inline Unu &lt;/label&gt; <br>
+                  &lt;/div&gt; <br>
+                  &lt;div class="<b>radio radio-inline</b>"&gt;<br>
+                    &nbsp;&lt;input type="radio" id="<b>inlineRadio2</b>" value="option2" name="radioInline"&gt;<br>
+                    &nbsp;&lt;label for="inlineRadio2"&gt; Inline Doi &lt;/label&gt; <br>
+                  &lt;/div&gt;<br>
+                </code>
+              </div>
+              <div class="col-md-3 co-sm-4">
+                <h5>Info</h5>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Informație utilă. Pentru utilizarea "<b>checkboxurilor și a radio butoanelor</b>" stilizate folosim stilurile personalizate pentru acestea. Stilurile sunt in file-ul <i>checkbox.css</i> din mapa <b>css</b>.
+                        <br>
+                        Pentru a nu crea conflicte pe viitor cu versiunile mai noi ale acestui plugin folositi versiunea care este salvata <a href="sources/lib/checkbox_styled/" target="_blank">in acest folder</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <br>  
+          <!--************************ /.radio buttons ***************-->
+
+          <!--************************ select si Multiple select ******-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Select și Multiple select implicite
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <select class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select> 
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">Html</h5>
+                <code>
+                  &lt;select class="<b>form-control</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt; <br>
+                  &lt;/select&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">Css</h5>
+                <code>
+
+                </code>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <select multiple class="form-control">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">Html</h5>
+                <code>
+                  &lt;select <b><i>multiple</i></b> class="<b>form-control</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;1&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;2&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;3&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;4&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option&gt;5&lt;/option&gt; <br>
+                  &lt;/select&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h5 class="text-uppercase">Css</h5>
+                <code>
+                  
+                </code>
+              </div>
+            </div>
+          <!--*********************** /.select si Multiple select ******-->
+          <br>
+          <!--*********************** select stilizat ******************-->
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Select stilizat dropdown list</h4>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <select class="demo-select">
+                  <option value="0" selected="" disabled="">Alege opțiunea</option>
+                  <option value="1">Grup 1</option>
+                  <option value="2">Grup 2</option>
+                  <option value="3">Grup 3</option>
+                  <option value="4">Grup 4</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h6 class="text-uppercase">Html</h6>
+                <code>
+                  &lt;select class=<b>demo-select</b>&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="0" selected="" disabled=""&gt;Alege opțiunea&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="1"&gt;Grup 1&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="2"&gt;Grup 2&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="3"&gt;Grup 3&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="4"&gt;Grup 4&lt;/option&gt; <br>
+                  &lt;/select&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h6 class="text-uppercase">Info</h6>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Informație utilă. Toate stilurile folosite pentru acest <b>select-dropdown stilizat</b> sunt în mapa <b>css</b> file-ul <i>select2.css</i>. Aici folosim și pluginul jQuery <i>select2.min.js</i> din mapa <b>js</b>. Pentru inițializare folosim următoarea funcție:  <br>
+                        <code>
+                          $('<b>select.demo-select</b>').select2({});
+                        </code>
+                        <br>
+                        Pentru a nu crea conflicte pe viitor cu versiunile mai noi ale acestui plugin folositi versiunea care este salvata in <a href="sources/lib/select2/" target="_blank">acest folder</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Select stilizat multiple select</h4>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <select class="demo-select multiple-select" multiple="multiple">
+                  <option value="1">Grup 1</option>
+                  <option value="2">Grup 2</option>
+                  <option value="3">Grup 3</option>
+                  <option value="4">Grup 4</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-sm-4 ghid-blk">
+                <h6 class="text-uppercase">Html</h6>
+                <code>
+                  &lt;select class=<b>demo-select</b>&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="0" selected="" disabled=""&gt;Alege opțiunea&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="1"&gt;Grup 1&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="2"&gt;Grup 2&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="3"&gt;Grup 3&lt;/option&gt; <br>
+                    &nbsp;&nbsp;&lt;option value="4"&gt;Grup 4&lt;/option&gt; <br>
+                  &lt;/select&gt;
+                </code>
+              </div>
+              <div class="col-md-3 col-sm-4 ghid-blk">
+                <h6 class="text-uppercase">Info</h6>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Informație utilă. Toate stilurile folosite pentru acest <b>select-dropdown stilizat</b> sunt în mapa <b>css</b> file-ul <i>select2.css</i>. Aici folosim și pluginul jQuery <i>select2.min.js</i> din mapa <b>js</b>. Pentru inițializare folosim următoarea funcție:  <br>
+                        <code>
+                          $("<b>select.demo-select.multiple-select</b>").select2({ <br>
+                            &nbsp;placeholder: "Alege opțiunea", <br>
+                          });
+                        </code>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <br>
+          <!--*********************** /.select stilizat ****************-->
+
+          <!--*********************** căutare **************************-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Căutare
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-offset-4 col-md-4">
+                <!-- live search DEMO !!! jquery-ui - AUTOCOMPLETE -->
+                <div class="input-group main-search">
+                  <input type="text" class="form-control ui-autocomplete-input" placeholder="Caută după denumire serviciu, categorie, etc." id="tags" autocomplete="off">
+                  <button class="input-group-addon"><i class="fa fa-search"></i></button>
+                </div>
+                <!-- /.live search DEMO !!! jquery-ui -->
+              </div>
+            </div>
+          <!--*********************** /.căutare ************************-->
+          <br> <br>         
+          <!--*********************** validare *************************-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Stări validare
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group has-success succes-state">
+                  <label class="control-label" for="inputSuccess1">Input cu succes</label>
+                  <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
+                  <span id="helpBlock2" class="help-block">Textul validării cu succes.</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h6 class="text-uppercase">html</h6>
+                <code>
+                  &lt;div class="<b>form-group has-success</b>"&gt; <br>
+                   &nbsp;&nbsp;&lt;label class="<b>control-label</b>" for="inputSuccess1"&gt;Input cu succes&lt;/label&gt; <br>
+                    &nbsp;&nbsp;&lt;input type="text" class="<b>form-control</b>" id="inputSuccess1" aria-describedby="helpBlock2"&gt; <br>
+                    &nbsp;&nbsp;&lt;span id="helpBlock2" class="<b>help-block</b>"&gt;Textul validării cu succes.&lt;/span&gt; <br>
+                  &lt;/div&gt; <br>
+                </code>
+              </div>
+              <div class="col-md-3">
+                <h6 class="text-uppercase">css</h6>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group has-warning">
+                  <label class="control-label" for="inputWarning1">Input cu atenționare</label>
+                  <input type="text" class="form-control" id="inputWarning1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h6 class="text-uppercase">html</h6>
+                <code>
+                  &lt;div class="<b>form-group has-warning</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;label class="<b>control-label</b>" for="inputWarning1"&gt;Input with warning&lt;/label&gt; <br>
+                    &nbsp;&nbsp;&lt;input type="text" class="<b>form-control</b>" id="inputWarning1"&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-3">
+                <h6 class="text-uppercase">css</h6>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group has-error error-state">
+                  <label class="control-label" for="inputError1">Input cu eroare</label>
+                  <input type="text" class="form-control" id="inputError1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h6 class="text-uppercase">html</h6>
+                <code>
+                  &lt;div class="<b>form-group has-error</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;label class="<b>control-label</b>" for="inputError1"&gt;Input with error&lt;/label&gt; <br>
+                    &nbsp;&nbsp;&lt;input type="text" class="<b>form-control</b>" id="inputError1"&gt; <br>
+                  &lt;/div&gt; <br>
+                </code>
+              </div>
+              <div class="col-md-3">
+                <h6 class="text-uppercase">css</h6>
+              </div>
+            </div>
+            <br>
+          <!--*********************** /.validare ************************-->
+
+          <!--*********************** mesage box ************************-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Mesage box-uri
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="alert alert-success">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-check fa-lg fa-li" aria-hidden="true"></i>
+                        Succes! Acest message box apare în cazul în care o acțiune anterioară a fost realizată cu succes.
+                      </li>
+                    </ul>
+                </div>
+                <div class="alert light-red">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-ban fa-lg fa-li" aria-hidden="true"></i>
+                        Eroare! Acest message box apare în cazul în care în realizarea acțiunii anterioare s-a produs o eroare.
+                      </li>
+                    </ul>
+                </div>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Informație utilă. Acest message box poate fi folosit și pentru a comunica informație utilă contextuală.
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          <!--*********************** /.mesage box **********************-->
+            <br>
+          <!--************************ alert box ************************-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Alert box-uri
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <h5>Implicite</h5>
+                <div class="alert alert-success" role='alert'>
+                  Succes! Acest message box apare în cazul în care o acțiune anterioară a fost realizată cu succes.
+                </div>
+                <div class="alert alert-danger" role='alert'>
+                  Eroare! Acest message box apare în cazul în care în realizarea acțiunii anterioare s-a produs o eroare.
+                </div>
+                <div class="alert alert-info" role='alert'>
+                  Informație utilă. Acest message box poate fi folosit și pentru a comunica informație utilă contextuală.
+                </div>
+                <br>
+                <h5>Dismissable (cu butonul inchide)</h5>
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <strong>Eroare!</strong> Acest message box apare în cazul în care în realizarea acțiunii anterioare s-a produs o eroare.
+                </div>
+                <br>
+                <h5>Alert cu linkuri</h5>
+                <div class="alert alert-success" role="alert">
+                  <strong>Succes!</strong> Acțiunea dvs. a avut loc.
+                  <a href="#" class="alert-link">Accesează link-ul</a>
+                </div>
+                <div class="alert alert-danger" role="alert">
+                  <strong>Eroare!</strong> Pentru mai multe detalii accesați: <a href="#" class="alert-link">link</a>
+                </div>
+              </div>
+            </div>
+          <!--************************ /.alert box **********************-->
+            <br>
+            <br>
+          <!--************************ progress bar ***********************-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>
+                    Progress bar
+                  </h4>
+                  <hr>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                    50%
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h6 class="text-uppercase">Html</h6>
+                <code>
+                  &lt;div class=<b>"progress"</b>&gt; <br>
+                    &nbsp;&nbsp;&lt;div class=<b>"progress-bar"</b> role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"&gt; <br>
+                      &nbsp;&nbsp;50% <br>
+                    &nbsp;&nbsp;&lt;/div&gt; <br>
+                  &lt;/div&gt;
+                </code>
+              </div>
+              <div class="col-md-4">
+                <h6 class="text-uppercase">Css</h6>
+                <code>
+                  
+                </code>
+              </div>
+            </div>
+          <!--************************ /.progress bars ********************-->
+            <br>
+          <!--************************ exemplu formular *******************-->
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Exemplu de formular</h4>
+                <form class="test-form">
+                  <div class="form-group">
+                    <label for="names">Nume Prenume</label>
+                    <input type="email" class="form-control" id="names" placeholder="Nume Prenume">
+                  </div>
+                  <div class="form-group">
+                    <label for="testPassword">Parolă</label>
+                    <input type="password" class="form-control" id="testPassword" placeholder="Parolă">
+                  </div>
+                  <div class="input-group"> 
+                   <label for="fileInput" class="btn btn-file btn-default pull-left"> 
+                    <i class="fa fa-upload" aria-hidden="true"></i> 
+                    Încarcă fișierul .PDF 
+                    <input type="file" id="fileInput" style="display:none"> 
+                   </label> 
+                  </div> 
+                  <div class="checkbox">
+                    <input id="defaultCheck" class="styled" type="checkbox">
+                    <label for="defaultCheck">
+                      Sunt de acord cu termenii și condiții.
+                    </label>
+                  </div>
+                  <hr>
+                  <button class="btn btn-warning">Anulare</button>
+                  <button type="submit" class="btn btn-default pull-right">Trimite</button>
+                </form>
+
+                <form class="test-form">
+                  <div class="form-group">
+                    <label for="names2">Nume Prenume</label>
+                    <input type="email" class="form-control" id="names2" placeholder="Nume Prenume">
+                  </div>
+                  <div class="form-group">
+                    <label for="testPassword2">Parolă</label>
+                    <input type="password" class="form-control" id="testPassword2" placeholder="Parolă">
+                  </div>
+                  <button class="btn btn-warning">Anulare</button>
+                  <button type="submit" class="btn btn-default pull-right">Trimite</button>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <h5>HTML</h5>
+                <code>
+                  &lt;form class="<b>test-form</b>"&gt; <br>
+                    &nbsp;&lt;div class="<b>form-group</b>"&gt; <br>
+                      &nbsp;&nbsp;&lt;label for="names2"&gt;Nume Prenume&lt;/label&gt; <br>
+                      &nbsp;&nbsp;&lt;input type="email" class="<b>form-control</b>" id="names2" placeholder="Nume Prenume"&gt; <br>
+                    &nbsp;&lt;/div&gt; <br>
+                    &nbsp;&lt;div class="form-group"&gt; <br>
+                      &nbsp;&nbsp;&lt;label for="testPassword2"&gt;Parolă&lt;/label&gt; <br>
+                      &nbsp;&nbsp;&lt;input type="password" class="<b>form-control</b>" id="testPassword2" placeholder="Parolă"&gt; <br>
+                    &nbsp;&lt;/div&gt; <br>
+                    &nbsp;&lt;div class="input-group"&gt;<br> 
+                     &nbsp;&nbsp;&lt;label for="fileInput" class="<b>btn btn-file btn-default pull-left</b>"&gt; <br>
+                      &nbsp;&nbsp;&nbsp;&lt;i class="fa fa-upload" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                      &nbsp;&nbsp;&nbsp;Încarcă fișierul .PDF <br>
+                      &nbsp;&nbsp;&nbsp;&lt;input type="file" id="fileInput" style="display:none"&gt;<br> 
+                     &nbsp;&nbsp;&lt;/label&gt; <br>
+                    &nbsp;&lt;/div&gt; <br>
+                    &nbsp;&lt;div class="checkbox"&gt; <br>
+                      &nbsp;&nbsp;&lt;input id="defaultCheck" class="<b>styled</b>" type="checkbox"&gt; <br>
+                      &nbsp;&nbsp;&lt;label for="defaultCheck"&gt; <br>
+                        &nbsp;&nbsp;&nbsp;Sunt de acord cu termenii și condiții.
+                      &nbsp;&nbsp;&lt;/label&gt; <br>
+                    &nbsp;&lt;/div&gt; <br>
+                    &nbsp;&lt;button class="<b>btn btn-warning</b>"&gt;Anulare&lt;/button&gt; <br>
+                    &nbsp;&lt;button type="submit" class="<b>btn btn-default pull-right</b>"&gt;Trimite&lt;/button&gt; <br>
+                  &lt;/form&gt; 
+                </code>
+                <br>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Informație utilă. Stilurile sunt implicite
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro">
+                  <h4>Exemple de formulare în pagini</h4>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-4">
+                <div class="example">
+                  <div class="example_bg" data-bg="images/form1.jpg"></div>
+                  <a href="sources/exemple_pagini/msign/semnare_select.html" class="btn btn-link" target="_blank">Vezi exemplu formular <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="example">
+                  <div class="example_bg" data-bg="images/form2.jpg"></div>
+                  <a href="sources/exemple_pagini/msign/semnare_lipsa_hsm.html" class="btn btn-link" target="_blank">Vezi exemplu formular <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="example">
+                  <div class="example_bg" data-bg="images/form3.jpg"></div>
+                  <a href="sources/exemple_pagini/mpay/formular_serviciu.html" class="btn btn-link" target="_blank">Vezi exemplu formular <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row text-center">
+              <div class="col-md-4">
+                <div class="example">
+                  <div class="example_bg" data-bg="images/form4.jpg"></div>
+                  <a href="sources/exemple_pagini/mpay/detalii_card.html" class="btn btn-link" target="_blank">Vezi exemplu formular <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="example">
+                  <div class="example_bg" data-bg="images/form5.jpg"></div>
+                  <a href="sources/exemple_pagini/mpass/inregistrare.html" class="btn btn-link" target="_blank">Vezi exemplu formular <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="example">
+                  <div class="example_bg" data-bg="images/form6.jpg"></div>
+                  <a href="sources/exemple_pagini/mpass/password2.html" class="btn btn-link" target="_blank">Vezi exemplu formular <i class="fa fa-external-link"></i></a>
+                </div>
+              </div>
+            </div>
+          <!--************************ /.exemplu formular *****************-->
+        <!-- /.FORMULARE -->
+        <br>      
+        <!-- TABELE -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="intro">
+                <h3>
+                  <i class="fa fa-table" aria-hidden="true"></i>
+                  Tabele
+                </h3>
+                <hr>
+              </div>
+            </div>
+          </div> 
+          <!-- tabel responsive -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="responsive-table">
+                <h4>Tabel responsive</h4>
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead> 
+                      <tr> <th>#</th> <th>Denumire</th> <th>Disponibilitate online</th> <th>Optiuni</th> </tr> 
+                    </thead>
+                    <tbody> 
+                      <tr> 
+                        <th>1</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td class="hidden-xs">
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td> 
+                      </tr>
+                      <tr> 
+                        <th>2</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td class="hidden-xs">
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>3</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>4</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <th>5</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>6</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.tabel responsive -->
+
+          <!-- tabel non-responsive -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="standard-table">
+                <h4>Tabel non-responsive/standard</h4>
+                  <table class="table">
+                    <thead> 
+                      <tr> <th>#</th> <th>Denumire</th> <th>Disponibilitate online</th> <th>Optiuni</th> </tr> 
+                    </thead>
+                    <tbody> 
+                      <tr> 
+                        <th>1</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td> 
+                      </tr>
+                      <tr> 
+                        <th>2</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>3</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>4</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <th>5</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>6</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+          <!-- /.tabel non-responsive -->
+
+          <!-- tabel cu separatoare responsive -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="bordered-table">
+                <h4>Tabel cu separatoare</h4>
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover">
+                    <thead> 
+                      <tr> <th>#</th> <th>Denumire</th> <th>Disponibilitate online</th> <th>Optiuni</th> </tr> 
+                    </thead>
+                    <tbody> 
+                      <tr> 
+                        <th>1</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td> 
+                      </tr>
+                      <tr> 
+                        <th>2</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>3</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>4</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <th>5</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>6</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.tabel cu separatoare responsive -->
+
+          <!-- tabel cu dungi -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="striped-table">
+                <h4>Tabel cu rânduri cu fundal</h4>
+                <div class="table-responsive">
+                  <table class="table table-striped">
+                    <thead> 
+                      <tr> <th>#</th> <th>Denumire</th> <th>Disponibilitate online</th> <th>Optiuni</th> </tr> 
+                    </thead>
+                    <tbody> 
+                      <tr> 
+                        <th>1</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td> 
+                      </tr>
+                      <tr> 
+                        <th>2</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>3</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>4</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr>
+                      <tr> 
+                        <th>5</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>6</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-car" aria-hidden="true"></i>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>7</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>8</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Da</td> 
+                        <td>
+                          <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        </td>
+                      </tr> 
+                      <tr> 
+                        <th>9</th> 
+                        <td>Lorem Ipsum</td> 
+                        <td>Nu</td> 
+                        <td>
+                        </td>
+                      </tr> 
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.tabel cu dungi -->
+
+          <!-- tabel orizontal scrollable -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="standard-table">
+                <h4>Tabel cu derulare internă</h4>
+                  <div class="scrollable-table">
+                    <table class="table tableScrollable">
+                      <thead> 
+                        <tr> <th>#</th> <th>Denumire</th> <th>Disponibilitate online</th> <th>Optiuni</th> </tr> 
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <th>1</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Da</td> 
+                          <td>
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          </td> 
+                        </tr>
+                        <tr> 
+                          <th>2</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Nu</td> 
+                          <td>
+                          </td>
+                        </tr> 
+                        <tr> 
+                          <th>3</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Da</td> 
+                          <td>
+                            <i class="fa fa-car" aria-hidden="true"></i>
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                          </td>
+                        </tr> 
+                        <tr> 
+                          <th>4</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Da</td> 
+                          <td>
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <th>5</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Nu</td> 
+                          <td>
+                            <i class="fa fa-car" aria-hidden="true"></i>
+                          </td>
+                        </tr> 
+                        <tr> 
+                          <th>6</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Da</td> 
+                          <td>
+                            <i class="fa fa-car" aria-hidden="true"></i>
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          </td>
+                        </tr> 
+                        <tr> 
+                          <th>7</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Nu</td> 
+                          <td>
+                            <i class="fa fa-car" aria-hidden="true"></i>
+                          </td>
+                        </tr> 
+                        <tr> 
+                          <th>8</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Nu</td> 
+                          <td>
+                          </td>
+                        </tr> 
+                        <tr> 
+                          <th>9</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Da</td> 
+                          <td>
+                            <i class="fa fa-car" aria-hidden="true"></i>
+                          </td>
+                        </tr> 
+                        <tr> 
+                          <th>10</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Da</td> 
+                          <td>
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                          </td>
+                        </tr> 
+                        <tr> 
+                          <th>11</th> 
+                          <td>Lorem Ipsum</td> 
+                          <td>Da</td> 
+                          <td>
+                            <i class="fa fa-car" aria-hidden="true"></i>
+                          </td>
+                        </tr> 
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.tabel orizontal scrollable -->
+
+          <!-- tabel cu paginare -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="pagination-table">
+                <h4>Tabel cu paginare</h4>
+                 <div class="panel panel-default panel-table">
+                  <div class="panel-heading">
+                    <div class="row">
+                      <div class="col col-md-6">
+                        <h3 class="panel-title">Titlu Panel</h3>
+                      </div>
+                      <div class="col col-md-6 text-right">
+                        <button type="button" class="btn btn-sm btn-primary btn-create">Crează Nou</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table table-striped table-bordered table-list">
+                      <thead>
+                        <tr>
+                          <th><em class="fa fa-cog"></em></th>
+                          <th class="hidden-xs">ID</th>
+                          <th>Nume</th>
+                          <th>Email</th>
+                        </tr> 
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="icons-td">
+                            <a class="btn btn-default" title="Editează"><em class="fa fa-pencil"></em></a>
+                            <a class="btn btn-danger" title="Șterge"><em class="fa fa-trash"></em></a>
+                          </td>
+                          <td class="hidden-xs">1</td>
+                          <td>John Doe</td>
+                          <td>johndoe@example.com</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="panel-footer">
+                    <div class="row">
+                      <div class="col col-md-4">Pagina 1 din 5
+                      </div>
+                      <div class="col col-md-8">
+                        <ul class="pagination hidden-xs">
+                          <li>
+                            <a href="#" aria-label="Previous" class="prev">
+                              <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                          <li class="active"><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li>
+                            <a href="#" aria-label="Next" class="next">
+                              <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="pagination visible-xs pull-right">
+                          <li><a href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                          <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <!-- /.tabel cu paginare -->
+
+          <!-- exemple de tabele in pagini -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="intro">
+                <h4>Exemple tabele în pagini</h4>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4">
+              <div class="example">
+                <div class="example_bg" data-bg="images/exemplu_tabel1.jpg"></div>
+                <a href="sources/exemple_pagini/msign/document_rezultat.html" class="btn btn-link" target="_blank">Vezi exemplu tabel
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="example">
+                <div class="example_bg" data-bg="images/exemplu_tabel2.jpg"></div>
+                <a href="sources/exemple_pagini/date.gov.md/date-search.html" class="btn btn-link" target="_blank">Vezi exemplu tabel
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="example">
+                <div class="example_bg" data-bg="images/exemplu_tabel3.jpg"></div>
+                <a href="sources/exemple_pagini/servicii.gov.md/contul-meu-subpage.html" class="btn btn-link" target="_blank">Vezi exemplu tabel
+                  <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /.exemple de tabele in pagini -->
+            
+          <!-- afisare cod tabele -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="intro buttons full_width">
+                <h4>Afișare cod tabele:</h4>
+                <a class="btn show_code pull-right" role="button" data-toggle="collapse" href="#codeView4" aria-expanded="false" aria-controls="codeView4">
+                  <span>+</span>
+                  Afișează codul
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row collapse module-code" id="codeView4">
+            <div class="col-md-6 col-sm-6">
+              <h6 class="text-uppercase">html</h6>
+                <code>
+                  &lt;table class="table table-hover"&gt; <br>
+                    &nbsp;&lt;thead&gt; <br> 
+                      &nbsp;&nbsp;&lt;tr&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;#&lt;/th&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;Denumire&lt;/th&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;Disponibilitate online&lt;/th&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;Optiuni&lt;/th&gt; <br>
+                      &nbsp;&nbsp;&lt;/tr&gt; <br>
+                    &nbsp;&lt;/thead&gt;  <br>
+                    &nbsp;&lt;tbody&gt;  <br>
+                      &nbsp;&nbsp;&lt;tr&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;1&lt;/th&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Lorem Ipsum&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Da&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-credit-card" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-file-text-o" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;/td&gt;  <br>
+                      &nbsp;&nbsp;&lt;/tr&gt; <br>
+                      &nbsp;&nbsp;&lt;tr&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;2&lt;/th&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Lorem Ipsum&lt;/td&gt; <br> 
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Nu&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-car" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-file-text-o" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;/td&gt; <br>
+                      &nbsp;&nbsp;&lt;/tr&gt; <br> 
+                      &nbsp;&nbsp;&lt;tr&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;3&lt;/th&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Lorem Ipsum&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Da&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-car" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-credit-card" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;/td&gt; <br>
+                      &nbsp;&nbsp;&lt;/tr&gt; <br> 
+                      &nbsp;&nbsp;&lt;tr&gt; <br> 
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;4&lt;/th&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Lorem Ipsum&lt;/td&gt; <br> 
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Da&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-credit-card" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-file-text-o" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;/td&gt; <br>
+                      &nbsp;&nbsp;&lt;/tr&gt; <br>
+                      &nbsp;&nbsp;&lt;tr&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;5&lt;/th&gt; <br> 
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Lorem Ipsum&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Nu&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-car" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-credit-card" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-file-text-o" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;/td&gt; <br>
+                      &nbsp;&nbsp;&lt;/tr&gt;  <br>
+                      &nbsp;&nbsp;&lt;tr&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;th&gt;6&lt;/th&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Lorem Ipsum&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt;Da&lt;/td&gt;  <br>
+                        &nbsp;&nbsp;&nbsp;&lt;td&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-car" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-credit-card" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="fa fa-file-text-o" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;/td&gt; <br>
+                      &nbsp;&nbsp;&lt;/tr&gt;  <br>
+                    &nbsp;&lt;/tbody&gt; <br>
+                  &lt;/table&gt;
+                </code>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <h6 class="text-uppercase">Css</h6>
+              <code>
+                <b>.table</b>{border: 1px solid #ccc;} <br>
+                <b>.table tbody th</b>{ border-top: none !important;} <br>
+                <b>.table>tbody>tr:first-child>td</b>{padding-top: 0;} <br>
+                <b>.table>thead:first-child>tr>th:first-child</b>, <br>
+                <b>.table>tbody>tr>th:first-child</b>{ <br>
+                  &nbsp;&nbsp;padding-left: 30px; <br>
+                  &nbsp;&nbsp;line-height: 30px; <br>
+                  &nbsp;&nbsp;vertical-align: middle; <br>
+                } <br>
+                <b>.table>tbody>tr>td </b>{ <br>
+                    &nbsp;&nbsp;line-height: 30px; <br>
+                    &nbsp;&nbsp;vertical-align: inherit; <br>
+                } <br>
+                <b>.table>tbody>tr>td i.fa</b>{margin-right: 5px;} <br>
+
+                <b>.table-bordered>tbody>tr>td,</b> <br>
+                <b>.table-bordered>tbody>tr>th,</b> <br>
+                <b>.table-bordered>thead>tr>th</b>{ <br>
+                  &nbsp;&nbsp;border-bottom: 1px solid #ccc; <br>
+                  &nbsp;&nbsp;border-right: 1px solid #ccc; <br>
+                  &nbsp;&nbsp;padding-left: 30px; <br>
+                }
+                <b>.table-bordered>thead>tr>th</b>{border-bottom: 2px solid #ccc;} <br>
+              </code>
+            </div>
+          </div>
+          <!-- /.afisare cod tabele -->
+        <!-- /.TABELE -->
+
+        <!-- COD -->
+
+        <div class="row">
+              <div class="col-md-12">
+                <div class="intro buttons full_width">
+                  <h4>Cod pentru căutare:</h4>
+                  <a class="btn show_code pull-right" role="button" data-toggle="collapse" href="#searchShow" aria-expanded="false" aria-controls="searchShow">
+                    <span>+</span>
+                    Afișează codul
+                  </a>
+                </div>
+              </div>
+        </div>
+        <div class="row collapse module-code" id="searchShow">
+                <div class="col-md-6">
+                  <h5>HTML</h5>
+                  <code>
+                    &lt;div class="<b>input-group main-search</b>"&gt; <br>
+                      &nbsp;&nbsp;&lt;input type="text" class="<b>form-control ui-autocomplete-input</b>" placeholder="Caută după denumire serviciu, categorie, etc." id="<b>tags</b>" autocomplete="off"&gt; <br>
+                      &nbsp;&nbsp;&lt;button class="<b>input-group-addon</b>"&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-search</b>"&gt;&lt;/i&gt; <br>
+                      &nbsp;&nbsp;&lt;/button&gt; <br>
+                    &lt;/div&gt; <br>
+                  </code>
+                </div>
+                <div class="col-md-3">
+                  <h5>CSS</h5>
+                  <code>
+                    /* search box */<br>
+                    <b>.main-search button.input-group-addon</b>{ <br>
+                      &nbsp;&nbsp;color: #fff; <br>
+                      &nbsp;&nbsp;width: 40px; <br>
+                      &nbsp;&nbsp;right: 0px; <br>
+                      &nbsp;&nbsp;top: 0px; <br>
+                      &nbsp;&nbsp;height: 40px; <br>
+                      &nbsp;&nbsp;background: #3366cc; <br>
+                      &nbsp;&nbsp;line-height: 1; <br>
+                      &nbsp;&nbsp;border-top-right-radius: 4px; <br>
+                      &nbsp;&nbsp;border-bottom-right-radius: 4px; <br>
+                    } <br>
+                     <b>.main-search .input-group-addon:hover</b>{color: #333;} <br>
+                     <b>.main-search .input-group-addon:focus</b>{outline: none;} <br>
+                    /*dropdown*/<br>
+                     <b>.ui-autocomplete</b>{ <br>
+                        &nbsp;&nbsp;list-style-type: none; <br>
+                        &nbsp;&nbsp;color: #666; <br>
+                        &nbsp;&nbsp;padding-left: 0; <br>
+                        &nbsp;&nbsp;line-height: 2.143em; <br>
+                        &nbsp;&nbsp;width: 370px; <br>
+                        &nbsp;&nbsp;overflow: hidden; <br>
+                        &nbsp;&nbsp;margin: 0; <br>
+                        &nbsp;&nbsp;background: #fff; <br>
+                    } <br>
+                    <b>.ui-autocomplete .ui-menu-item</b>{ <br>
+                        &nbsp;&nbsp;padding: 5px 10px; <br>
+                        &nbsp;&nbsp;border-width: 0 0 1px 0; <br>
+                        &nbsp;&nbsp;border-color: #ccc; <br>
+                        &nbsp;&nbsp;border-style: solid; <br>
+                        &nbsp;&nbsp;cursor: pointer; <br>
+                    }
+                  </code>
+                </div>
+                <div class="col-md-3">
+                  <h5>JS</h5>
+                  <code>
+                    if(<b>$('#tags').length > 0</b>){ <br>
+                      function <b>cauta(x)</b>{ <br>
+                        var <b>availableTags</b> = [ <br>
+                            "Caută denumire serviciu", <br>
+                            "Caută denumire serviciu în Persoane fizice", <br>
+                            "Caută denumire serviciu în Business", <br>
+                            "Caută denumire serviciu în Scenarii de viață", <br>
+                            "Caută denumire serviciu în Vizitatori/nerezidenți", <br>
+                        ]; <br>
+                        for (var i = 0, len = <b>availableTags</b>.length; i &lt; len; i++) { <br>
+                          <b>availableTags</b>[i] = <b>availableTags</b>[i].replace("denumire serviciu",x); <br>
+                        } return <b>availableTags</b>; <br>
+                      } <br>
+                      $( function() { <br>
+                          $( "#tags" ).autocomplete({ <br>
+                            source: function( request, response ){ <br>
+                              response(cauta(request.term)); <br>
+                            } <br>
+                          }).data( "<b>ui-autocomplete</b>" )._renderItem = function( ul, item ) { <br>
+                            return $( "&lt;li&gt;&lt;/li&gt;" ).data("item.autocomplete", item) <br>
+                            .append( item.value.replace($('#tags').val(),"<strong>"+$('#tags').val()+"</strong>")) <br>
+                            .appendTo( ul ); <br>
+                          }; <br>
+                      }); <br>
+                    } <br> 
+                  </code>
+                </div>
+                <div class="col-md-12">
+                  <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                          Pentru a crea un search block cu live reload am folosit plugin-ul jQuery-ui <b>autocomplete</b>, 
+                          <a href="https://jqueryui.com/autocomplete/" target="_blank">vezi sursa</a>.Fișierul necesar pentru funcționare îl găsiți in mapa: JS - jquery-ui.min.js. 
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+        </div>
+        
+         <!--*** codul pentru alerte si mesaje ***-->
+            <div class="row">
+              <div class="col-md-12">
+                <div class="intro buttons full_width">
+                  <h4>Cod pentru alerte si mesaje:</h4>
+                  <a class="btn show_code pull-right" role="button" data-toggle="collapse" href="#codeShow" aria-expanded="false" aria-controls="codeShow">
+                    <span>+</span>
+                    Afișează codul
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="row collapse module-code" id="codeShow">
+              <div class="col-md-10">
+                <h5>HTML</h5> 
+                <br>
+                <h6>Alert box</h6>
+                <code>
+                  &lt;div class="<b>alert alert-success</b>"&gt; <br>
+                    &nbsp;&nbsp;&lt;ul class="<b>fa-ul</b>"&gt; <br>
+                     &nbsp;&nbsp; &lt;li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-check fa-lg fa-li</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Succes! Acest message box apare în cazul în care o acțiune anterioară a fost realizată cu succes. <br>
+                      &nbsp;&nbsp;&nbsp;&lt;/li&gt; <br>
+                    &nbsp;&nbsp;&lt;/ul&gt; <br>
+                  &lt;/div&gt; <br>
+                  &lt;div class="<b>alert alert-info</b>"&gt; <br>
+                    &nbsp;&lt;ul class="<b>fa-ul</b>"&gt; <br>
+                      &nbsp;&nbsp;&lt;li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&lt;i class="<b>fa fa-info-circle fa-lg fa-li</b>" aria-hidden="true"&gt;&lt;/i&gt; <br>
+                        &nbsp;&nbsp;&nbsp;... <br>
+                      &nbsp;&nbsp;&lt;/li&gt; <br>
+                    &nbsp;&lt;/ul&gt; <br>
+                  &lt;/div&gt; <br>
+                </code>
+                <br>
+                <h6>Alert box dismissible</h6>
+                <code>
+                  &lt;div class="<b>alert alert-danger alert-dismissible</b>" role="alert"&gt;<br>
+                    &nbsp;&nbsp;&lt;button type="button" class="<b>close</b>" data-dismiss="alert" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;&lt;/button&gt; <br>
+                    &nbsp;&nbsp;&lt;strong&gt;Eroare!&lt;/strong&gt; Acest message box apare în cazul în care în realizarea acțiunii anterioare s-a produs o eroare. <br>
+                  &lt;/div&gt; <br>
+                </code>
+                <br>
+                <h6>Mesage box</h6>
+                <code>
+                  &lt;div class="<b>alert alert-success</b>"&gt; <br>
+                    &nbsp;&nbsp;Succes! Acest message box apare în cazul în care o acțiune anterioară a fost realizată cu succes. <br>
+                  &lt;/div&gt; <br>
+                </code>
+                <br>
+                <h6>Alert box cu link</h6>
+                <code>
+                  &lt;div class="<b>alert alert-success</b>" role="alert"&gt; <br>
+                    &nbsp;&nbsp;&lt;strong&gt;Succes!&lt;/strong&gt; Acțiunea dvs. a avut loc. <br>
+                    &nbsp;&nbsp;&lt;a href="#" class="<b>alert-link</b>"&gt;Accesează link-ul&lt;/a&gt; <br>
+                  &lt;/div&gt; <br>
+                </code>  
+              </div>
+              <div class="col-md-2">
+                <h6>INFO</h6>
+                <div class="alert alert-info">
+                    <ul class="fa-ul">
+                      <li>
+                        <i class="fa fa-info-circle fa-lg fa-li" aria-hidden="true"></i>
+                        Stilurile sunt implicite
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          <!--*** /.codul pentru alerte si mesaje*** -->
+    
+        <!-- /.COD -->
+        </div>  
+      </main>
+      <!-- /.continutul paginii -->
+      <footer>
+        <div class="container">
+          <div class="row">
+           <div class="col-md-2 col-sm-4">
+              <h5 class="text-uppercase">Centru de asistență</h5>
+             <span>servicii publice electronice</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-left">
+              <a href="tel:+37322820000" class="contact-tel"><span>022 </span><b>820 000</b></a>
+            </div>
+            <div class="col-md-offset-2 col-md-5 text-right copyright col-sm-4">
+                <a href="terms.html">Termeni și condiții</a> <br>
+                <span>
+                  ©&nbsp;2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> Toate drepturile rezervate
+                </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- sfirsit pagina -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

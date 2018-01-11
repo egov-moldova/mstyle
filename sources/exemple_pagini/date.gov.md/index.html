@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+    
+    <title>Portalul Guvernamental al Datelor Deschise</title>
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/date.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header class="big-bg medium-header" data-bg="images/header_bg.jpg">
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Portalul Guvernamental <br>
+                    al Datelor Deschise
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                      <span>Date</span>
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Instituții publice</a></li>
+                      <li><a href="date-set-date.html">Categorii seturi de date</a></li>
+                      <li><a href="#">Statistici</a></li>
+                    </ul>
+                    <!-- /.dropdown menu -->
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                      <span>Aplicații</span>
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Lorem Ipsum</a></li>
+                      <li><a href="#">Aplicație 2</a></li>
+                      <li><a href="#">Aplicații 3</a></li>
+                    </ul>
+                    <!-- /.dropdown menu -->
+                  </li>
+                  <li><a href="#">Participă</a></li>
+                  <li><a href="#">Despre</a></li>
+                  <li><a href="#">Comunicate</a></li>
+                  <li><a href="#">Sondaje</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="faq.html">Întrebări frecvente</a></li>
+                  <li><a href="terms_conditions.html">Termeni și condiții</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+        <!-- header content -->
+        <div class="container header-content">
+          <div class="row">
+            <div class="col-md-6 col-sm-8">
+              <h1>Seturi de date deschise</h1>
+              <ul class="list-inline top-dates">
+                <li>
+                  <h3>937</h3>
+                  <a href="#">seturi date</a>
+                </li>
+                <li>
+                  <h3>48</h3>
+                  <a href="#">instituții</a>
+                </li>
+                <li>
+                  <h3>17</h3>
+                  <a href="#">categorii</a>
+                </li>
+              </ul>
+
+              <!-- live search DEMO !!! jquery-ui - AUTOCOMPLETE -->
+              <div class="input-group main-search">
+                <input type="text" class="form-control" placeholder="Caută după denumire serviciu, categorie, etc." id="tags">
+                <button class="input-group-addon"><i class="fa fa-search"></i></button>
+              </div>
+              <!-- /.live search DEMO !!! jquery-ui -->
+              <ul class="list-inline tips">
+                <li>Sugestii:</li>
+                <li>  
+                  <a href="#">sănătate,</a>
+                </li>
+                <li>  
+                  <a href="#">spital,</a>
+                </li>
+                <li>  
+                  <a href="#">instituții medico-sanitare</a>
+                </li>
+              </ul>
+
+              <button type="button" class="btn btn-default btn-transparent" data-toggle="modal" data-target="#videoModal">
+                <i class="fa fa-play-circle"></i>
+                Vezi prezentare video
+              </button>
+            </div>
+            <div class="col-md-6 col-sm-4 text-right">
+              <div class="recomandations">
+                  <h4>Seturi de date recomandate:</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</a>
+                    </li>
+                    <li>
+                      <a href="#">Date privind balanţa anuală a patrimoniului public al APC (autorităţilor publice centrale)</a>
+                    </li>
+                    <li>
+                      <a href="#">Date privind îndeplinirea lucrărilor de construcție, reparație, proiectare a drumurilor, şi procurarea utilajului din fondul rutier</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.header content -->
+        <!-- Video modal -->
+        <div class="modal fade bs-example-modal-lg" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title pull-left" id="myModalLabel">Titlul clipului video</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe id="ytplayer" type="text/html" class="embed-responsive-item" src="https://www.youtube.com/embed/DijTs6xFRDo" allowfullscreen="">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.Video modal -->
+      </header>
+      <main>
+        <div class="container">
+          <div class="row">
+            <!-- categorii seturi de date deschise -->
+            <div class="col-md-9 text-center">
+              <div class="date-categories">
+                <h4 class="text-center title">Categorii seturi de date deschise</h4>
+                <ul class="three-column">
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-database"></i>
+                      <span class="date-title">Finanțe și Buget</span>
+                      <span class="date-nr">49</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-truck"></i>
+                      <span class="date-title">Transport</span>
+                      <span class="date-nr">33</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-bolt"></i>
+                      <span class="date-title">Energie</span>
+                      <span class="date-nr">76</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-graduation-cap"></i>
+                      <span class="date-title">Educație</span>
+                      <span class="date-nr">12</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-futbol-o"></i>
+                      <span class="date-title">Sport</span>
+                      <span class="date-nr">87</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-gavel"></i>
+                      <span class="date-title">Justiție</span>
+                      <span class="date-nr">72</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-bar-chart"></i>
+                      <span class="date-title">Economie și Sectorul Privat</span>
+                      <span class="date-nr">85</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-leaf"></i>
+                      <span class="date-title">Agricultură</span>
+                      <span class="date-nr">98</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-list-alt"></i>
+                      <span class="date-title">Clasificatoare și nomenclatoare</span>
+                      <span class="date-nr">25</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-plane"></i>
+                      <span class="date-title">Turism</span>
+                      <span class="date-nr">87</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-tint"></i>
+                      <span class="date-title">Mediu</span>
+                      <span class="date-nr">82</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-music"></i>
+                      <span class="date-title">Cultură</span>
+                      <span class="date-nr">54</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-stethoscope"></i>
+                      <span class="date-title">Sănătate</span>
+                      <span class="date-nr">23</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-users"></i>
+                      <span class="date-title">Societate</span>
+                      <span class="date-nr">99</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-flask"></i>
+                      <span class="date-title">Știință și Cercetare</span>
+                      <span class="date-nr">44</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-flag"></i>
+                      <span class="date-title">Integrare Europeană</span>
+                      <span class="date-nr">67</span>  
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="date-link">
+                      <i class="fa fa-map-o"></i>
+                      <span class="date-title">Date Geospatiale</span>
+                      <span class="date-nr">83</span>  
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--/. categorii seturi de date deschise -->
+
+            <!-- ultimile seturi de date -->
+            <div class="col-md-3">
+              <div class="widget date-widget">
+                <h4 class="widget-title">Ultimele seturi de date</h4>
+                <div class="widget-content">
+                  <ul class="list-unstyled">
+                    <li class="top-download">
+                      <a href="#">
+                        Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova 
+                        <i class="fa fa-fire"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Date privind balanţa anuală a patrimoniului public al APC (autorităţilor publice centrale)
+                      </a>
+                    </li>
+                    <li class="top-download">
+                      <a href="#">
+                        Date privind îndeplinirea lucrărilor de construcție, reparație, proiectare a drumurilor, şi procurarea utilajului din fondul rutier
+                        <i class="fa fa-fire"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Date privind balanţa anuală a patrimoniului public al APC (autorităţilor publice centrale)
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        Date privind îndeplinirea lucrărilor de construcție, reparație, proiectare a drumurilor, şi procurarea utilajului din fondul rutier
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.ultimile seturi de date -->
+          </div>
+        </div>
+
+        <!-- banci de date deschise -->
+        <section class="bg-info data-banks">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h4 class="section-title">Bănci de date deschise</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category dates" data-bg="images/place1.jpg"">
+                  <a href="#" class="overlay-lnk"></a>
+                  <h4 class="category-title">Portalul informațional <br> e-Cadastru</h4>
+                  <a href="#" class="btn btn-default">Accesează <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category dates" data-bg="images/place2.jpg"">
+                  <a href="#" class="overlay-lnk"></a>
+                  <h4 class="category-title">Registrul de Stat al Achizițiilor <br> Publice</h4>
+                  <a href="#" class="btn btn-default">Accesează <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category dates" data-bg="images/place3.jpg"">
+                  <a href="#" class="overlay-lnk"></a>
+                  <h4 class="category-title">Fondul național de date geospațiale <br> al Republicii Moldova</h4>
+                  <a href="#" class="btn btn-default">Accesează <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category dates" data-bg="images/place4.jpg"">
+                  <a href="#" class="overlay-lnk"></a>
+                  <h4 class="category-title">Banca de date statistice <br> a Republicii Moldova</h4>
+                  <a href="#" class="btn btn-default">Accesează <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category dates" data-bg="images/place5.jpg"">
+                  <a href="#" class="overlay-lnk"></a>
+                  <h4 class="category-title">Registru de Stat al Actelor Juridice <br> ale Republicii Moldova</h4>
+                  <a href="#" class="btn btn-default">Accesează <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category dates" data-bg="images/place6.jpg"">
+                  <a href="#" class="overlay-lnk"></a>
+                  <h4 class="category-title">Orarul curselor auto interne și <br> internaționale</h4>
+                  <a href="#" class="btn btn-default">Accesează <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- /.banci de date deschise -->
+      </main>
+      <footer class="big-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Centru de asistență</h4>
+                <span>servicii publice electronice</span>
+                <a href="callTo:+373820000" class="call-action"><span>022</span> 820 000</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Legături utile</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">Despre portal</a>
+                  </li>
+                  <li>
+                    <a href="#">Ajutor</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">Întrebări frecvente</a>
+                  </li>
+                  <li>
+                    <a href="terms_conditions.html">Termeni și condiții</a>
+                  </li>
+                  <li>
+                    <a href="#">Contacte</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Rețele sociale</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook-official"></i>Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-youtube-play"></i>Youtube</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter-square"></i>Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin-square"></i>Linkedin</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <p class="copyright">
+                  &copy; 2012-2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> <br>
+                  Toate drepturile rezervate
+                </p>
+                <ul class="list-unstyled last-dates">
+                  <li><a href="#">API</a></li>
+                  <li><a href="#">Documentație API</a></li>
+                  <li><a href="#" class="feedback-btn">Oferă feedback</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

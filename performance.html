@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+
+    <title>Ghid - Ghid de stil servicii electronice guvernamentale</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- start pagina -->
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Ghid de stil servicii electronice guvernamentale
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="grila.html">Grilă<span class="sr-only">(current)</span></a></li>
+                  <li><a href="colors.html">Culori</a></li>
+                  <li><a href="text.html">Text și pictograme</a></li>
+                  <li><a href="nav.html">Navigare</a></li>
+                  <li><a href="forms.html">Formulare și tabele</a></li>
+                  <li><a href="elements.html">Alte elemente</a></li>
+                  <li class="active"><a href="performance.html">Tehnic</a></li>
+                  <li><a href="examples.html">Exemple</a></li>
+                  <li><a href="sources/downloads/ghid.zip" class="btn btn-download" download>Descarcă</a></li>
+                  <li class="hidden-sm hidden-md hidden-lg font_control">
+                    <span id="fontChange2">Mărire / micșorare text</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+      <!-- continutul paginii -->
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="intro">
+                <h2><i class="fa fa-th-large" aria-hidden="true"></i> Structura</h2>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <!-- content p/u structura pagină -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="description structure two-columns">
+                <pre>
+&lt;!DOCTYPE&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta/&gt;
+    &lt;title/&gt;
+    &lt;link/&gt;
+    &lt;style/&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="page-content"&gt;
+      &lt;header/&gt;
+      &lt;main/&gt;
+      &lt;footer/&gt;
+    &lt;/div&gt;
+    &lt;script/&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+                <p>Prezența tuturor blocurilor mentionate este obligatorie.</p>
+
+                <h4><code>&lt;!DOCTYPE&gt;</code></h4>
+                <p>
+                  Declarația în cauză trebuie să fie prima declarație din pagină, ea nu este o declarație de tip tag html. <br/>
+                  Întotdeauna trebuie să fie prezentă în pagină, și se utilizează la declararea tipului de conținut html care urmează în pagină.<br/>
+                  Declarația trebuie să fie &lt;!DOCTYPE html&gt; - ceea ce îi indică browserului că urmează conținut de tip html5.<br/><br/>
+                </p>
+                <h4><code>&lt;html&gt;</code></h4>
+                <p> Parametri optionali:<br/>
+                    <strong>lang</strong>
+                      - primeste valori conform standardului ISO 639-1.<br/>
+                      - exemplu <code>&lt;html lang="ro"&gt;</code><br/>
+                      - indică limba în care e scris conținutul<br/>
+                      - se utilizează de către motoarele de căutare pentru indexarea corectă a conținutului paginii.<br/>
+                      - daca pagina este predestinata pentru a fi indexata de catre motoarele de cautare parametrul este obligatoriu.<br/><br/>
+                </p>
+                <h4><code>&lt;meta/&gt;</code></h4>
+                <p> 
+                  Acest bloc poate conține mai multe declarații.<br/><br/>
+                  
+                  <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code><br/>
+                    Această declarație este obligatorie și se utilizează pentru compatibilitatea cu dispozitivele mobile. <a href="https://developer.mozilla.org/ro/docs/Mozilla/Mobile/Viewport_meta_tag" target="_blank">Reguli de utilizare</a>.<br/><br/>
+                  
+                  <code>&lt;meta name="robots" content="index, follow"&gt;</code><br/>
+                    Această declarație e obligatorie și se utilizează de către motoarele de căutare. <a href="http://www.metatags.org/meta_name_robots" target="_blank">Reguli de utilizare</a>.<br/><br/>
+                    
+                  <code>&lt;meta name="description" content="aici se indica descrierea"&gt;</code><br/>
+                    Această declarație e obligatorie și se utilizează de către motoarele de căutare la afișarea rezultatelor ca descriere a paginii. Maxim 160 caractere.<a href="https://moz.com/learn/seo/meta-description" target="_blank">Reguli de utilizare</a>.<br/><br/>
+                  
+                  <h3>Declaratii meta pentru optimizarea experienței de interacțiune cu rețelele sociale</h3>
+                  <h4>Facebook</h4>
+                  <p>În cazul în care se dorește implementarea cu rețeaua de socializare în cauză, toate declarațiile de tip 
+                  <code><meta property="og:**" content="Facebook link"></code> de mai jos sunt obligatorii. Ele vor defini conținutul care este utilizat la afișarea paginii în Facebook.<br/><br/>
+                  
+                  <code>&lt;meta property="og:url" content="https://domeniu.md/pagina.html" /&gt;</code><br/>
+                    Descriere: Adresa URL (canonical url) a paginii în cauză.<br/>
+                    Mențiuni: Adresa URL NU trebuie să conțină parametri de sesiune, de contorizare, de identificare a utilizatorilor și/sau a anumitor elemente sau stări ale paginii. În cazul utilizării unui subdomeniu dedicat pentru dispozitivele mobile, adresa URL trebuie să indice adresa URL a paginii Desktop.<br/><br/>
+                    
+                  <code>&lt;meta property="og:title" content="Titlul Paginii" /&gt;</code><br/>
+                    Descriere: Titlul paginii fără indicarea numelui site-ului, organizației, sau a sloganelor.<br/><br/>
+                    
+                  <code>&lt;meta property="og:description" content="Descrirea Paginii" /&gt;</code><br/>
+                    Descriere: Descrierea concisă a paginii în cel mult 3 propoziții.<br/><br/>
+                    
+                  <code>&lt;meta property="og:image" content="https://domeniu.md/adresa.jpg" /&gt;</code><br/>
+                    Descriere: Imaginea reprezentativă a paginii, care va apărea la acțiunea de share.<br/>
+                    Mențiuni: Imaginile care sunt mai mari de 600px x 315px, vor fi afișate ca imagini mari în rețeaua de socializare. Se recomandă imagini mai mari de 1200px x 630px cu capacitatea nu mai mare de 8MB<br/><br/>
+                  </p>
+                  <h4>Twitter</h4>
+                  <p>
+                  În cazul în care se dorește implementarea cu rețeaua de socializare în cauză, toate declarațiile de tip <code>
+                  <meta property="twitter:**" content="Twitter link"></code> de mai jos sunt obligatorii. Ele vor defini conținutul care este utilizat la afișarea paginii în Twitter.<br/><br/>
+                  
+                  <code>&lt;meta name="twitter:card" content="summary" /&gt;</code><br/>
+                  Descriere: Tipul cardului pe twitter.<br/><br/>
+                    
+                    
+                  <code>&lt;meta name="twitter:description" content="descriere" /&gt;</code><br/>
+                    Descriere: Descrierea concisă a paginii.<br/>
+                    Mențiuni: Maxim 200 caractere<br/><br/>
+                    
+                  <code>&lt;meta name="twitter:title" content="Titlul Paginii" /&gt;</code><br/>
+                    Descriere: Titlul paginii fără indicarea numelui site-ului, organizației, sau a sloganelor.<br/>
+                    Mențiuni: Maxim 70 caractere<br/><br/>
+                    
+                  <code>&lt;meta name="twitter:image" content="https://domeniu.md/adresa.jpg" /&gt;</code><br/>
+                    Descriere: Imaginea reprezentativă a paginii, care va apărea la acțiunea de share.<br/>
+                    Mențiuni: Fișier nu mai mare de 1MB<br/><br/>
+                    
+                  </p>
+                <h4><code>&lt;title/&gt;</code></h4>
+                <p> 
+                  Acest bloc este obligatoriu.<br/><br/>
+                  Descriere: Definește titlul paginii în bara de titlu a browser-elor, în motoarele de căutare etc.<br/><br/>
+                </p>
+                <h4><code>&lt;link/&gt;</code></h4>
+                <p> 
+                  Acest bloc poate conține mai multe declarații.<br/><br/>
+                  
+                  <code>&lt;link rel="stylesheet" href="http://domeniu.md/fisier.css" /&gt;</code><br/>
+                    Descriere: Încărcarea fișierelor/declarațiilor CSS.<br/><br/>
+                  
+                  <code>&lt;link rel="canonical" href="http://domeniu.md/pagina.html" /&gt;</code><br/>
+                    Descriere: Adresa URL (canonical url) a paginii în cauză. Se utilizează de către motoarele de căutare.<br/>
+                    Mențiuni: Adresa URL NU trebuie să conțină parametri de sesiune, de contorizare, de identificare a utilizatorilor și/sau a anumitor elemente sau stări ale paginii. În cazul în care pagina e accesibilă la mai multe adrese url, în toate paginile de la adresele url corespondente va fi indicat un singur canonical url.<br/><br/>
+                  <code>&lt;link rel="dns-prefetch" href="//maxcdn.com" /&gt;</code><br/>
+                  Această declarație nu e obligatorie<br/>
+                  Descriere: Se utilizează pentru a face resolve la domeniile care vor fi utilizate în paginile accesate ulterior, pentru a micșora timpul de încărcare a paginilor ulterioare. <a href="http://dev.chromium.org/developers/design-documents/dns-prefetching" target="_blank">Reguli de utilizare</a>.<br/><br/>
+                  
+                  <code>&lt;link rel="icon" type="image/x-icon" href="/favicon.ico" /&gt;</code>
+                  Această declarație nu e obligatorie<br/>
+                  Descriere: Se utilizează pentru a indica o pictogramă pentru afișarea în bara de titlu a browser-elor sau/și dispozitivelor mobile a paginii. <a href="http://iconhandbook.co.uk/reference/examples/favicons/" target="_blank">Reguli de utilizare</a>.<br/><br/>
+                  
+                </p>
+                <h4><code>&lt;header/&gt;</code></h4>
+                <p>
+                  În acest bloc se plasează tot ce se află în antetul paginii.<br/><br/>
+                  Antetul constă din 2 bare de navigare. care includ meniuri de navigare. <br/>
+                  Acest bloc este obligatoriu.<br/><br/>
+                  
+                </p>  
+                <h3>Atribute suplimentare ale elementelor HTML</h3>
+                <h4><code>data-bg="url"</code></h4>
+                <p>
+                  Exemplu: <code>&lt;div data-bg="https://domain.com/image.jpg"&gt;&lt;/div&gt;</code><br/>
+                  Descriere: imaginea indicata ca valoare a parametrului va servi ca fundal (background-image) a elementului si il va acoperi in totalitate (background-size:cover)
+                </p>
+                <h4><code>data-toggle="tooltip"</code></h4>
+                <p>
+                  Exemplu: <code>&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Informatie sus"&gt;Informatie sus&lt;/button>&gt;</code><br/>
+                  Descriere: Textul indicat ca valoare parametrului va fi afișată la acțiunea de mouse over pe element.
+                </p>
+                <h4><code>data-toggle="popover"</code></h4>
+                <p>
+                  Exemplu: <code>&lt;button type="button" class="btn btn-default" data-toggle="popover" title="Titlul" data-content="Lorem Ipsum dolore sit amet !!!"&gt;Click to toggle popover&lt;/button&gt;</code><br/>
+                  Descriere: Textul indicat ca valoare parametrului va fi afișată la acțiunea de click pe element
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /.content p/u structura pagină -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="intro">
+                <h3><i class="fa fa-line-chart" aria-hidden="true"></i> Performanță</h3>
+                <hr>
+              </div>
+            </div>
+          </div>
+          <!-- content p/u performanta -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="description performance three-column">
+                <h4><i class="fa fa-html5" aria-hidden="true"></i> HTML</h4>
+                <p>
+                  În codul HTML, declarațiile CSS trebuie să fie amplasate ca ordine înaintea declarațiilor JS. <br>
+                  Pentru a asigura caching-ul conținutului static, evitați utilizarea parametrilor URL (prin "?").<br>Proxy serverele mai vechi nu fac caching la resursele ce conțin "?". <br>
+                  Reduceți la minim numărul de elemente în DOM utilizate, unde e posibil. <br>
+                  Evitați încărcarea resurselor care se redirecționează (30x) sau nu există (404). <br>
+                  Cu cât mai mare este numărul domeniilor/subdomeniilor din care are loc încărcarea resurselor în pagină, cu atât timpul de încărcare a paginii va fi mai mare, datorită cererilor DNS.
+                </p>
+                
+                <h4><i class="fa fa-css3" aria-hidden="true"></i> CSS</h4>
+                <p>
+                  Blocurile <code>&lt;style&gt;</code> și <code>&lt;link&gt;</code> trebuie să fie amplasate în <code>&lt;head&gt;</code>. <br>
+                  Evitați utilizarea CSS <code>@import</code>. <br>
+                  Codul CSS trebuie minificat - să nu conțină comentarii și caractere de tip white-space. <br> CSS-ul poate fi minificat la adresa: <a href="https://cssminifier.com/" target="_blank">https://cssminifier.com/</a> <br>
+                  Codul CSS de dimensiuni mici nu trebuie amplasat în fișiere separate ci direct în pagină, <code>&lt;style&gt;</code>. <br>
+                  Evitați utilizarea stilurilor inline pentru elementele din pagină. <br>
+                  Evitați încărcarea multiplă a aceluiași fișier în aceeași pagină. <br>
+                  Evitați AlphaImageLoader, utilizarea acestuia sporește considerabil durata încărcării paginilor în care se utilizează. <br>
+                </p>
+              
+                <h4><i class="fa fa-code" aria-hidden="true"></i> JS(JavaScript)</h4>
+                <p>Blocurile <code>&lt;script&gt;</code> trebuie să fie amplasate înaintea închiderii tagului <code>&lt;body&gt;</code>. <br>
+                Scripturile de dimensiuni mici nu trebuie amplasate în fișiere separate ci direct în pagină, inline. <br>
+                Fișierele JS trebuie minificate - să nu conțină comentarii și caractere de tip white-space. JS-ul poate fi minificat la adresa: <a href="https://jscompress.com/" target="_blank">https://jscompress.com/</a> <br>
+                Evitați încărcarea multiplă a aceluiași fișier în aceeași pagină.
+                </p>
+
+                <h4><i class="fa fa-font" aria-hidden="true"></i> Garnituri de text</h4>
+                <p>
+                    Fișierele de tip font nu trebuie să fie incluse în cod ca accesate din Google Fonts, deoarece fișierele din Google Fonts astfel accesate nu se stochează în memoria cache a browser-ului. <br>
+                    Fișierele de tip font trebuie descărcate și deservite dintr-o resursă care permite browser-ului să facă cache.
+                </p>
+              
+                <h4><i class="fa fa-picture-o" aria-hidden="true"></i> Imagini</h4>
+                <p>
+                  Imaginile <code>&lt;img&gt;</code> trebuie întotdeaună să conțină atributele width și height, pentru a preveni redimensionarea imaginilor/conținutului în timpul încărcării paginii. <br>
+                  Imaginile trebuie optimizate (fără pierdere de calitate) pentru a micșora la maxim mărimea lor.
+                </p>
+                  <h5>Standalone:</h5>
+                    <ol style="list-style-type: none;">
+                      <li>PNG - <b>OptiPNG</b> </li>
+                      <li>JPG - <b>jpegoptim</b></li>
+                    </ol> 
+                  <h5>Online:</h5>
+                    <ul style="list-style-type: none;">
+                      <li><a href="https://compressor.io/" target="_blank">https://compressor.io/</a></li>
+                    </ul>
+                <p>
+                  Mărimea imaginilor nu trebuie să fie mai mare decât ele apar în conținut. <br>
+                  Fișierul favicon-ul trebuie să fie mic ca mărime de stocare și cacheable. <br>
+                  Unde e posibil utilizați CSS în loc de imagini.
+                </p>
+              
+                <h4><i class="fa fa-server" aria-hidden="true"></i> HTTP Server</h4>
+                <p>
+                  Toate fișierele statice (img/css/ttf/woff/jpeg/png/js) trebuie să fie hostate pe subdomenii care nu utilizează cookie. <br>
+                  Toate fișierele statice (img/css/ttf/woff/jpeg/png/js) trebuie să returneze în HTTP header Last-modified sau ETag. <br>
+                  Aceasta permite browser-elor/proxy serverelor să profite la maxim de posibilitățile încorporate de caching și micșorează esențial traficul către serverul web. <br>
+                  Pentru compatibilitatea cu IE9, evitați indicarea tagului meta charset. Charset-ul trebuie să fie indicat în HTTP header. <br>
+                  Pentru compatibilitatea cu proxy serverele care sunt configurate incorect, și pot oferi conținut compresat clienților care nu pot citi conținutul compresat, specificați HTTP header Vary: Accept-Encoding, care permite proxy-serverelor să păstreze paginile compresate și necompresate. <br>
+                  Activați opțiunea Keep-Alive, aceasta va permite conexiunilor HTTP să fie persistente ceea ce va micșora latența cererilor ulterioare. <br>
+                  Dacă e posibil utilizați HTTP/2. <br>
+                  Adăugați HTTP header Expires, pentru a indica browserului dacă poate sau nu să fie utilizat conținutul din cache. <br>
+                  Utilizați compresia gzip la nivel de server HTTP. <br>
+                  În cazul în care e posibil și oportun marcați răspunsurile la cererile AJAX cacheable.
+                </p>
+              
+                <h4><i class="fa fa-facebook-square" aria-hidden="true"></i> Integrare Rețele Sociale</h4>
+                <p>
+                  Paginile care pot fi distribuite pe rețelele sociale trebuie să conțină tag-uri <code>&lt;meta&gt;</code> OpenGraph: og:title, og:site_name, og:description, og:url, og:image
+                </p>
+
+                <h4><i class="fa fa-mobile" aria-hidden="true"></i> Optimizare Mobil / Touch Screen</h4>
+                <p>
+                  Mărimea suprafeței de contact a degetului unui adult cu ecranul tactil este de 10mmx10mm, Recomandările pentru dezvoltatorii Android indică 7mm. Ca rezultat, pentru a crea un element utilizabil pentru dispozitivele touchscreen, el nu trebuie să fie mai mic de 48px. <br>
+                  Elementele din pagină care sunt mai mici de 48px și sunt funcționale (link-uri, text, iconițe) pe dispozitivele touch-screen trebuie să nu fie amplasate mai aproape de 32px unul de celelălt atât vertical cât și orizontal. <br>
+                  Mărimea garniturii de text trebuie să nu fie mai mică de 12px, se recomandă utilizarea mărimii 16px.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- /.content p/u performanta -->
+        </div>
+      </main>
+      <!-- /.continutul paginii -->
+      <footer>
+        <div class="container">
+          <div class="row">
+           <div class="col-md-2 col-sm-4">
+              <h5 class="text-uppercase">Centru de asistență</h5>
+             <span>servicii publice electronice</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-left">
+              <a href="tel:+37322820000" class="contact-tel"><span>022 </span><b>820 000</b></a>
+            </div>
+            <div class="col-md-offset-2 col-md-5 text-right copyright col-sm-4">
+                <a href="terms.html">Termeni și condiții</a> <br>
+                <span>
+                  ©&nbsp;2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> Toate drepturile rezervate
+                </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- sfirsit pagina -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+    
+    <title>Selectează document pentru semnare</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/msign.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Serviciul de autentificare
+                    și control al accesului
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="semnare_select.html">Semnare document electronic<span class="sr-only">(current)</span></a></li>
+                  <li><a href="verificare_semnare.html">Verificare semnătură</a></li>
+                  <li><a href="#">Despre Msign</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="faq.html">Întrebări frecvente</a></li>
+                  <li><a href="terms_conditions.html">Termeni și condiții</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+      <!-- continutul paginii -->
+      <main>    
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <h1>Semnarea unui documentul electronic</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <ol class="breadcrumb withCheck">
+                  <li class="active"><span>1. Selectarea documentului</span></li>
+                  <li><span>2. Selectarea modalității de semnare</span></li>
+                  <li><span>3. Semnarea fișierului</span></li>
+                  <li><span>4. Primirea confirmării</span></li>
+              </ol>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="title">Încarcă documentul .PDF de pe calculator pentru semnare</h3>
+            </div>
+          </div>
+          <div class="row">
+            <!-- upload-file-section -->
+            <div class="col-md-7">
+              <div class="download-section">
+                <div class="input-group drag_drop">
+                  <label for="fileInput" class="btn btn-file btn-default pull-left">
+                    <i class="fa fa-upload" aria-hidden="true"></i>
+                    Încarcă fișierul .PDF
+                    <input type="file" id="fileInput" style="display:none">
+                  </label>
+                  <input type="text" class="form-control pull-left" readonly="">
+                  <span>
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    sau trageți un document.pdf aici
+                  </span>
+                </div>
+                <div class="form-group default-state">
+                  <label for="signReason">Motivul semnării</label>
+                  <input type="text" class="form-control pull-right" id="signReason" placeholder="ex: Rezoluția,aprobat,avizat,etc">
+                </div>
+                <ul class="list-inline confirm-list">
+                  <li>
+                    <span>Cod imagine de verificare:</span>
+                    <img src="images/capcha.jpg" title="captcha" alt="captcha-img">
+                    <a href="#"><i class="fa fa-refresh"></i></a>
+                  </li>
+                  <li class="pull-right">
+                    <span>Cod:</span>
+                    <form> 
+                      <input type="text" name="verify-code" id="verify-code">
+                      <label for="verify-code">
+                        <button type="button" class="tooltip-view" data-toggle="tooltip" data-placement="bottom" title="Introdu codul de verificare din imagine!">
+                          <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </button>
+                      </label>
+                    </form>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+                <hr>
+                <a href="autorizare.html" class="btn btn-primary">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Continuă
+                </a>
+              </div>
+            </div>
+            <!-- /.upload-file-section -->
+            <!-- instructions block -->
+            <div class="col-md-5">
+              <div class="alert alert-info upload-info">
+                <h4>
+                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  Instrucțiuni
+                </h4>
+                <p>
+                  Puteți incărca doar documente .PDF.
+                </p>
+                <p>
+                  Semnarea documentului electronic se face utilizând una dintre
+                  următoarele 4 modalităti:
+                </p>
+                <ol>
+                  <li>
+                    <a href="faq.html#question4">semnătură mobilă <sup>*</sup></a>
+                  </li>
+                  <li>
+                    <a href="faq.html#question6">buletin de identitate electronic</a>
+                  </li>
+                  <li>
+                    <a href="#">certificate digitale</a>
+                  </li>
+                  <li>
+                    <a href="autorizare.html">nume de utilizator și parolă</a>
+                  </li>
+                </ol>
+                <p>
+                  <sup>*</sup> Aveți nevoie de un certificat HSM pentru a semna documentul electronic
+                  cu ajutorul semnăturii mobile. Dacă nu aveti unul, <a href="semnare_lipsa_hsm.html">depuneți o cerere de
+                  creare a certificatului HSM</a>.
+                </p>
+              </div>
+            </div>
+            <!-- /.instructions block -->
+          </div>
+        </div>
+        <!-- /.container -->
+      </main>
+      <!-- continutul paginii -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-4">
+              <h5 class="text-uppercase">Centru de asistență</h5>
+              <span>servicii publice electronice</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-left">
+                <a href="tel:+37322820000" class="contact-tel"><span>022 </span><b>820 000</b></a>
+            </div>
+            <div class="col-md-offset-2 col-md-5 text-right copyright col-sm-4">
+                <a href="terms_conditions.html">Termeni și condiții</a> <br>
+                <span>
+                  &copy;&nbsp;2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> Toate drepturile rezervate
+                </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

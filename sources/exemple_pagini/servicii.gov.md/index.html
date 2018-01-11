@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+    
+    <title>Servicii Guvernamentale</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/services.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header class="big-bg medium-header" data-bg="images/laptop_bg.jpg">
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Portalul <br>Serviciilor Publice
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="service_search_proper.html">Cetățeni<span class="sr-only">(current)</span></a></li>
+                  <li><a href="service-category.html">Persoane juridice</a></li>
+                  <li><a href="#">Nerezidenți</a></li>
+                  <li><a href="service_search_proper.html">Catalog servicii publice</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="faq.html">Întrebări frecvente</a></li>
+                  <li><a href="terms_conditions.html">Termeni și condiții</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+        <!-- header content -->
+        <div class="container header-content">
+          <div class="row">
+            <div class="col-md-6 col-sm-8">
+              <h1>Catalogul serviciilor publice</h1>
+              <h4>523 servicii publice disponibile, dintre care 128 e-Servicii.</h4>
+
+              <!-- live search DEMO !!! jquery-ui - AUTOCOMPLETE -->
+              <div class="input-group main-search">
+                <input type="text" class="form-control" placeholder="Caută după denumire serviciu, categorie, etc." id="tags">
+                <button class="input-group-addon"><i class="fa fa-search"></i></button>
+              </div>
+              <!-- /.live search DEMO !!! jquery-ui -->
+              <ul class="list-inline tips">
+                <li>Sugestii:</li>
+                <li>  
+                  <a href="#">Cazier,</a>
+                </li>
+                <li>  
+                  <a href="#">Buletin electronic de vot,</a>
+                </li>
+                <li>  
+                  <a href="#">Elaborarea planului cadastral</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-6 col-sm-4 text-right">
+              <div class="top-services noBorder">
+                  <h4>Cele mai accesate servicii:</h4>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="service-details-profile.html">Eliberarea cazierului judiciar</a>
+                    </li>
+                    <li>
+                      <a href="#">Acces gratuit la date din registrul bunurilor imobile</a>
+                    </li>
+                    <li>
+                      <a href="#">Licențierea activității de transport rutier</a>
+                    </li>
+                    <li>
+                      <a href="#">Verifică IDNP</a>
+                    </li>
+                    <li>
+                      <a href="#">Verifică IDNO</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.header content -->
+      </header>
+      <main>
+      <!-- continutul paginii -->
+        <!-- categorii servicii -->
+        <div class="bg-info category-blocks">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category" data-bg="images/friends.jpg">
+                  <a href="service-category.html" class="overlay-lnk"></a>
+                  <h3 class="category-title">Cetățeni</h3>
+                  <span class="subtitle">Serviciile publice destinate persoanelor fizice</span>
+                  <a href="service-category.html" class="btn btn-default">Vezi serviciile <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category" data-bg="images/office.jpg">
+                  <a href="service-category.html" class="overlay-lnk"></a>
+                  <h3 class="category-title">Business</h3>
+                  <span class="subtitle">Serviciile publice destinate persoanelor juridice</span>
+                  <a href="service-category.html" class="btn btn-default">Vezi serviciile <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 text-center">
+                <div class="category" data-bg="images/plane.jpg">
+                  <a href="service-category.html" class="overlay-lnk"></a>
+                  <h3 class="category-title">Vizitatori</h3>
+                  <span class="subtitle">Serviciile publice destinate nerezidenților</span>
+                  <a href="service-category.html" class="btn btn-default">Vezi serviciile <i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.categorii servicii -->
+
+        <!-- scenarii de viata -->
+        <div class="default-bg life-blocks">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3 col-sm-6 text-center">
+                <div class="block">
+                  <img src="images/life1.jpg" alt="life-image-icon" class="img-circle">
+                  <a href="#" class="block-title">Șomer</a>
+                  <span class="block-subtitle">
+                    Identificarea oportunităților, documentarea
+                    și angajarea în câmpul muncii.
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                <div class="block">
+                  <img src="images/life3.jpg" alt="life-image-icon" class="img-circle">
+                  <a href="#" class="block-title">Întemeierea familiei</a>
+                  <span class="block-subtitle">
+                    Serviciile publice ce țin de întemeierea
+                    familiei și documentele aferente.
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                <div class="block">
+                  <img src="images/life2.jpg" alt="life-image-icon" class="img-circle">
+                  <a href="#" class="block-title">Inițierea unei afaceri</a>
+                  <span class="block-subtitle">
+                    Procedura de inițiere a unei afaceri, actele
+                    necesare și documentele aferente. 
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                <div class="block">
+                  <img src="images/life4.jpg" alt="life-image-icon" class="img-circle">
+                  <a href="#" class="block-title">Pensionar</a>
+                  <span class="block-subtitle">
+                    Procedura de pensionare și documentele
+                    necesare implicate în proces
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                <div class="block">
+                  <img src="images/life-imigrare.jpg" alt="life-image-icon" class="img-circle">
+                  <a href="#" class="block-title">Emigrant</a>
+                  <span class="block-subtitle">
+                    Identificarea oportunităților, documentarea
+                    și angajarea în câmpul muncii.
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                <div class="block">
+                  <img src="images/life-tineri.jpg" alt="life-image-icon" class="img-circle">
+                  <a href="#" class="block-title">Imigrant</a>
+                  <span class="block-subtitle">
+                    Serviciile publice ce țin de întemeierea
+                    familiei și documentele aferente.
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                <div class="block">
+                  <img src="images/life-sanatate.jpg" alt="life-image-icon" class="img-circle">
+                  <a href="#" class="block-title">Părinte</a>
+                  <span class="block-subtitle">
+                    Procedura de inițiere a unei afaceri, actele
+                    necesare și documentele aferente. 
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-3 col-sm-6 text-center">
+                <div class="block">
+                  <img src="images/life-studii.jpg" alt="life-image-icon" class="img-circle">
+                  <a href="#" class="block-title">Student</a>
+                  <span class="block-subtitle">
+                    Procedura de pensionare și documentele
+                    necesare implicate în proces
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.scenarii de viata -->
+
+      <!-- /.continutul paginii -->
+      </main>
+      <footer class="big-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Centru de asistență</h4>
+                <span>servicii publice electronice</span>
+                <a href="callTo:+373820000" class="call-action"><span>022</span> 820 000</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Legături utile</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">Despre portal</a>
+                  </li>
+                  <li>
+                    <a href="#">Ajutor</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">Întrebări frecvente</a>
+                  </li>
+                  <li>
+                    <a href="terms_conditions.html">Termeni și condiții</a>
+                  </li>
+                  <li>
+                    <a href="#">Contacte</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Rețele sociale</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook-official"></i>Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-youtube-play"></i>Youtube</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter-square"></i>Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin-square"></i>Linkedin</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <p class="copyright">
+                  &copy; 2012-2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> <br>
+                  Toate drepturile rezervate
+                </p>
+                <a href="#" class="btn btn-link">Oferă feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

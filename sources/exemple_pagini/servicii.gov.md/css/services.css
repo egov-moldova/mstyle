@@ -1,0 +1,1128 @@
+/*****************************************************************
+    Stilurile personalizate pentru serviciu.gov.md.
+    Necesar de conectat in cod si mstyle.css !!!
+******************************************************************/
+
+/*** index.html ***/
+#page-content {padding-bottom: 235px;}
+.medium-header{height: 350px;}
+
+.header-content{padding-top: 90px;}
+.header-content h1{
+	color: #fff;
+	margin: 0 0 10px;
+}
+.header-content h4{
+	color: #fff;
+	margin-bottom: 25px;
+	font-weight: 400;
+}
+.header-content .main-search button.input-group-addon{right: 35px;}
+.header-content .main-search.input-group{width: 80%;}
+
+.tips{
+	width: 100%;
+	margin: 20px 0 0 0;
+	color: #fff;
+}
+.tips li:first-child{margin-right: 10px;}
+.tips li{padding: 0;}
+.tips li a{
+	text-decoration: underline;
+	color: #fff;
+}
+
+/*top services*/
+.top-services.noBorder{
+	border: none;
+	height: inherit;
+}
+.top-services.noBorder h4{
+	margin-bottom: 10px;
+}
+.top-services.noBorder ul{padding: 0;}
+.top-services.noBorder ul a{
+	margin-bottom: 0;
+	color: #fff;
+	text-decoration: underline;
+	line-height: 30px;
+}
+.top-services.noBorder ul a:hover,
+.tips li a:hover{text-decoration: none;}
+
+/*main search*/
+.big-bg .center-content .main-search{
+	width: 420px;
+	height: 40px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main-search button.input-group-addon{
+	color: #fff;
+	width: 40px;
+	right: 0px;
+	top: 0px;
+	height: 40px;
+	background: #3366cc;
+	line-height: 1;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.main-search .input-group-addon:focus{outline: none;}
+.main-search .input-group-addon:hover{color: #333;}
+.main-search .form-control{
+	border: none;
+	width: calc(100% - 40px);
+}
+.main-search .form-control:focus{background: #fff;} 
+
+/*live search (jquery-ui - Autocomplete) stilurile din mstyle.css*/
+/*hide bottom elements*/
+.ui-helper-hidden-accessible{
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/*categories blocks - stilurile din mstyle.css*/
+.category-blocks{padding: 30px 0;}
+/*scenarii de viata - stilurile sunt din mstyle.css*/
+.life-blocks{padding: 60px 0 0;}
+
+/*big footer - stilurile din mstyle.css*/
+
+/*** service-details.html ***/
+
+/*main description*/
+.page-title .breadcrumb{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 27px;
+}
+
+.description-info .description-title{
+	border-bottom: none;
+	padding: 0;
+}
+.description-info .alert-info{margin: 25px 0;}
+.description-info p{margin-bottom: 25px;}
+.description-info .access-service{
+	padding: 30px 0 0;
+	border-top: 1px solid #eee;
+	float: left;
+	width: 100%;
+}
+.description-info .access-service .btn-link{
+	padding-right: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+.main-description{
+	padding-bottom: 0;
+	border: none;
+}
+
+/*panel group collapsible elements*/
+.main-description .panel-group{
+	display: inline-block;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.main-description .panel-group .panel{margin-bottom: -1px;}
+.panel-default>.panel-heading{
+	background: transparent;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	border-left: none;
+	border-right: none;
+	padding: 20px 0;
+	display: table;
+	width: 100%;
+}
+.panel-default>.panel-heading .description-title{
+	border: none;
+	padding: 0;
+	margin: 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+.panel-default>.panel-heading .description-title .fa{margin-right: 7px;}
+.main-description .panel-heading a[role="button"]{
+	width: 32px;
+	height: 32px;
+	border: 1px solid #3366cc;
+	border-radius: 4px;
+	text-align: center;
+	display: table;
+	float: right;
+}
+.panel-collapse{clear: both;}
+
+.main-description .panel-body{
+	padding: 25px 0;
+	border-top: none !important;
+}
+.panel-collapse .panel-body .access-service{
+	padding: 30px 0 0;
+	border-top: 1px solid #ccc;
+	margin-top: 25px;
+}
+.panel-collapse .panel-body li{margin-bottom: 15px;}
+.panel-collapse .panel-body li:last-child,
+.panel-collapse .panel-body ul{margin-bottom: 0;}
+
+.access-service .btn{
+	float: left;
+	font-size: 16px;
+}
+#location-map {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+}
+.main-description .panel-heading a[role="button"]:hover,
+.main-description .panel-heading a[role="button"]:focus{
+	text-decoration: none;
+	border-color: #333;
+}
+.main-description .panel-heading a[role="button"] small.sign{
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: 300;
+	font-size: 14px;
+	font-style: inherit;
+	font-size: 15px;
+	line-height: .8em;
+}
+.main-description .work-program .panel-body ul:first-of-type{margin-bottom: 25px;}
+.main-description .work-program .panel-body ul:last-of-type{margin-bottom: 15px;}
+
+/*sidebar*/
+.sidebar .block{margin-bottom: 30px;}
+.sidebar .block-title{
+	padding: 20px 30px;
+	margin: 0;
+}
+.block .brand{
+	padding: 5px 0 0 75px;
+	height: 60px;
+	color: #3366cc;
+	margin-bottom: 20px;
+	background-image: url('../images/logo1.png');
+	background-repeat: no-repeat;
+	background-position: 0px 50%;
+}
+.block .brand h5{line-height: 1.714em;}
+.sidebar .block ul{padding: 25px 30px 15px 30px;}
+.sidebar .block-content{padding: 0}
+.sidebar .service-info li{
+	text-align: left;
+	margin-bottom: 10px;
+}
+.sidebar .service-info li button{padding: 0;}
+.sidebar .service-info .fa{
+	display: inline-block;
+	margin-right: 8px;
+}
+.sidebar .block .brand{
+	position: relative;
+	padding: 30px 30px 30px 100px;
+	display: inline-block;
+	height: inherit;
+	background-position: 30px 50%;
+	margin-bottom: 0
+}
+.sidebar .block .brand:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 25px;
+	right: 25px;
+	border-bottom: 1px solid #eee;
+}
+
+/*** service_search_proper.html ***/
+
+/*search sidebar*/
+.search-sidebar{margin: 30px 0;}
+.search-sidebar h3{margin-bottom: 25px;}
+.search-sidebar h4{margin-bottom: 15px;}
+/*search btn*/
+.search-sidebar .input-group-addon{
+	background: #3366cc;
+	color: #fff;
+	right: 0;
+    padding: 5px 12px;
+    text-align: center;
+    width: auto;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.search-sidebar .form-control{
+	border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;	
+}
+.search-sidebar .input-group-addon:focus,
+.search-sidebar .input-group-addon:hover{
+	outline: none;
+	box-shadow: none;
+	background: #333;
+	color: #fff;
+}
+
+.search-sidebar .select2-selection--single{background: #fcfcf4}
+.nrSelect span{
+	float: left;
+	line-height: 40px;
+}
+.nrSelect .demo-select{
+	min-width: 40px;
+	float: left;
+}
+.nrSelect .select2-container .select2-selection--single .select2-selection__rendered{padding: 0 20px 0 8px}
+.nrSelect .select2-container{
+	min-width: 45px;
+	float: left;
+	margin: 0 15px 0 10px;
+}
+.search-sidebar .btn-warning{
+	color: #cc3333;
+	font-weight: bold;
+	padding: 9px 0;
+}
+.search-sidebar .btn-warning:hover{color: #333;}
+
+/*services-list*/
+.services-wrapp{
+	position: relative;
+	border: 1px solid #ccc;
+	margin: 30px 0;
+}
+.services-intro {
+    border-bottom: 1px solid #ccc;
+    padding: 0 30px;
+}
+.services-intro h3 {
+    display: inline-block;
+    margin: 15px 0;
+    line-height: 100%;
+}
+.services-intro ul {
+    margin: 0;
+    line-height: 55px;
+}
+.services-intro ul li {
+    padding: 0;
+    margin-left: 20px;
+}
+.services-inline-list{
+	position: relative;
+    padding: 17px 27px 15px 30px;
+    line-height: 44px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.services-inline-list li {
+    position: relative;
+    cursor: pointer;
+}
+.services-inline-list li:before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    right: -27px;
+    top: 0;
+    height: 100%;
+    background-color: #f5f5f5;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+.services-inline-list a {display: block;}
+.services-inline-list i {
+    color: #999;
+    float: right;
+    margin: 0 5px;
+    line-height: 44px;
+}
+.services-inline-list li:hover:before {opacity: 1;}
+.services-inline-list li:hover i{color: #333;}
+
+/*pagination*/
+.services-wrapp .pagination{
+	padding: 30px 30px 24px 30px;
+	border-top: 1px solid #ccc;
+	margin: 0;
+}
+.pagination li span{border: none;}
+.pagination li.pull-right{
+	position: absolute;
+	right: 30px;
+}
+
+/*** service-provider.html ***/
+.service-brand{margin: 30px 0;}
+.service-brand .logo{
+	width: 52px;
+	height: 52px;
+	background: url('../images/logo1.png') no-repeat center;
+	background-size: cover;
+	float: left;
+	margin-right: 10px;
+}
+.service-brand h3{
+	margin: 0;
+	line-height: 30px;
+}
+.service-brand span{
+	line-height: 24px;
+	color: #666;
+}
+.service-brand span a{color: #3366cc;}
+
+/*institution-description*/
+.institution-description{
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+.institution-description h4{
+	border-bottom: 1px solid #ccc;
+	padding: 21px 0 20px 30px;
+	margin-bottom: 25px;
+}
+.institution-description article{
+	overflow-x: scroll;
+	max-height: 280px;
+}
+.institution-description h4 i{margin-right: 5px;}
+.institution-description p{
+	padding: 0 30px;
+	margin-bottom: 25px;
+}
+
+/*lista serviciilor*/
+.provider-services{margin-bottom: 0;}
+.provider-services h4{
+	display: inline-block;
+    margin: 26px 0;
+    line-height: 100%;
+}
+.provider-services .services-intro ul{line-height: 71px;}
+.provider-services .services-inline-list{
+	padding: 12px 30px 13px;
+	margin-bottom: 0;
+}
+
+/*controls*/
+.controls{
+	display: inline-block;
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	padding: 30px 30px 25px 30px;
+	margin-bottom: 25px;
+}
+.pagination-left{
+	text-align: left;
+	float: left;
+	width: auto;
+	margin: 0;
+	line-height: 1em;
+}
+.pagination-left li:last-child{margin-left: 25px;}
+
+/*provider sidebar*/
+.provider-sidebar{margin-top: 0}
+.widget{
+	position: relative;
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+	display: inline-block;
+	width: 100%;
+}
+.widget-title{
+	border-bottom: 1px solid #ccc;
+    padding: 21px 0 20px 30px;
+    margin-bottom: 25px;
+}
+.widget-title i{margin-right: 5px;}
+
+.widget ul{
+	padding: 0 30px;
+	margin: 0;
+}
+.widget ul:first-of-type li:last-child{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 25px;
+}
+.widget ul li{
+	margin-bottom: 20px;
+	display: inline-block;
+	width: 100%;
+}
+.widget ul span.pull-left{
+	width: 55px;
+	display: inline-block;
+}
+.widget ul span.pull-right,
+.widget ul a.pull-right{
+	padding-left: 15px;
+	display: inline-block;
+	text-align: left !important;
+	width: calc(100% - 55px);
+}
+
+.widget .middle-title{
+	padding-left: 30px;
+	margin-bottom: 30px;
+}
+
+.life-cases ul li:last-child{
+	padding-bottom: 0 !important;
+	border-bottom: none !important;
+}
+
+/*** service-category.html ***/
+.service-category-description h3{
+	margin-top: 27px;
+	margin-bottom: 14px;
+}
+.service-category-description p{margin-bottom: 25px;}
+.service-category-description ul li>a{font-weight: bold;}
+.service-category-description ul li{margin-bottom: 10px;}
+.service-category-description ul{
+	margin-bottom: 0;
+	margin-top: 65px;
+}
+.service-category-grid{padding-top: 60px;}
+
+/*stilurile la blocurile "service-category" sunt in mstyle.css*/
+
+/*** search_results.html ***/
+.search-results .services-inline-list li{
+	line-height: 1.714em;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	cursor: default;
+}
+.search-results .services-inline-list a{font-size: 18px}
+.search-results .services-inline-list li:before{
+	height: auto;
+	top: -20px;
+	bottom: -1px;
+}
+
+.search-results .services-inline-list li:last-child{
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.services-inline-list{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
+/*** services_category_sub.html ***/
+.small-header{
+	height: 175px;
+	background-attachment: inherit;
+}
+.small-header .header-content{padding-top: 57px;}
+#services-subcategory{margin-top: 30px;}
+
+/*panels*/
+#services-subcategory{
+	display: inline-block;
+	width: 	100%;
+	height: auto;
+}
+.panel-subcategory{
+	box-shadow: none;
+	margin-bottom: 0 !important;
+}
+.panel-subcategory .panel-heading{
+	padding: 20px 0;
+	border-top: 1px solid #ccc;
+}
+.panel-subcategory .description-title{
+	display: inline-block;
+	border: none;
+	padding: 0;
+	line-height: 1.714em;
+}
+.panel-subcategory .panel-heading button{
+	position: relative;
+	border: 1px solid #3366cc;
+	border-radius: 4px;
+	padding: 2px 11px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: transparent;
+}
+
+.panel-subcategory .panel-heading button:hover,
+.panel-subcategory .panel-heading button:focus{
+	color: #333;
+	text-decoration: none;
+	border-color: #333;
+	outline: none;
+}
+.panel-subcategory .panel-body{
+	border-top: 1px solid #ccc !important;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+.panel-subcategory .panel-body ol,
+.panel-subcategory .panel-body ul{margin-top: 15px;}
+
+.services-wrapp.noBorder{
+	margin-top: -6px;
+	border: none;
+}
+.services-wrapp.noBorder .services-intro{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-left: 0;
+}
+.services-wrapp.noBorder .services-inline-list{padding-left: 0;}
+
+.controls.noBorder{
+	border-width: 1px 0 0 0;
+	border-style: solid;
+	border-color: #ccc;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/*sidebar subcategories*/
+.sidebar-subcategories{
+	border: 1px solid #ccc;
+	min-height: 600px;
+	margin: 30px 0;
+}
+.sidebar-subcategories h3{
+	border-bottom: 1px solid #ccc;
+	padding: 18px 0 17px 30px;
+}
+
+.sidebar-subcategories .service-category{
+	height: auto;
+	padding: 28px 30px 1px 130px;
+	margin: 0;
+}
+.sidebar-subcategories .service-category:after{
+	content: "";
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	bottom: 0;
+	height: 1px;
+	background: #eee;
+}
+.sidebar-subcategories .service-category img{
+	top: 30px;
+	left: 30px;
+}
+
+.sidebar-subcategories button{
+	margin: 30px 0 30px 30px;
+}
+.sidebar-subcategories button[aria-expanded="false"] .fa{
+	transform: rotate(0);
+	transition: transform .3s ease-in-out;
+}
+.sidebar-subcategories button[aria-expanded="true"] .fa{
+	transform: rotate(180deg);
+	transition: transform .3s ease-in-out;
+}
+
+/*** contul-meu.html ***/
+/* ! info - stilurile blocurilor sunt in mstyle.css !*/
+.notificated i.fa{position: relative;}
+.notificated i.fa:after{
+	content: "";
+	position: absolute;
+	right: -2px;
+	top: -5px;
+	width: 8px;
+	height: 8px;
+	border: 2px solid #eee;
+	border-radius: 50%;
+	background: #cc3333;
+}
+.account-blocks,
+.busines-account{padding-top: 30px;}
+.busines-account h4{
+	font-weight: normal;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+/*** contul-meu-subpage.html ***/
+.account-list:first-of-type{margin: 30px 0;}
+.account-list:last-of-type{margin-bottom: 30px;}
+.account-list{
+	margin: 0;
+	border: 1px solid #ccc;
+}
+.account-list .title{
+	margin-bottom: 0;
+	padding-left: 25px;
+	cursor: default;
+}
+.account-list .title:hover{background: transparent;}
+
+.account-list>li{
+	border-bottom: 1px solid #eee;
+	padding: 18px 20px;
+	cursor: pointer;
+}
+.account-list>li:last-child{border-bottom: none;}
+.account-list>li:hover{background: #eee;}
+
+.account-list>li .fa{ 
+	color: #718f9e;
+	font-size: 18px;
+}
+.account-list>li .btn{
+	padding: 0;
+	font-weight: bold;
+}
+.account-list>li.active{background: #eee;}
+.account-list>li.active .btn,
+.account-list>li.active i.fa,
+.account-list>li:hover .btn,
+.account-list>li:hover i.fa{color: #333;}
+.account-list .badge{display: block;}
+
+/*tabelul cu date*/
+.account-respond{
+	margin-top: 30px;
+	border: 1px solid #ccc;
+	min-height: 350px;
+}
+.account-respond .table{border: none;}
+.account-respond .title{
+	padding: 18px 30px 17px 20px;
+	margin: 0;
+	border-bottom: 1px solid #ccc;
+}
+.account-respond thead,
+.account-respond tbody>tr{
+	border-bottom: 1px solid #eee;
+	border-top: none;
+}
+.account-respond thead>tr>th{color: #333;}
+.account-respond thead>tr>th:last-child,
+.account-respond tbody>tr>td:last-child{
+	text-align: right;
+	padding-right: 20px;
+}
+.account-respond tbody>tr a{font-weight: 400;}
+.account-respond tbody>tr b{
+	padding: 2px 6px;
+	border-radius: 4px;
+}
+
+table tbody a.new{font-weight: bold;}
+
+/*pentru acest model de tabel lungimea rindurilor va fi bazata pe continutul din celule !!! */
+.account-respond thead>tr>th, 
+.account-respond tbody>tr>th,
+.account-respond tfoot>tr>th, 
+.account-respond thead>tr>td, 
+.account-respond tbody>tr>td, 
+.account-respond tfoot>tr>td{
+	width: auto;
+	min-width: 80px;
+}
+.account-respond thead:first-child>tr>th:first-child, 
+.account-respond tbody>tr>th:first-child{padding-left: 20px;}
+
+/* /.doar pentru acest model lungimea rindurilor va fi bazata pe continutul din rind !!! */
+
+/* cercul animat (loading)*/
+.account-respond .table{display: none;}
+.account-respond div.loading{
+	padding: 120px 0 0 0;
+	color: #333;
+}
+
+/*** contul-meu-widgets.html ***/
+.account-intro .img-circle{
+	width: 68px;
+	height: 68px;
+	object-fit: cover;
+	border: 2px solid #fff;
+	margin-right: 30px;
+}
+.account-intro h1 span{font-weight: 400;}
+.account-intro .btn{
+	background: transparent;
+	border-color: #fff;
+	color: #fff;
+	margin-top: 5px;
+}
+.account-blk.business i.icon{color: #333;}
+.account-blk.widget{margin-bottom: 30px;}
+.account-blk.widget .btn{
+	position: static;
+	transform: translateX(0);
+}
+.account-blk.widget ul{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 20px;
+	text-align: left;
+	border-top: 1px solid #eee;
+}
+.account-blk.widget ul li{
+	width: auto;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+.account-blk.widget ul:first-of-type li:last-child{
+	border: none;
+	padding: 0
+}
+.account-blk.widget ul li button{
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	margin-right: 20px;
+}
+.widget-control .btn.plus[aria-expanded="true"]:after{
+	position: absolute;
+    content: "-";
+    background: #fff;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 3px;
+}
+.account-blk.widget ul li button:focus{
+	color: #333;
+	background: transparent;
+}
+.account-blk.widget a.btn{
+	height: 30px;
+	padding: 4px 10px 6px;
+}
+.account-blk.widget a.btn i.fa{margin-right: 0;}
+
+.widget-collapse{
+	position: relative;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	margin: -31px 0 30px;
+	padding: 15px 20px;
+}
+.widget-collapse ul{margin: 0;}
+.widget-collapse ul li {
+	position: relative;
+	margin-bottom: 5px;
+}
+.widget-collapse ul.withMargin li{margin-bottom: 15px;}
+.widget-collapse ul.withMargin li:last-of-type,
+.widget-collapse ul li:last-of-type{margin-bottom: 0;}
+
+.notificated a{font-weight: bold;}
+
+/*** service_article.html ***/
+.main-description.article-content{
+	border: none;
+	padding-bottom: 0;
+}
+.article-title{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 23px;
+	margin-bottom: 27px;
+}
+.article-title h1{margin-bottom: 18px;}
+.article-title .post-date{color: #666;}
+.article-content h3{
+	line-height: 1.5em;
+	margin-bottom: 15px;
+}
+.article-content h4{margin-bottom: 20px;}
+.article-content p,
+.article-content ol,
+.article-content ul{margin-bottom: 25px;}
+.article-content blockquote{
+	background: #eee;
+	font-size: 14px;
+	font-style: italic;
+	padding: 25px 30px;
+	border-left: none;
+	margin-bottom: 30px;
+}
+.article-img{
+	border-bottom: 1px solid #eee;
+	margin-bottom: 30px;
+	padding-bottom: 4px;
+}
+.article-img .img-responsive{
+	max-height: 515px;
+	margin-bottom: 5px;
+}
+.article-content ol{padding-left: 15px;}
+.article-content ol li:first-child{
+	line-height: 1;
+	margin-bottom: 5px;
+}
+
+/*commnents*/
+.article-comment{
+	border-top: 1px solid #ccc;
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 25px;
+}
+.article-comment .user-avatar{
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+	margin-right: 30px;
+}
+.article-comment .user-name{margin-bottom: 20px;}
+
+/*sidebar*/
+.block-content span.pull-right{color: #999;}
+.block li > ol{padding-left: 15px;}
+.block li > ol li{margin-bottom: 0;}
+
+
+/*******************************************************************
+            stilurile p/u dispozitivele mobile
+********************************************************************/
+
+/* -----Phones----- */
+
+/* Portrait */
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+	
+	/* index.html */
+	.big-bg{
+		height: 100%;
+		background-size: cover;
+		background-attachment: initial;
+	}
+	#page-content{padding-bottom: 0;}
+	.page-title {margin-top: 25px;}
+	.tips{margin-bottom: 30px;}
+
+	/* service_search_proper.html */
+	.services-wrapp .services-inline-list{
+		float: left;
+		padding: 0;
+	}
+
+	.services-inline-list li{
+		border-top: 1px solid #eee;
+		padding: 0 15px;
+		float: left;
+		width: 100%;
+	}
+	.pagination li.pull-right{position: static;}
+	.search-results .services-inline-list li{padding: 20px 20px 10px 20px;}
+	.search-results .services-inline-list a{margin-bottom: 10px;}
+
+	/* service_details.html */
+	.service-info{text-align: center;}
+	.service-info li{margin: 0 5px;}
+	.access-service .btn{margin-bottom: 20px;}
+	.description-title{padding-right: 0;}
+	.block .brand{height: auto;}
+
+
+	/* service-provider.html */
+	.service-brand .logo{margin-bottom: 60px;}
+	.provider-services{
+		display: inline-block;
+		width: 100%;
+	}
+	.pagination-left>li:last-child>a, .pagination-left>li a.prev{text-align: center;}
+	.controls{padding: 30px 15px 25px 30px;}
+	.controls.noBorder{
+		padding: 15px 0;
+		margin: 0;
+	}
+	.pagination-left{
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.pagination-left li:last-child{float: right;}
+	.controls.noBorder .nrSelect .select2-container{margin: 0 5px;}
+
+	.provider-services .services-intro ul{line-height: 2.143em;}
+	.services-intro ul li{
+		margin-left: 0;
+		margin-right: 20px;
+	}
+	
+	/*** service-category.html ***/
+	.header-content .main-search.input-group{width: 100%;}
+	.service-category{margin-bottom: 90px;}
+
+	/*** service-category-sub.html ***/
+	.small-header{height: 290px;}
+	.panel-subcategory .description-title{width: 88%;}
+	.services-inline-list{
+		line-height: 30px;
+	}
+	.services-inline-list i{line-height: 2.143em}
+	.provider-services .services-inline-list{padding: 15px 0;}
+
+	/*** contul-meu-subpage.html ***/
+	.account-intro .btn{margin-bottom: 30px;}
+	.show-xs .title{margin-top: 30px;}
+	.show-xs .dropdown.open:after{display: none;}
+	.account-respond thead>tr>th, 
+	.account-respond tbody>tr>th, 
+	.account-respond tfoot>tr>th, 
+	.account-respond thead>tr>td, 
+	.account-respond tbody>tr>td, 
+	.account-respond tfoot>tr>td{padding-left: 30px;}
+
+	#info-list.btn{
+		border-radius: 0;
+		width: 60%;
+		text-align: left;
+	}
+	#info-list.btn .fa{
+		float: right;
+		margin-top: 5px;
+		transition: all .2s ease-in-out;
+	}
+	#info-list.btn:focus{background: transparent;}
+	.dropdown.open #info-list.btn .fa{transform: rotate(180deg);}
+	.dropdown-menu.account-list{margin-top: 0;}
+	.account-list>li{padding: 17px;}
+
+}
+
+/* Landscape */
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	
+	/* index.html */
+	.big-bg{
+		height: 100%;
+		background-size: cover;
+		background-attachment: initial;
+	}
+	#page-content{padding-bottom: 0}
+
+	/* service_search_proper.html */
+	.services-inline-list{float: left;}
+	.services-inline-list li{border-top: 1px solid #eee;}
+	.pagination li.pull-right{position: static;}
+
+	/*search-results.html*/
+	.search-results .services-inline-list li{border-top: none;}
+
+	/* service_details.html */
+	.service-info li{margin-right: 17px;}
+	.access-service .btn{margin-bottom: 20px;}
+	.description-title{padding-right: 0;}
+	.block .brand{height: auto;}
+	.block.about-institution{margin-bottom: 30px;}
+
+	/* service-provider.html */
+	.provider-services{
+		display: inline-block;
+		width: 100%;
+	}
+	.controls{padding: 30px 10px 25px 10px;}
+
+	/*** service-category.html ***/
+	.header-content .main-search.input-group{width: 100%;}
+
+	/*** service-category-sub.html ***/
+	.panel-subcategory .description-title{width: 90%;}
+
+	/*** contul-meu-subpage.html ***/
+	.account-intro .btn{margin-bottom: 30px;}
+	.show-xs .title{margin-top: 30px;}
+	.show-xs .dropdown.open:after{display: none;}
+	.account-respond thead>tr>th, 
+	.account-respond tbody>tr>th, 
+	.account-respond tfoot>tr>th, 
+	.account-respond thead>tr>td, 
+	.account-respond tbody>tr>td, 
+	.account-respond tfoot>tr>td{padding-left: 30px;}
+
+	#info-list.btn{
+		border-radius: 0;
+		width: 45%;
+		text-align: left;
+	}
+	#info-list.btn .fa{
+		float: right;
+		margin-top: 5px;
+		transition: all .2s ease-in-out;
+	}
+	#info-list.btn:focus{background: transparent;}
+	.dropdown.open #info-list.btn .fa{transform: rotate(180deg);}
+	.dropdown-menu.account-list{margin-top: 0;}
+	.account-list>li{padding: 17px;}
+
+}
+
+/* -----Tablets------ */
+
+/* Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait){
+	
+	/* index.html */
+	#page-content{padding-bottom: 255px;}
+	.category{
+		margin-bottom: 30px;
+		padding: 30px 25px;
+	}
+
+}
+
+/* Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: landscape){
+	
+	/* index.html */
+	.header-content .main-search.input-group{width: 100%;}
+	.category-title{margin-top: 85px;}
+	.big-footer{padding-top: 28px;}
+	
+	/* service_search_proper.html */
+	.search-sidebar .btn-primary{padding: 9px 10px;}
+
+	
+	/*** service-category.html ***/
+	.service-category img{margin-bottom: 70%;}
+	.service-category{
+		margin-bottom: 60px;
+    	max-height: 100%;
+	    height: 280px;
+	}
+	
+	/*** service-provider.html ***/
+	.services-intro ul li{margin-left: 10px;}
+	/*** contul-meu.html ***/
+	.account-blk{height: 300px;}
+
+	/*** contul-meu-subpage.html ***/
+	.account-list>li{padding: 10px 5px;}
+
+	/*** contul-meu-widgets.html ***/
+	.account-blk.widget ul li button{margin-right: 5px;}
+}
+

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+    
+    <title>Noutăți - Portalul Serviciior Publice</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/services.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Portalul <br>
+                    Serviciilor Publice
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="service_search_proper.html">Cetățeni<span class="sr-only">(current)</span></a></li>
+                  <li><a href="service-category.html">Persoane juridice</a></li>
+                  <li><a href="#">Nerezidenți</a></li>
+                  <li><a href="service_search_proper.html">Catalog servicii publice</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="faq.html">Întrebări frecvente</a></li>
+                  <li><a href="terms_conditions.html">Termeni și condiții</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->  
+      </header>
+      <main>
+        <!-- continutul paginii -->
+        <div class="container">
+          <div class="row">
+            <!-- continutul articolului -->
+              <div class="col-md-8 col-sm-12">
+                <div class="page-title">
+                  <ol class="breadcrumb">
+                    <li><a href="#">Prima pagină</a></li>
+                    <li><a href="#">Noutăți</a></li>
+                  </ol>
+                </div>
+
+                <div class="main-description article-content">
+                  <!-- articol -->
+                  <div class="news-intro">
+                    <!-- titlu articol & data publicarii -->
+                    <div class="news-title">
+                      <h3>Primul titlu al uni articol</h3>
+                      <span class="news-post-date">
+                        Publicat la <i>20 noiembrie 2016</i> în categoria <a href="#" class="news-category">Servicii pentru cetăteni</a>
+                      </span>
+                    </div>
+                    <!-- /.titlu articol & data publicarii -->
+                    <p>
+                      Asigurarea drepturilor constituţionale la compartimentul accesului la informaţie a persoanelor fizice şi juridice, asigurarea executării actelor legislative şi normative, actelor interne ale MAI în vigoare privind prestarea serviciilor informaţionale autorităţilor administraţiei publice şi instituţiilor non-guvernamentale, persoanelor fizice şi juridice, prin eliberarea actelor juridice şi gestionarea evidenţelor respective. 
+                    </p>
+                    <a href="article.html" class="btn btn-default btn-sm">Citește mai mult <i class="fa fa-angle-right"></i></a>
+                  </div>
+                  <!-- /.articol -->
+
+                  <!-- articol -->
+                  <div class="news-intro img-post">
+                    <!-- titlu articol & data publicarii -->
+                    <div class="news-title">
+                      <h3>Al doilea titlu al unui articol sau a unei noutăți</h3>
+                      <span class="news-post-date">
+                        Publicat la <i>12 noiembrie 2016</i> în categoria <a href="#" class="news-category">Servicii pentru cetăteni</a>
+                      </span>
+                    </div>
+                    <!-- /.titlu articol & data publicarii -->
+                    <img src="images/article_img.jpg" alt="article-image" class="img-responsive">
+                    <p>
+                      Asigurarea drepturilor constituţionale la compartimentul accesului la informaţie a persoanelor fizice şi juridice, asigurarea executării actelor legislative şi normative, actelor interne ale MAI în vigoare privind prestarea serviciilor informaţionale autorităţilor administraţiei publice şi instituţiilor non-guvernamentale, persoanelor fizice şi juridice, prin eliberarea actelor juridice şi gestionarea evidenţelor respective. 
+                    </p>
+                    <a href="article.html" class="btn btn-default btn-sm">Citește mai mult <i class="fa fa-angle-right"></i></a>
+                  </div>
+                  <!-- /.articol -->
+
+                   <!-- articol -->
+                  <div class="news-intro">
+                    <!-- titlu articol & data publicarii -->
+                    <div class="news-title">
+                      <h3>Al treilea titlu al unui articol sau a unei noutăți</h3>
+                      <span class="news-post-date">
+                        Publicat la <i>10 noiembrie 2016</i> în categoria <a href="#" class="news-category">Servicii pentru cetăteni</a>
+                      </span>
+                    </div>
+                    <!-- /.titlu articol & data publicarii -->
+                    <p>
+                      Asigurarea drepturilor constituţionale la compartimentul accesului la informaţie a persoanelor fizice şi juridice, asigurarea executării actelor legislative şi normative, actelor interne ale MAI în vigoare privind prestarea serviciilor informaţionale autorităţilor administraţiei publice şi instituţiilor non-guvernamentale, persoanelor fizice şi juridice, prin eliberarea actelor juridice şi gestionarea evidenţelor respective. 
+                    </p>
+                    <a href="article.html" class="btn btn-default btn-sm">Citește mai mult <i class="fa fa-angle-right"></i></a>
+                  </div>
+                  <!-- /.articol -->
+
+                  <!-- articol -->
+                  <div class="news-intro img-post">
+                    <!-- titlu articol & data publicarii -->
+                    <div class="news-title">
+                      <h3>Al patrulea titlu al unui articol sau a unei noutăți</h3>
+                      <span class="news-post-date">
+                        Publicat la <i>12 noiembrie 2016</i> în categoria <a href="#" class="news-category">Servicii pentru cetăteni</a>
+                      </span>
+                    </div>
+                    <!-- /.titlu articol & data publicarii -->
+                    <img src="images/gov.jpg" alt="article-image" class="img-responsive">
+                    <p>
+                      Asigurarea drepturilor constituţionale la compartimentul accesului la informaţie a persoanelor fizice şi juridice, asigurarea executării actelor legislative şi normative, actelor interne ale MAI în vigoare privind prestarea serviciilor informaţionale autorităţilor administraţiei publice şi instituţiilor non-guvernamentale, persoanelor fizice şi juridice, prin eliberarea actelor juridice şi gestionarea evidenţelor respective. 
+                    </p>
+                    <a href="article.html" class="btn btn-default btn-sm">Citește mai mult <i class="fa fa-angle-right"></i></a>
+                  </div>
+                  <!-- /.articol -->
+
+                  <!-- articol -->
+                  <div class="news-intro">
+                    <!-- titlu articol & data publicarii -->
+                    <div class="news-title">
+                      <h3>Al patrulea titlu al unui articol sau a unei noutăți</h3>
+                      <span class="news-post-date">
+                        Publicat la <i>12 noiembrie 2016</i> în categoria <a href="#" class="news-category">Servicii pentru cetăteni</a>
+                      </span>
+                    </div>
+                    <!-- /.titlu articol & data publicarii -->
+                    <p>
+                      Asigurarea drepturilor constituţionale la compartimentul accesului la informaţie a persoanelor fizice şi juridice, asigurarea executării actelor legislative şi normative, actelor interne ale MAI în vigoare privind prestarea serviciilor informaţionale autorităţilor administraţiei publice şi instituţiilor non-guvernamentale, persoanelor fizice şi juridice, prin eliberarea actelor juridice şi gestionarea evidenţelor respective. 
+                    </p>
+                    <a href="article.html" class="btn btn-default btn-sm">Citește mai mult <i class="fa fa-angle-right"></i></a>
+                  </div>
+                  <!-- /.articol -->
+
+                  <!-- paginarea -->
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                      <li class="active">
+                        <a href="#">1</a>
+                      </li>
+                      <li>
+                        <a href="#">2</a>
+                      </li>
+                      <li>
+                        <a href="#">3</a>
+                      </li>
+                      <li class="pull-right">
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">Următoarea agină</span>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <!--/. paginarea -->
+                </div>
+              </div>
+            <!-- continutul articolului -->
+            <!-- sidebar -->
+            <aside class="col-md-4 col-sm-6 sidebar">
+              <div class="block">
+                <h4 class="block-title">
+                  Categorii
+                </h4>
+                <div class="block-content">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Toate articolele</a>
+                      <span class="pull-right">29</span>
+                    </li>
+                    <li>
+                      <a href="#">Economie</a>
+                      <span class="pull-right">4</span>
+                    </li>
+                    <li>
+                      <a href="#">Finanțe publice</a>
+                      <span class="pull-right">15</span>
+                    </li>
+                    <li>
+                      <a href="#">Legislație</a>
+                      <span class="pull-right">10</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block">
+                <h4 class="block-title">
+                  Ai mai putea fi interesat de
+                </h4>
+                <div class="block-content">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="#">Obținerea cetățeniei</a>
+                    </li>
+                    <li>
+                      <a href="#">Eliberarea cazierului contravențional</a>
+                    </li>
+                    <li>
+                      <a href="#">Verificare validitate și valabilitate a cazierului judiciar</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="block">
+                <h4 class="block-title">
+                  Bloc informativ
+                </h4>
+                <div class="block-content">
+                  <ul class="list-unstyled">
+                    <li>
+                      Asigurarea drepturilor constituţionale la compartimentul accesului la informaţie a persoanelor fizice şi juridice, asigurarea executării actelor legislative şi normative, actelor interne ale MAI în vigoare.
+                    </li>
+                    <li>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste possimus minus temporibus et dolore nisi delectus qui dolor modi, odio, quas aperiam corporis cumque! Ipsum nesciunt saepe eveniet rem, eligendi!
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+            <!-- /.sidebar -->
+          </div>
+        </div>
+        <!-- /.continutul paginii -->
+      </main>
+      <footer class="big-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Centru de asistență</h4>
+                <span>servicii publice electronice</span>
+                <a href="callTo:+373820000" class="call-action"><span>022</span> 820 000</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Legături utile</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">Despre portal</a>
+                  </li>
+                  <li>
+                    <a href="#">Ajutor</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">Întrebări frecvente</a>
+                  </li>
+                  <li>
+                    <a href="terms_conditions.html">Termeni și condiții</a>
+                  </li>
+                  <li>
+                    <a href="#">Contacte</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Rețele sociale</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook-official"></i>Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-youtube-play"></i>Youtube</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter-square"></i>Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin-square"></i>Linkedin</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <p class="copyright">
+                  &copy; 2012-2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> <br>
+                  Toate drepturile rezervate
+                </p>
+                <a href="#" class="btn btn-link">Oferă feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

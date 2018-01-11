@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+    
+    <title>Servicii Guvernamentale</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Our styles -->
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/services.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header class="big-bg small-header" data-bg="images/open_bg.jpg">
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Portalul <br>Serviciilor Publice
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="service_search_proper.html">Cetățeni<span class="sr-only">(current)</span></a></li>
+                  <li class="active"><a href="#">Persoane juridice</a></li>
+                  <li><a href="#">Nerezidenți</a></li>
+                  <li><a href="service_search_proper.html">Catalog servicii publice</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="faq.html">Întrebări frecvente</a></li>
+                  <li><a href="terms_conditions.html">Termeni și condiții</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+        <!-- header content -->
+        <div class="container header-content">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              <h1>Deschiderea unei afaceri</h1>
+              <h4>Serviciile publice ce țin de deschiderea unei companii și procedurile aferente </h4>
+            </div>
+          </div>
+        </div>
+        <!-- /.header content -->
+      </header>
+      <main>
+      <!-- continutul paginii -->
+        <!-- descriere -->
+        <div class="bg-info service-category-description">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <h3>Informații utile</h3>
+                <p>
+                  Acest compartiment este dedicat persoanelor juridice
+                  sau celor ce sunt pe cale să inițieze o afacere.
+                </p>
+                <p>
+                  Am făcut o selecție din cele mai accesate subiecte din
+                  acest compartiment pentru a-ți economisi timpul.
+                </p>
+              </div>
+              <div class="col-md-offset-1 col-md-3 col-sm-4">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">Înregistrarea companiei</a>
+                  </li>
+                  <li>
+                    <a href="#">Tipuri de persoane juridice</a>
+                  </li>
+                  <li>
+                    <a href="#">Taxe și impozite</a>
+                  </li>
+                  <li>
+                    <a href="#">Raportare și dări de seamă</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-offset-1 col-md-3 col-sm-4">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">Despre proprietatea privată</a>
+                  </li>
+                  <li>
+                    <a href="#">Acte permisive</a>
+                  </li>
+                  <li>
+                    <a href="#">Proprietatea intelectuală</a>
+                  </li>
+                  <li>
+                    <a href="#">Controale</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.descriere -->
+        
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-8 col-sm-12">
+              <!-- continut colapse -->
+              <div class="panel-group" id="services-subcategory" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-subcategory">
+                  <div class="panel-heading" role="tab" id="heading2">
+                    <h4 class="description-title">
+                      Titlu scenariu de viață ce include mai multe servicii publice
+                    </h4>
+                    <button data-parent="#services-subcategory" data-toggle="collapse" href="#collapse2" aria-expanded="true" aria-controls="collapse2" class="pull-right">
+                      <small class="sign">+</small>
+                    </button>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                    <div class="panel-body">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum similique, perspiciatis quo dolor harum alias! Quibusdam, excepturi, dignissimos. Nisi, ducimus sed perferendis repellendus, earum aliquid quam qui eaque quasi iste.
+                      </p>
+                      <ol>
+                        <li><a href="#">Serviciile publice ce țin de întemeiere</a></li>
+                        <li><a href="#">Serviciile publice ce țin de întemeiere</a></li>
+                      </ol>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ab facere recusandae eligendi eveniet laudantium voluptatem sapiente quam repudiandae. 
+                      </p>
+                      <ol>
+                        <li><a href="#">Serviciile publice ce țin de întemeiere</a></li>
+                        <li><a href="#">Serviciile publice ce țin de întemeiere</a></li>
+                        <li><a href="#">Serviciile publice ce țin de întemeiere</a></li>
+                      </ol>
+                      <p>
+                        Aperiam ab facere recusandae eligendi eveniet laudantium voluptatem sapiente quam repudiandae. 
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-subcategory">
+                  <div class="panel-heading" role="tab" id="heading3">
+                    <h4 class="description-title"> 
+                      Al doilea titlu scenariu de viață ce include mai multe servicii publice
+                    </h4>
+                    <button data-parent="#services-subcategory" data-toggle="collapse" href="#collapse3" aria-expanded="true" aria-controls="collapse3" class="pull-right">
+                      <small class="sign">+</small>
+                    </button>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                    <div class="panel-body">
+                      <h5>Subtitlul informativ al serviciului</h5>
+                      <p>
+                        Aperiam ab facere recusandae eligendi eveniet laudantium voluptatem sapiente quam repudiandae. 
+                      </p>
+                      <ul>
+                        <li>Lorem Ipsum</li>
+                        <li>Lorem Ipsum dolor</li>
+                        <li>Lorem Ipsum dolor sit</li>
+                        <li>Lorem Ipsum dolor sit amet</li>
+                      </ul>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe commodi recusandae eligendi in, sequi illum perferendis atque sed reiciendis, dignissimos esse quis tempore aliquid eius quasi maxime asperiores!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.continut colapse -->
+              <!-- lista serviciilor -->
+              <div class="services-wrapp provider-services noBorder">
+                <div class="services-intro">
+                  <h4>46 servicii publice</h4>
+                </div>
+                <ul class="list-unstyled services-inline-list">
+                  <li>
+                    <a href="service_details.html">Examinarea portretului (gabitoscopică)</a>
+                  </li>
+                  <li>
+                    <a href="service_details.html">Acordarea atestatului de colecționer (Persoană fizică)</a>
+                  </li>
+                  <li>
+                    <a href="service_details.html">Analiza auto-tehnică a circumstanțelor accidentelor rutiere</a>
+                  </li>
+                  <li>
+                    <a href="service_details.html">Analiza criminalistcă autotehnică a circumstanţelor accidentelor</a>
+                  </li>
+                  <li>
+                    <a href="#">Analiza metalelor şi aliajelor de metale</a>
+                  </li>
+                  <li>
+                    <a href="#">Analiza tehnică a documentelor</a>
+                  </li>
+                  <li>
+                    <a href="#">Analiza tehnică a documentelor</a>
+                  </li>
+                  <li>
+                    <a href="#">Acordarea ajutorului de şomaj</a>
+                  </li>
+                  <li>
+                    <a href="#">Asigurarea protecției persoanelor juridice și fizice, a clădirilor și a teritoriilor limitate.
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Autorizarea deţinerii armei care face obiectul declarării (Persoană fizică)
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">Autorizarea deţinerii armei ce face obiectul declarării (Persoane juridice )</a>
+                  </li>
+                  <li>
+                    <a href="#">Autorizarea funcţionării tirului de trageri (Persoane juridice )</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.lista serviciilor -->
+              <!-- afisarea serviciilor -->
+              <div class="controls noBorder">
+                <ul class="pagination pagination-left">
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li>
+                    <a href="#" aria-label="Next">
+                      <span aria-hidden="true">Următoarea pagină</span>
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="nrSelect pull-right">
+                  <span>Afișează</span>
+                  <select class="demo-select"> 
+                    <option value="0" selected="">10</option> 
+                    <option value="1">20</option> 
+                    <option value="2">30</option> 
+                    <option value="3">50</option> 
+                  </select>
+                  <span>rezultate pe pagină</span>
+                </div>
+              </div>
+              <!-- /.afisarea serviciilor -->
+            </div>
+
+            <aside class="col-md-4 col-sm-6">
+              <div class="sidebar-subcategories">
+                <h3>2 subcategorii</h3>
+                <div class="service-category">
+                  <img src="images/life1.jpg" alt="imagine-e-gov" class="img-circle">
+                  <h4>Deschiderea unei afaceri</h4>
+                  <span>Servicii publice ce țin de deschiderea unei companii și procedurile aferente</span>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Acte normative</a></li>
+                    <li><a href="#">Acreditare, conformitate, standarde</a></li>
+                    <li><a href="#">Raportare</a></li>
+                  </ul>
+                </div>
+                <div class="service-category">
+                  <img src="images/life-studii.jpg" alt="egov-image" class="img-circle">
+                  <h4>Raportare</h4>
+                  <span>Biroul Național de Statistică, Casa Națională de Asigurări Sociale</span>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Formulare</a></li>
+                    <li><a href="#">Biroul Național de Statistică</a></li>
+                    <li><a href="#">Casa Națională de Asigurări Sociale</a></li>
+                  </ul>
+                </div>
+                <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#services-collapsed" aria-expanded="false" aria-controls="services-collapsed">
+                  Vezi toate subcategoriile
+                  <i class="fa fa-angle-down"></i>
+                </button>
+                <div class="collapse" id="services-collapsed">
+                  <div class="service-category">
+                    <img src="images/life-cadastru.jpg" alt="imagine-e-gov" class="img-circle">
+                    <h4>Dreptul de proprietate</h4>
+                    <span>Biroul Național de Statistică, Casa Națională de Asigurări Sociale</span>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Bunuri imobile</a></li>
+                      <li><a href="#">Terenuri</a></li>
+                      <li><a href="#">Elaborarea planului cadastral</a></li>
+                    </ul>
+                  </div>
+                  <div class="service-category">
+                    <img src="images/life1.jpg" alt="imagine-e-gov" class="img-circle">
+                    <h4>Deschiderea unei afaceri</h4>
+                    <span>Servicii publice ce țin de deschiderea unei companii și procedurile aferente</span>
+                    <ul class="list-unstyled">
+                      <li><a href="#">Acte normative</a></li>
+                      <li><a href="#">Acreditare, conformitate, standarde</a></li>
+                      <li><a href="#">Raportare</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      <!-- /.continutul paginii -->
+      </main>
+      <footer class="big-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Centru de asistență</h4>
+                <span>servicii publice electronice</span>
+                <a href="callTo:+373820000" class="call-action"><span>022</span> 820 000</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Legături utile</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">Despre portal</a>
+                  </li>
+                  <li>
+                    <a href="#">Ajutor</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">Întrebări frecvente</a>
+                  </li>
+                  <li>
+                    <a href="terms_conditions.html">Termeni și condiții</a>
+                  </li>
+                  <li>
+                    <a href="#">Contacte</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Rețele sociale</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook-official"></i>Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-youtube-play"></i>Youtube</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter-square"></i>Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin-square"></i>Linkedin</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <p class="copyright">
+                  &copy; 2012-2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> <br>
+                  Toate drepturile rezervate
+                </p>
+                <a href="#" class="btn btn-link">Oferă feedback</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

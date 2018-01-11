@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+    
+    <title>Set Date</title>
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- checkboxes styles -->
+    <link href="css/checkbox.css" rel="stylesheet">
+    <!-- Select dropdown styles -->
+    <link href="css/select2.css" rel="stylesheet">
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/date.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Portalul Guvernamental <br>
+                    al Datelor Deschise
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                      <span>Date</span>
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Instituții publice</a></li>
+                      <li><a href="date-set-date.html">Categorii seturi de date</a></li>
+                      <li><a href="#">Statistici</a></li>
+                    </ul>
+                    <!-- /.dropdown menu -->
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> 
+                      <span>Aplicații</span>
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <!-- dropdown menu -->
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Lorem Ipsum</a></li>
+                      <li><a href="#">Aplicație 2</a></li>
+                      <li><a href="#">Aplicații 3</a></li>
+                    </ul>
+                    <!-- /.dropdown menu -->
+                  </li>
+                  <li><a href="#">Participă</a></li>
+                  <li><a href="#">Despre</a></li>
+                  <li><a href="#">Comunicate</a></li>
+                  <li><a href="#">Sondaje</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="faq.html">Întrebări frecvente</a></li>
+                  <li><a href="terms_conditions.html">Termeni și condiții</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+
+      <main>
+        <!-- continutul-paginii -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <ol class="breadcrumb top-breadcrumb">
+                  <li><a href="#">Prima pagină</a></li>
+                  <li><a href="#">Servicii pentru cetățeni</a></li>
+                  <li><a href="#">Servicii pentru documentare</a></li>
+              </ol>
+              <!-- main-content -->
+              <div class="main-content">
+                <h3 class="title">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</h3>
+                <p class="subtitle">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</p>
+                <!-- elementele collapsibile -->
+                <div class="panel-group" id="accordion-date" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                      <h4 class="panel-title top-download">
+                        <i class="fa fa-file-excel-o fa-2x"></i> 
+                        <span>La data de 14.08.2015</span>
+                        <i class="fa fa-fire"></i>
+                      </h4>
+                      <ul class="list-inline panel-control">
+                        <li>
+                          <a class="btn  btn-default btn-sm" role="button" data-toggle="collapse" data-parent="#accordion-date" href="#date1" aria-expanded="true" aria-controls="date1">
+                          <i class="fa fa-info-circle"></i>Informații
+                        </a>
+                        </li>
+                        <li>
+                          <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>Descarcă</button>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <!-- continutul -->
+                    <div id="date1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <h5>Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</h5>
+                        <div class="alert alert-info" role="alert">
+                          Previzualizarea nu este disponibilă. (No handler defined for data type: xlsx.)
+                        </div>
+                        <ul class="list-unstyled">
+                          <li>
+                            <span>Ultima actualizare:</span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Creat la: </span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Format:</span>
+                            <span class="pull-right">xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)</span>
+                          </li>
+                          <li>
+                            <span>Licență:</span>
+                            <span class="pull-right">License Not Specified</span>
+                          </li>
+                        </ul>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#moreExample" aria-expanded="false" aria-controls="moreExample">
+                          Arată mai multe informații
+                        </button>
+                        <div class="collapse" id="moreExample">
+                          <ul class="list-unstyled">
+                            <li>
+                              <span>ID:</span>
+                              <span class="pull-right">b4ffc458-ce2f-4d65-bb7c-05d6f7a2b997</span>
+                            </li>
+                            <li>
+                              <span>Mimetype: </span>
+                              <span class="pull-right">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</span>
+                            </li>
+                            <li>
+                              <span>On same domain:</span>
+                              <span class="pull-right">1</span>
+                            </li>
+                            <li>
+                              <span>Position:</span>
+                              <span class="pull-right">23</span>
+                            </li>
+                            <li>
+                              <span>Resource group id:</span>
+                              <span class="pull-right">c08068e1-3376-4c93-8999-a3d6c459fce7</span>
+                            </li>
+                            <li>
+                              <span>Resource type:</span>
+                              <span class="pull-right">file</span>
+                            </li>
+                            <li>
+                              <span>Size:</span>
+                              <span class="pull-right">14,1 MiB</span>
+                            </li>
+                            <li>
+                              <span>State:</span>
+                              <span class="pull-right">active</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.continutul -->
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title top-download">
+                        <i class="fa fa-file-excel-o fa-2x"></i>
+                        <span>Date la data de 22.10.2015</span>
+                        <i class="fa fa-fire"></i>
+                      </h4>
+                      <ul class="list-inline panel-control">
+                        <li>
+                          <a class="btn  btn-default btn-sm" role="button" data-toggle="collapse" data-parent="#accordion-date" href="#date2" aria-expanded="true" aria-controls="date2">
+                          <i class="fa fa-info-circle"></i>Informații
+                        </a>
+                        </li>
+                        <li>
+                          <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>Descarcă</button>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <!-- continutul -->
+                    <div id="date2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                      <div class="panel-body">
+                        <h5>Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</h5>
+                        <div class="alert alert-info" role="alert">
+                          Previzualizarea nu este disponibilă. (No handler defined for data type: xlsx.)
+                        </div>
+                        <ul class="list-unstyled">
+                          <li>
+                            <span>Ultima actualizare:</span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Creat la: </span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Format:</span>
+                            <span class="pull-right">xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)</span>
+                          </li>
+                          <li>
+                            <span>Licență:</span>
+                            <span class="pull-right">License Not Specified</span>
+                          </li>
+                        </ul>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#moreExample2" aria-expanded="false" aria-controls="moreExample2">
+                          Arată mai multe informații
+                        </button>
+                        <div class="collapse" id="moreExample2">
+                          <ul class="list-unstyled">
+                            <li>
+                              <span>ID:</span>
+                              <span class="pull-right">b4ffc458-ce2f-4d65-bb7c-05d6f7a2b997</span>
+                            </li>
+                            <li>
+                              <span>Mimetype: </span>
+                              <span class="pull-right">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</span>
+                            </li>
+                            <li>
+                              <span>On same domain:</span>
+                              <span class="pull-right">1</span>
+                            </li>
+                            <li>
+                              <span>Position:</span>
+                              <span class="pull-right">23</span>
+                            </li>
+                            <li>
+                              <span>Resource group id:</span>
+                              <span class="pull-right">c08068e1-3376-4c93-8999-a3d6c459fce7</span>
+                            </li>
+                            <li>
+                              <span>Resource type:</span>
+                              <span class="pull-right">file</span>
+                            </li>
+                            <li>
+                              <span>Size:</span>
+                              <span class="pull-right">14,1 MiB</span>
+                            </li>
+                            <li>
+                              <span>State:</span>
+                              <span class="pull-right">active</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.continutul -->
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                      <h4 class="panel-title">
+                        <i class="fa fa-file-excel-o fa-2x"></i>
+                        <span>Date din Registrul de stat al unităţilor de drept</span>
+                      </h4>
+                      <ul class="list-inline panel-control">
+                        <li>
+                          <a class="btn  btn-default btn-sm" role="button" data-toggle="collapse" data-parent="#accordion-date" href="#date3" aria-expanded="true" aria-controls="date3">
+                          <i class="fa fa-info-circle"></i>Informații
+                        </a>
+                        </li>
+                        <li>
+                          <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>Descarcă</button>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <!-- continutul -->
+                    <div id="date3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                      <div class="panel-body">
+                        <h5>Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</h5>
+                        <div class="alert alert-info" role="alert">
+                          Previzualizarea nu este disponibilă. (No handler defined for data type: xlsx.)
+                        </div>
+                        <ul class="list-unstyled">
+                          <li>
+                            <span>Ultima actualizare:</span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Creat la: </span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Format:</span>
+                            <span class="pull-right">xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)</span>
+                          </li>
+                          <li>
+                            <span>Licență:</span>
+                            <span class="pull-right">License Not Specified</span>
+                          </li>
+                        </ul>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#moreExample3" aria-expanded="false" aria-controls="moreExample3">
+                          Arată mai multe informații
+                        </button>
+                        <div class="collapse" id="moreExample3">
+                          <ul class="list-unstyled">
+                            <li>
+                              <span>ID:</span>
+                              <span class="pull-right">b4ffc458-ce2f-4d65-bb7c-05d6f7a2b997</span>
+                            </li>
+                            <li>
+                              <span>Mimetype: </span>
+                              <span class="pull-right">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</span>
+                            </li>
+                            <li>
+                              <span>On same domain:</span>
+                              <span class="pull-right">1</span>
+                            </li>
+                            <li>
+                              <span>Position:</span>
+                              <span class="pull-right">23</span>
+                            </li>
+                            <li>
+                              <span>Resource group id:</span>
+                              <span class="pull-right">c08068e1-3376-4c93-8999-a3d6c459fce7</span>
+                            </li>
+                            <li>
+                              <span>Resource type:</span>
+                              <span class="pull-right">file</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.continutul -->
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                      <h4 class="panel-title top-download">
+                        <i class="fa fa-file-excel-o fa-2x"></i> 
+                        <span>Date la data de 01.07.2015</span>
+                        <i class="fa fa-fire"></i>
+                      </h4>
+                      <ul class="list-inline panel-control">
+                        <li>
+                          <a class="btn  btn-default btn-sm" role="button" data-toggle="collapse" data-parent="#accordion-date" href="#date4" aria-expanded="true" aria-controls="date4">
+                          <i class="fa fa-info-circle"></i>Informații
+                        </a>
+                        </li>
+                        <li>
+                          <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>Descarcă</button>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <!-- continutul -->
+                    <div id="date4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                      <div class="panel-body">
+                        <h5>Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</h5>
+                        <div class="alert alert-info" role="alert">
+                          Previzualizarea nu este disponibilă. (No handler defined for data type: xlsx.)
+                        </div>
+                        <ul class="list-unstyled">
+                          <li>
+                            <span>Ultima actualizare:</span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Creat la: </span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Format:</span>
+                            <span class="pull-right">xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)</span>
+                          </li>
+                          <li>
+                            <span>Licență:</span>
+                            <span class="pull-right">License Not Specified</span>
+                          </li>
+                        </ul>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#moreExample4" aria-expanded="false" aria-controls="moreExample4">
+                          Arată mai multe informații
+                        </button>
+                        <div class="collapse" id="moreExample4">
+                          <ul class="list-unstyled">
+                            <li>
+                              <span>ID:</span>
+                              <span class="pull-right">b4ffc458-ce2f-4d65-bb7c-05d6f7a2b997</span>
+                            </li>
+                            <li>
+                              <span>Mimetype: </span>
+                              <span class="pull-right">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</span>
+                            </li>
+                            <li>
+                              <span>On same domain:</span>
+                              <span class="pull-right">1</span>
+                            </li>
+                            <li>
+                              <span>Position:</span>
+                              <span class="pull-right">23</span>
+                            </li>
+                            <li>
+                              <span>Resource group id:</span>
+                              <span class="pull-right">c08068e1-3376-4c93-8999-a3d6c459fce7</span>
+                            </li>
+                            <li>
+                              <span>Resource type:</span>
+                              <span class="pull-right">file</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.continutul -->
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFive">
+                      <h4 class="panel-title">
+                        <i class="fa fa-file-excel-o fa-2x"></i>
+                        <span>La data de 10.12.2015</span>
+                      </h4>
+                      <ul class="list-inline panel-control">
+                        <li>
+                          <a class="btn  btn-default btn-sm" role="button" data-toggle="collapse" data-parent="#accordion-date" href="#date5" aria-expanded="true" aria-controls="date5">
+                          <i class="fa fa-info-circle"></i>Informații
+                        </a>
+                        </li>
+                        <li>
+                          <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>Descarcă</button>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <!-- continutul -->
+                    <div id="date5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                      <div class="panel-body">
+                        <h5>Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</h5>
+                        <div class="alert alert-info" role="alert">
+                          Previzualizarea nu este disponibilă. (No handler defined for data type: xlsx.)
+                        </div>
+                        <ul class="list-unstyled">
+                          <li>
+                            <span>Ultima actualizare:</span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Creat la: </span>
+                            <span class="pull-right">6 zile în urmă (Noiembrie 18, 2016)</span>
+                          </li>
+                          <li>
+                            <span>Format:</span>
+                            <span class="pull-right">xlsx (application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)</span>
+                          </li>
+                          <li>
+                            <span>Licență:</span>
+                            <span class="pull-right">License Not Specified</span>
+                          </li>
+                        </ul>
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#moreExample5" aria-expanded="false" aria-controls="moreExample5">
+                          Arată mai multe informații
+                        </button>
+                        <div class="collapse" id="moreExample5">
+                          <ul class="list-unstyled">
+                            <li>
+                              <span>ID:</span>
+                              <span class="pull-right">b4ffc458-ce2f-4d65-bb7c-05d6f7a2b997</span>
+                            </li>
+                            <li>
+                              <span>Mimetype: </span>
+                              <span class="pull-right">application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</span>
+                            </li>
+                            <li>
+                              <span>On same domain:</span>
+                              <span class="pull-right">1</span>
+                            </li>
+                            <li>
+                              <span>Position:</span>
+                              <span class="pull-right">23</span>
+                            </li>
+                            <li>
+                              <span>Resource group id:</span>
+                              <span class="pull-right">c08068e1-3376-4c93-8999-a3d6c459fce7</span>
+                            </li>
+                            <li>
+                              <span>Resource type:</span>
+                              <span class="pull-right">file</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- /.continutul -->
+                  </div>
+                </div>
+                <!-- /.elementele collapsibile -->
+
+                <!-- flux de activitate -->
+                <h3 class="block-title">Flux de activitate <span>36</span></h3>
+                <ul class="list-unstyled flux-list">
+                  <li>
+                    <i class="fa fa-certificate roundedIcon"></i>
+                    <p>
+                      <a href="#">MTIC</a> a adăugat resursa <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova </a> la setul de date <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</a> <i class="time">6 zile în urmă</i>
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa fa-refresh roundedIcon"></i>
+                    <p>
+                      <a href="#">MTIC</a> a actualizat resursa <a href="#">La data de 19.10.2016</a> în setul de date <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</a> <i class="time">1 lună în urmă</i>
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa fa-certificate roundedIcon"></i>
+                    <p>
+                      <a href="#">MTIC</a> a adăugat resursa <a href="#">La data de 20.09.2016</a> la setul de date <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</a> <i class="time">2 luni în urmă</i>
+                    </p>
+                  </li>
+                  <li class="viewList-btn">
+                    <i class="fa fa-plus-circle roundedIcon"></i>
+                    <a class="btn btn-link" role="button" data-toggle="collapse" href="#moreFlux" aria-expanded="false" aria-controls="moreFlux">Vezi toți itemii din fluxul de activitate </a>
+                  </li>
+                  <ul class="collapse list-unstyled" id="moreFlux">
+                    <li>
+                      <i class="fa fa-certificate roundedIcon"></i>
+                      <p>
+                        <a href="#">MTIC</a> a adăugat resursa <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova </a> la setul de date <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</a> <i class="time">6 zile în urmă</i>
+                      </p>
+                    </li>
+                    <li>
+                      <i class="fa fa-refresh roundedIcon"></i>
+                      <p>
+                        <a href="#">MTIC</a> a actualizat resursa <a href="#">La data de 19.10.2016</a> în setul de date <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</a> <i class="time">1 lună în urmă</i>
+                      </p>
+                    </li>
+                    <li>
+                      <i class="fa fa-certificate roundedIcon"></i>
+                      <p>
+                        <a href="#">MTIC</a> a adăugat resursa <a href="#">La data de 20.09.2016</a> la setul de date <a href="#">Date din Registrul de stat al unităţilor de drept privind întreprinderile înregistrate în Republica Moldova</a> <i class="time">2 luni în urmă</i>
+                      </p>
+                    </li>
+                  </ul>
+                </ul>
+                <!-- /.flux de activitate -->
+
+                <!-- comentarii -->
+                <div class="comments-blk">
+                  <h3 class="block-title">Comentarii <span>0</span></h3>
+
+                  <p class="info">
+                    <a href="#">Autentificare</a> sau <a href="#">înregistrare</a> pentru a posta comentarii
+                  </p>
+                </div>
+                <!-- /.comentarii -->
+              </div>
+              <!-- /.main-content -->
+            </div>
+            <!-- sidebar -->
+            <aside class="col-md-4 col-sm-6">
+              <div class="sidebar">
+                <div class="widget">
+                  <h4 class="widget-title">
+                    Informații despre setul de date
+                  </h4>
+                  <div class="widget-content">
+                    <ul class="list-unstyled">
+                      <li>
+                        <span><i class="fa fa-user"></i>Autor:</span>
+                        <a href="#" class="pull-right">Ecaterina Stăvila</a>
+                      </li>
+                      <li>
+                        <span><i class="fa fa-certificate" aria-hidden="true"></i>Date noi:</span>
+                        <span class="pull-right">da</span>
+                      </li>
+                      <li>
+                        <span><i class="fa fa-refresh"></i>Actualizare:</span>
+                        <span class="pull-right">lunar</span>
+                      </li>
+                      <li>
+                        <span><i class="fa fa-lock" aria-hidden="true"></i>Licență:</span>
+                        <span class="pull-right">Nespecificat</span>
+                      </li>
+                      <li>
+                        <span><i class="fa fa-folder-o"></i>Categorie:</span>
+                        <a href="#" class="pull-right">Economie și sectorul privat</a>
+                      </li>
+                      <li class="tags">
+                        <span><i class="fa fa-tag" aria-hidden="true"></i>Cuvinte cheie:</span>
+                        <ul class="list-inline pull-right">
+                          <li><a href="#">RSUD,</a></li>
+                          <li><a href="#">date deschise,</a></li>
+                          <li><a href="#">întreprinderi,</a></li>
+                          <li><a href="#">companii,</a></li>
+                          <li><a href="#">Cod Fiscal,</a></li>
+                          <li><a href="#">administrator,</a></li>
+                          <li><a href="#">informație</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="widget about-institution">
+                  <div class="brand">
+                    <h5>
+                      Ministerul Tehnologiei Informației și Comunicațiilor
+                    </h5>
+                  </div>
+                  <div class="widget-content"> 
+                    <p>
+                      Ministerul Tehnologiei Informaţiei şi
+                      Comunicaţiilor al Republicii Moldova este
+                      autoritatea publică desemnată să elaboreze, să
+                      promoveze şi să aplice politica 
+                    </p>
+                    <a href="#" class="btn btn-default">Vezi profilul insituției <i class="fa fa-angle-right"></i></a>
+                  </div>
+                </div>
+                <div class="widget">
+                  <h4 class="widget-title">
+                    Seturi de date înrudite
+                  </h4>
+                  <div class="widget-content">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#">
+                          Date privind balanţa anuală a patrimoniului public al APC (autorităţilor publice centrale)
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Date privind îndeplinirea lucrărilor de construcție, reparație, proiectare a drumurilor şi procurarea utilajului din fondul rutier ianuarie-mai 2013</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="widget">
+                  <h4 class="widget-title">
+                    Distribuie pe rețelele de socializare
+                  </h4>
+                  <div class="widget-content">
+                    <ul class="list-unstyled social-links">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-facebook-official"></i>
+                          <span>Facebook</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-google-plus"></i>
+                          <span>Google +</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-twitter-square"></i>
+                          <span>Twitter</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="widget">
+                  <h4 class="widget-title">
+                    Developer API
+                  </h4>
+                  <div class="widget-content">
+                    <p>
+                      Puteţi accesa acest registru prin <a href="#">API</a> (accesează <a href="#">documentatia API</a>).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </aside>
+            <!-- /.sidebar -->
+          </div>
+        </div>
+        <!-- /.continutul-paginii -->
+      </main>
+
+      <footer class="big-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Centru de asistență</h4>
+                <span>servicii publice electronice</span>
+                <a href="callTo:+373820000" class="call-action"><span>022</span> 820 000</a>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Legături utile</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">Despre portal</a>
+                  </li>
+                  <li>
+                    <a href="#">Ajutor</a>
+                  </li>
+                  <li>
+                    <a href="faq.html">Întrebări frecvente</a>
+                  </li>
+                  <li>
+                    <a href="terms_conditions.html">Termeni și condiții</a>
+                  </li>
+                  <li>
+                    <a href="#">Contacte</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <h4>Rețele sociale</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#"><i class="fa fa-facebook-official"></i>Facebook</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-youtube-play"></i>Youtube</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter-square"></i>Twitter</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin-square"></i>Linkedin</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3">
+              <div class="footer-block">
+                <p class="copyright">
+                  &copy; 2012-2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> <br>
+                  Toate drepturile rezervate
+                </p>
+                <ul class="list-unstyled last-dates">
+                  <li><a href="#">API</a></li>
+                  <li><a href="#">Documentație API</a></li>
+                  <li><a href="#" class="feedback-btn">Oferă feedback</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

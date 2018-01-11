@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+
+    <title>Ghid de stil servicii electronice guvernamentale</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- start pagina -->
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Ghid de stil servicii electronice guvernamentale
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="grila.html">Grilă<span class="sr-only">(current)</span></a></li>
+                  <li><a href="colors.html">Culori</a></li>
+                  <li><a href="text.html">Text și pictograme</a></li>
+                  <li><a href="nav.html">Navigare</a></li>
+                  <li><a href="forms.html">Formulare și tabele</a></li>
+                  <li><a href="elements.html">Alte elemente</a></li>
+                  <li><a href="performance.html">Tehnic</a></li>
+                  <li><a href="examples.html">Exemple</a></li>
+                  <li><a href="sources/downloads/ghid.zip" class="btn btn-download" download>Descarcă</a></li>
+                  <li class="hidden-sm hidden-md hidden-lg font_control">
+                    <span id="fontChange2">Mărire / micșorare text</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+      <!-- continutul paginii -->
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="intro">
+                <h2>Ghidul de stil vizual</h2>
+                <div class="alert alert-info">
+                  <p>a fost creat pentru a îmbunătăți interfața tuturor serviciilor electronice guvernamentale pe parte de uzabilitate și consistență, pentru o utilizare mai ușoară  și o experiență mai plăcută.
+                  Folosind elementele definite pe parcursul acestui ghid de stil vizual, în primul rând se va ține cont de <b>accesibilitate</b> în funcție de context. Toate mărimile, culorile, spațierea, etc. au fost din start selectate pentru a fi accesibile. Uzabilitatea nu trebuie să fie sacrificată în schimbul ghidului de stil.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="three-column communications">
+                <h4>Principii generale</h4>
+                <p>
+                  <i>
+                    Designul este important. Dar designul nu înseamnă decorare sau ornamentare. Designul înseamnă a face comunicarea cât mai simplă și clară pentru utilizator. Uzabilitatea și ușurința de a folosi un sistem (și nu decorarea și ornamentarea) determină succesul sau eșecul unei pagini web. Din moment ce utilizatorul este singurul care interacționează și face deciziile sale în utilizarea sistemului, designul orientat pe utilizator a devenit un standard deja.
+                  </i>
+                </p>
+
+                <p>
+                  Utilizatorii apreciază calitatea, consistența și credibilitatea. Ei nu citesc, ei scanează mai degrabă. Sunt nerăbdători pentru a ajunge cât mai repede și simplu la rezultat. Doresc să aibă control și își folosesc intuiția mai degrabă decât a căuta o cale optimă.
+                </p>
+
+                <h4>Comunicarea</h4>
+                <p>
+                  Utilizatorii doresc acces rapid la informație, deci e important de a comunica clar și efectiv. Informația deci trebuie să fie ușor de citit și înțeles. Și aici avem un întreg arsenal: <a href="text.html">textul</a>, 
+                  <a href="colors.html">culorile</a>, titlurile, listele, imaginile, <a href="text.html#pictoAnchor">pictogramele</a>, etc. 
+                </p>
+
+                <h4>Contrastul</h4>
+                <p>
+                  Contrastul în principiu înseamnă diferență. Acesta este foarte important pentru ușurința de a depista elementele și a le percepe cât mai rapid.
+                </p>
+
+                <p>
+                  Vom folosi contrastul de <a href="colors.html">culori</a> și mărimi pentru a pune corect accentele și pentru a prioritiza elementele în ordinea în care avem nevoie. Ierarhizarea conținutului este foarte importantă și nu toate elementele sunt la fel de importante. Unele elemente trebuiesc accentuate pentru a fi observate și procesate vizual de către utilizator înaintea altora în funcție de context.
+                </p>
+
+                <h4>Repetiția</h4>
+                <p>
+                  Înseamnă folosirea repetată a unor seturi de stiluri pentru elemente cu scopul de a crea anumite deprinderi și consistență. Spre exemplu aceeași <a href="colors.html">culoare</a> pentru legături sau forma și modalitatea de interacțiune a 
+                  <a href="nav.html">butoanelor</a>, etc. Astfel va crește considerabil ușurința de a 1. învăța și 2. folosi cu cât mai puține erori serviciile electronice.
+                </p>
+
+                <h4>Alinierea</h4>
+                <p>Vom alinia elementele pentru a crea regularitate și unitate. Pentru aceasta vom folosi <a href="grila.html">grila</a>.</p>
+
+                <h4>Proximitatea</h4>
+                <p>
+                  Acest principiu constă în mutarea elementelor mai aproape sau mai departe unele de altele pentru a obține o mai bună organizare a acestora. Elementele de aceeași natură, pot fi mai aproape unele de altele și astfel vor fi privite ca un grup. Ca să obținem apartenența la un grup, putem folosi și <a href="elements.html">blocurile</a>.
+                </p>
+
+                <p>
+                  Spațiul gol nu înseamnă nimic. Este un ceva important. Utilizează spațiul pentru a organiza mai clar și a prioritiza.
+                </p>
+              </div>
+              <hr class="divider comunication">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-bars fa-rotate-90" aria-hidden="true"></i>
+                  Grilă
+                </h4>
+                <p>
+                  Grila are scopul de a uniformiza și standardiza dimensiunile și spațierea între elementele paginii. În același timp, e necesar să fie și foarte flexibilă și să poată face față unui număr mare de scenarii.
+                </p>
+                <a href="grila.html" class="btn btn-default">
+                  Află mai multe
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                  Culori
+                </h4>
+                <p>
+                  Culorile au rolul de a asigura contrast și lizibilitatea elementelor pe cat mai multe monitoare. Tot ele vor comunica vizual funcțiile elementelor și prioritatea unui față de celălalt.
+                </p>
+                <a href="colors.html" class="btn btn-default">
+                  Află mai multe
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-font" aria-hidden="true"></i>
+                  Text și pictograme
+                </h4>
+                <p>
+                  Vom folosi o garnitură de text modernă și care suportă diacriticele și alfabetul chirilic, plus este gratuit pentru utilizare și este destul de popular.
+                </p>
+                <a href="text.html" class="btn btn-default">
+                  Află mai multe
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                  Pictograme
+                </h4>
+                <p>
+                  Setul de pictograme ce vor fi folosite pentru a imbunatati comunicarea vizuala, uzabilitatea si experienta utilizatorului.
+                </p>
+                <a href="icons.html" class="btn btn-default">
+                  Află mai multe
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div> -->
+            <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                  Navigare
+                </h4>
+                <p>
+                  Descrierea elementelor de navigare (butoane, legături, paginare, anatomia headerului, etc.)
+                </p>
+                <a href="nav.html" class="btn btn-default">
+                  Află mai multe
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-list-alt" aria-hidden="true"></i>
+                  Formulare și tabele
+                </h4>
+                <p>
+                  Cum arată și cum interacționează elementele formularelor.
+                </p>
+                <a href="forms.html" class="btn btn-default">
+                  Află mai multe
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-line-chart" aria-hidden="true"></i>
+                  Tehnic
+                </h4>
+                <p>
+                  Un set de recomandări pentru îmbunătățirea și optimizarea performanței / timpului de încărcare a  paginilor web.
+                </p>
+                <a href="performance.html" class="btn btn-default">
+                  Află mai multe
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-square-o" aria-hidden="true"></i>
+                  Alte elemente
+                </h4>
+                <p>
+                  Descrierea altor elemente care ar putea fi întrebuințate pentru o experiență mai plăcută sau pentru rezolvarea anumitor sarcini funcționale.
+                </p>
+                <a href="elements.html" class="btn btn-default">
+                  Află mai multe
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+              <div class="ghid-block thumbnail">
+                <h4 class="ghid-title">
+                  <i class="fa fa-map-signs" aria-hidden="true"></i>
+                  Exemple
+                </h4>
+                <p>
+                  Câteva exemple contextuale pentru a arăta modalități de aplicare practică a ghidului de stil vizual pentru serviciile electronice guvernamentale.
+                </p>
+                <a href="examples.html" class="btn btn-default">
+                  Vezi exemple
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- /.continutul paginii -->
+      <footer>
+        <div class="container">
+          <div class="row">
+           <div class="col-md-2 col-sm-4">
+              <h5 class="text-uppercase">Centru de asistență</h5>
+             <span>servicii publice electronice</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-left">
+              <a href="tel:+37322820000" class="contact-tel"><span>022 </span><b>820 000</b></a>
+            </div>
+            <div class="col-md-offset-2 col-md-5 text-right copyright col-sm-4">
+                <a href="terms.html">Termeni și condiții</a> <br>
+                <span>
+                  ©&nbsp;2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> Toate drepturile rezervate
+                </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- sfirsit pagina -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

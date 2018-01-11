@@ -1,0 +1,1119 @@
+/*****************************************************************
+    Stilurile personalizate pentru MPay. 
+    Necesar de conectat in cod si mstyle.css !!!
+******************************************************************/
+
+/*logo*/
+.main-navbar .navbar-brand{
+    background-size: 90px;
+    padding-left: 100px;
+}
+
+/*main menu addons*/
+#main-menu .navbar-nav li:first-child, 
+#main-menu .navbar-nav li:nth-child(2) {font-weight: bold;}
+
+/*section intro*/
+.section-intro h3,
+.section-intro h2,
+.section-intro h1{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.section-intro p{margin-bottom: 15px;}
+.section-intro .breadcrumb{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*capcha image block*/
+.confirm-list{
+    float: left;
+    width: 100%;
+    margin: 0;
+}
+.confirm-list li{
+    position: relative;
+    padding: 0;
+    float: left;
+}
+.confirm-list li:first-child span{
+    max-width: 90px;
+    display: inline-block;
+    margin-right: 10px;
+}
+.confirm-list li:first-child img{
+    vertical-align: top;
+    margin-right: 5px;
+}
+.confirm-list li:first-child a{
+    float: right;
+    margin: 10px 0 0 15px;
+}
+.confirm-list li:nth-child(2){line-height: 2.63em;}
+.confirm-list li:nth-child(2) label{
+    position: absolute;
+    right: 10px;
+    top: 3px;
+}
+.confirm-list li:nth-child(2) label a{color: #ccc;}
+.confirm-list li:nth-child(2) input{
+    width: 140px;
+    margin-left: 10px;
+    border: 1px solid #aaa;
+}
+.confirm-list li:nth-child(2) input:focus{
+    border-color: #333;
+    outline: none;
+    padding-left: 10px;
+}
+
+/*tooltip view*/
+.tooltip-view{
+	background: transparent;
+    border: none;
+    padding: 0;
+    color: #ccc;
+}
+.tooltip-view:focus{outline: none;}
+
+/*** index.html ***/
+/*--- sunt stilurile standarte din mstyle.css !!!!!!!! --*/
+
+/*** services.html ***/
+
+/*search intro block*/
+.search-intro h3{line-height: 1.7em;}
+.search-intro .services-search-box {
+    float: left;
+    width: 310px;
+    margin-left: 2px;
+}
+.search-intro .select2-container {
+    background: #fcfcf4;
+    min-width: 228px;
+    float: right;
+}
+
+/*services block*/
+.services-list{
+	float: left;
+	margin-top: 30px;
+	margin-right: -30px;
+	margin-left: 0;
+	margin-bottom: 0;
+}
+.services-list li{
+	position: relative;
+	float: left;
+	padding: 0;
+	width: 170px;
+	margin-left: 0;
+	margin-right: 30px;
+	height: 225px;
+	margin-bottom: 30px;
+}
+.services-list li.newService:after{
+	content: "Nou";
+	position: absolute;
+	top: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #cc3333;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 3px 5px;
+}
+.service-block{
+	width: 100%;
+	height: 100%;
+	padding: 20px 5px !important;
+}
+.service-block .service-bg{
+	width: 130px;
+	height: 80px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 auto 10px;
+}
+.service-block p{
+	margin: 0;
+	line-height: 1.714em;
+}
+.service-block a{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	margin: 0;
+	width: auto !important;
+}
+.service-block:hover{border-color: #333;}
+
+/*** services_selected.html ***/
+
+/*service logo*/
+.service-selected-block{
+	border: 1px solid #ccc;
+	padding: 30px;
+	color: #666;
+	height: 360px;
+	margin-top: 30px;
+}
+.service-selected-block .service-selected-bg{
+	width: 210px;
+	height: 100px;
+	background-repeat: no-repeat;
+	background-position:  center;
+	background-size: 100px;
+	margin-bottom: 25px;
+}
+.service-selected-block h5{	margin-bottom: 25px}
+
+/*service pay block*/
+.service-pay-block,
+.select-block{
+	border: 1px solid #ccc;
+	color: #666;
+	min-height: 360px;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.service-pay-block h4,
+.select-block h4{
+	margin: 20px 0 30px;
+	padding: 0 30px 20px;
+	line-height: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.service-pay-block .form-inline{
+	position: relative;
+	width: 100%;
+	padding: 0 30px 28px;
+	border-bottom: 1px solid #eee;
+}
+.service-pay-block .form-group{
+	width: 100%;
+	position: relative;
+}
+.service-pay-block .form-group label{font-weight: 400;}
+.service-pay-block #codeInput{width: 240px;}
+.form-group label .tooltip-view{color: #3366cc;}
+.service-pay-block .form-group label{line-height: 1.429em;}
+
+.select-block span{
+	padding: 0 20px 0 30px;
+	display: block;
+	margin-bottom: 30px;
+}
+.select-block a{
+	margin-left: 30px;
+	margin-top: 30px;
+	width: calc(100% - 60px);
+}
+
+/*capcha block*/
+.capcha-block{
+	padding: 28px 30px;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 30px;
+}
+.capcha-block li:first-child span{
+	max-width: 100%;
+	margin: 10px 10px 0 0;
+}
+.capcha-block li:first-child img{margin-right: 0;}
+
+/*controls buttons*/
+.service-pay-block .controls{padding: 0 30px;}
+
+/*loading circle*/
+.loading-img {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    display: none;
+}
+
+/*service pay result (hidden by default)*/
+.service-pay-result{
+	border: 1px solid #ccc;
+	color: #666;
+	height: 360px;
+	display: none;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.service-pay-result h4{
+	margin: 20px 0 28px;
+	padding: 0 30px 20px;
+	line-height: 100%;
+	border-bottom: 1px solid #ccc;
+}
+.service-pay-result .input-group{
+	padding: 0 30px;
+	width: 100%;
+	margin-bottom: 28px;
+}
+.service-pay-result .input-group span{
+	display: block;
+	margin-bottom: 10px;
+}
+.service-pay-result .form-control{ position: relative;}
+.service-pay-result .input-group-addon:last-child{
+	right: 65px;
+    top: 40px;
+    color: #666;
+    padding: 0;
+}
+.service-pay-result .controls{ 
+	padding: 0 30px;
+}
+
+
+/*** pay-method.html ***/
+.payment-list{
+	margin-left: 0;
+	margin-right: -30px;
+}
+.pay-method{
+	position: relative;
+	width: 100%;
+	max-width: 270px;
+	height: 165px;
+	padding: 30px !important;
+	overflow: hidden;
+	margin: 25px 27px 12px 0;
+	transition: border-color .2s ease-in-out;
+}
+.pay-method i.fa{
+	float: left;
+	font-size: 36px;
+	margin-right: 8px;
+	color: #333;
+}
+.pay-method h4{
+	float: left;
+	margin-bottom: 2px;
+}
+.pay-method span{
+	display: block;
+	float: left;
+	color: #666;
+	line-height: 1.286em;
+}
+.pay-method .btn{
+	position: absolute;
+	left: 30px;
+	width: calc(100% - 60px);
+	bottom: 30px;
+}
+.pay-method .btn i.fa{
+	font-size: 14px;
+	float: none;
+	color: #fff;
+}
+.pay-method:hover{border-color: #333;}
+.pay-method:hover a.btn{margin-top: 0;}
+.pay-method.active{
+	border-color: #333;
+	cursor: no-drop;
+}
+
+/*banks list*/
+.banks-list ul{
+	margin-left: 0;
+	margin-right: -30px;
+	margin-bottom: 30px;
+}
+.banks-list .bank{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	max-width: 270px;
+	height: 165px;
+	background-repeat: no-repeat;
+	background-position: center 30px;
+	padding: 30px;
+	margin-top: 25px;
+	margin-right: 27px;
+	margin-bottom: 0;
+	transition: border-color .2s ease-in-out;
+}
+.banks-list .bank i.fa{
+	float: left;
+	font-size: 36px;
+	margin-right: 15px;
+}
+.banks-list .bank h4{
+	float: left;
+	margin: 10px 0;
+	color: #666;
+}
+.banks-list .bank .btn{
+	position: absolute;
+	left: 30px;
+	width: calc(100% - 60px);
+	bottom: 30px;
+}
+.banks-list .bank .btn i.fa{
+	font-size: 14px;
+	float: none;
+}
+.banks-list .bank:hover{border-color: #333;}
+
+/*** detalii_card.html ***/
+
+/*section intro bank logo*/
+.bankLogo{
+	position: absolute;
+    right: 15px;
+    width: 250px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 58px;
+}
+
+/*card-info block*/
+.card-info{ 
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+.card-info .title{
+	margin: 0;
+	padding: 20px 28px;
+	border-bottom: 1px solid #ccc;
+}
+.card-info form{
+	display: inline-block;
+	padding: 25px 0 0 28px;
+	margin: 0;
+}
+.card-info .form-group{
+	position: relative;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 25px;
+}
+.card-info .form-group.md-input{
+	width: 240px;
+	max-width: 100%;
+}
+.card-info .form-group.sm-input{
+	width: 150px;
+	max-width: 100%;
+}
+.card-info .form-group.sm-input .select2-container{min-width: 100%;}
+.card-info form label{
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.card-info .form-group a{
+	position: absolute;
+	right: 10px;
+	bottom: 7px;
+	color: #ccc;
+}
+
+/*tranzaction info block*/
+.tranzaction-info h3{
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+.tranzaction-info ul{
+	display: inline-block;
+	margin-bottom: 8px;
+}
+.tranzaction-info ul li{
+	line-height: 2.714em;
+	color: #666;
+	width: 100%;
+	float: left;
+}
+.tranzaction-info ul span{
+	width: 170px;
+	float: left;
+}
+.tranzaction-info ul a,
+.tranzaction-info ul b{ width: calc(100% - 170px); }
+.tranzaction-info ul b{ color: #333; }
+.tranzaction-info ul a>b{ color: #3366cc !important; }
+.tranzaction-info hr{margin-top: 0;}
+
+.cards-link{float: left;}
+.cards-link li{
+	width: 50px !important;
+	height: 30px;
+	padding-top: 5px;
+}
+.cards-link li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+/*** pay_method_e-banking.html && pay_method_cash.html && pay_method_terminal.html ***/
+/*pay instructions*/
+.cash-pay-instructions h3{
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+.cash-pay-instructions ol{
+	padding-left: 15px;
+	color: #666;
+	line-height: 1.714em;
+	margin-bottom: 25px;
+}
+.cash-pay-instructions ol p span{
+	color: #336633;
+	font-weight: bold;
+}
+.cash-pay-instructions li{margin-bottom: 5px;}
+.cash-pay-instructions ul{
+	padding-left: 15px;
+	line-height: 1.714em;
+	list-style-type: disc;
+}
+/*pay info*/
+.download-bill-block{
+	border: 1px solid #ccc;
+	padding: 28px 30px;
+	color: #666;
+	line-height: 24px;
+}
+.download-bill-block li{margin-bottom: 15px;}
+.download-bill-block .billNr{
+	display: inline-block;
+	color: #3c763d;
+    background: #dff0d8;
+    border-radius: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px 10px;
+	margin-top: -5px;
+}
+.download-bill-block .billSumm{
+	color: #333;
+	font-weight: 700;
+}
+.download-bill-block .btn{
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+/*** bank_respond.html ***/
+/*bill status block*/
+.bill-status{
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+.bill-status h3{ 
+	padding: 17px 0 0 28px; 
+	display: inline-block;
+    margin-top: 5px;
+    line-height: 30px;
+}
+.bill-status h3 span{display: block;}
+.bill-status h1{ 
+	margin: 28px 30px 28px 0; 
+	color: #3c763d;
+    background: #dff0d8;
+    line-height: 44px;
+    padding: 13px 20px;
+    border-radius: 3px;
+}
+.bill-status hr{margin: 0 0 30px 0;}
+.bill-status ul{
+	padding-left: 28px;
+	margin-bottom: 15px;
+	float: left;
+    min-width: 310px;
+}
+.bill-status ul li:first-child {
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+.bill-status ul li {line-height: 2.143em;}
+.bill-status ul li span {width: 40%;}
+.bill-status ul li span.pull-right {
+    font-weight: bold;
+    color: #333;
+    width: 60%;
+}
+.bill-status .btn{margin: 0 30px 30px 0;}
+.bill-status .btn_default{margin-top: 0;}
+.bill-status .view-more{
+	display: block;
+	margin-left: 28px;
+	margin-bottom: 25px;
+	padding: 0;
+	font-weight: bold;
+}
+.bill-status .view-more:focus{outline: none;}
+
+/*bill status for verificarea.html*/
+.bill-status.none{
+	display: none;
+	border: none;
+}
+.bill-status.none h3{
+	padding: 0;
+	margin-top: 0;
+}
+.bill-status.none h1,
+.bill-status.none .btn{margin: 0 0 28px 0;}
+.bill-status.none ul{
+	padding-left: 0;
+	margin: 0;
+}
+
+/*send bill to email block*/
+#emailCollapse form{
+	display: inline-block;
+	width: 100%;
+}
+#emailCollapse .form-group{ 
+	margin-bottom: 30px;
+	padding: 0;
+}
+#emailCollapse .form-group input[type=email]{
+	float: right;
+	margin-left: 30px;
+	width: 270px;
+}
+#emailCollapse .form-group label{
+	font-weight: 400;
+	line-height: 40px;
+	margin: 0;
+}
+#emailCollapse .form-group textarea{max-width: 100%;}
+#emailCollapse .capcha-block.confirm-list{padding: 0 0 28px 0;}
+#emailCollapse .capcha-block li:first-child span{margin: 10px 30px 0 0;}
+#emailCollapse .capcha-block li:first-child img{margin-right: 25px;}
+#emailCollapse.withMargin{
+	margin-bottom: 70px;
+	padding-bottom: 30px;
+}
+/*email resopnd text*/
+.respond-alert {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+#emailCollapse.withMargin .respond-alert{bottom: 80px;}
+/*tranzaction details*/
+.tranzactie-blk {
+    position: relative;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+.tranzactie-blk h3{
+	margin: 20px 0 0 0;
+	border-bottom: 1px solid #ccc;
+	padding-left: 30px;
+	padding-bottom: 20px;
+}
+.tranzactie-blk ul li {
+    line-height: 2.143em;
+    color: #666;
+}
+.tranzactie-blk ul li span.pull-right {
+    font-weight: bold;
+    color: #333;
+}
+.tranzactie-blk .bordered{ border-right: 1px solid #eee;}
+.tranzactie-blk .bordered ul{padding: 20px 15px 10px 30px;}
+.tranzactie-blk ul{padding: 20px 30px 10px 15px;}
+
+
+/*** verificarea.html ***/
+.bill-section{ 
+	border: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+.bill-section .form-group{
+	position: relative;
+	margin: 0;
+	padding: 28px 30px; 
+	width: 100%;
+}
+.bill-section .form-group .tooltip-view{
+	color: #3366cc;
+	display: block;
+	text-align: left;
+}
+/*succes state*/
+.bill-section .input-group:after{
+	content: "\f00c";
+	display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    color: #3c763d;
+    opacity: 0;
+    z-index: 3;
+}
+.bill-section .input-group.has-success:after{opacity: 1;}
+.bill-section .input-group.has-success .input-group-addon{opacity: 0;}
+.bill-section .form-group label a{
+	cursor: pointer;
+	display: block;
+	color: #3366cc;
+}
+.bill-section .form-group label{
+	margin: 0;
+	font-weight: 400;
+	float: left;
+}
+.bill-section .confirm-list .form-group{ padding: 0; }
+.bill-section .form-group .input-group{
+	float: right;
+	width: 240px;
+	position: relative;
+}
+.bill-section .capcha-block{border-top: 1px solid #eee;}
+.bill-section .form-group .input-group a{color: #ccc;}
+.bill-section .input-group-addon:last-child{right: 0;}
+.bill-section .input-group-addon:last-child .tooltip-view{color: #ccc;}
+.bill-section .btn {
+    margin-left: 28px;
+    margin-bottom: 28px;
+}
+
+/*** verificarea_eroare.html ***/
+#unpayedBill .view-more, 
+#partialpayedBill .view-more{margin-left: 0;}
+#unpayedBill h1.error {
+    color: #cc3333;
+    background: #ffcccc;
+}
+.status.alert{padding: 20px;}
+#partialpayedBill h1.partial-pay{
+	color: #333;
+	background: #eee;
+}
+
+
+/*** formular_serviciu.html ***/
+.service-form-blk{
+	position: relative;
+	margin-top: 30px;
+	border: 1px solid #ccc;
+	padding: 30px 30px 0;
+	margin-bottom: 30px;
+}
+.service-form-blk:after{
+	content: "";
+	position: absolute;
+	bottom: 100px;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #eee;
+}
+.service-form-blk .form-group{
+	width: 100%;
+	margin-bottom: 30px;
+	display: table
+}
+.service-form-blk .form-group label{
+	display: table-cell;
+	width: 150px;
+	text-align: right;
+	vertical-align: middle;
+	font-weight: 400;
+	line-height: 1.429em;
+}
+.service-form-blk .form-group label button{
+	background: transparent;
+	color: #3366cc;
+}
+.service-form-blk .form-group input{
+	width: calc(100% - 30px);
+	margin-left: 30px;
+	max-width: 100%;
+}
+.service-form-blk .capcha-block{
+	padding: 0;
+	border: none;
+}
+.service-form-blk .capcha-block label{line-height: 2.857em;}
+.form-info {margin-top: 30px;}
+.form-info h4{margin-bottom: 10px;}
+.form-info p{margin-bottom: 10px;}
+
+
+/*******************************************************************
+            stilurile p/u dispozitivele mobile
+********************************************************************/
+
+/* -----Phones----- */
+
+/* Portrait */
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+	/*logo*/
+	.main-navbar .navbar-brand{background-size: 75px;}
+	/*** index.html ***/
+	/* header */
+    .big-bg{height: 100vh;}
+    .big-bg .center-content .btn{margin-bottom: 30px;}
+
+	/*** services.html ***/
+	.search-intro h3{line-height: 1}
+	.search-intro .services-search-box{
+		width: 100%;
+		margin: 20px 0;
+	}
+	.search-intro .select2-container{min-width: 100%;}
+	.services-list li{
+		float: none;
+		width: 220px;
+	}
+	
+	/*** services_selected.html ***/
+	.service-selected-block .service-selected-bg{width: 100%;}
+	.service-pay-block{
+		max-height: 100%; 
+		margin-bottom: 60px;
+	}
+	.service-pay-block .form-inline{display: inline-block;}
+	.service-pay-block .form-inline .input-group-addon{top: 42px;}
+	.capcha-block li{
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.capcha-block{padding: 20px 30px;}
+	.service-pay-result{margin-bottom: 60px;}
+	.controls .btn.pull-right{
+		float: none !important;
+		margin: 30px 0;
+	}
+	.service-pay-result .input-group{width: 100%;}
+	
+	/*pay methods*/
+	.payment-list,
+	.banks-list{
+		text-align: center;
+		margin: 0;
+	}
+	.download-bill-block{margin: 30px 0;}
+	.pay-method{margin: 15px 0;}
+
+	/*** detalii_card.html ***/
+	.bankLogo{
+		position: relative;
+		right: 0;
+		bottom: auto;
+		margin-bottom: 30px;
+	}
+	.tranzaction-info{
+		margin-top: 30px;
+		margin-bottom: 90px;
+	}
+
+	/*** bank_respond.html ***/
+	.bill-status ul{padding-left: 5px;}
+	#emailCollapse .form-group{
+		width: 100%;
+		display: inline-block;
+	}
+	#emailCollapse .capcha-block.confirm-list{margin-bottom: 0;}
+	.respond-alert{left: 0;}
+
+	/* verificarea.html */
+	.breadcrumb.withCheck li{
+		margin-right: 0;
+		display: block;
+	}
+	.bill-section{margin-bottom: 30px;}
+	.bill-section .confirm-list li{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.bill-section .confirm-list li img{margin: 15px 10px;}
+	.bill-section .confirm-list li .form-control{float: right;}
+	.bill-section .btn{
+		margin: 0 auto 30px;
+		display: block;
+		width: calc(100% - 60px);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.status.alert{margin-bottom: 30px;}
+	.tooltip-inner,
+	.tooltip-inner img{
+		max-width: 100%;
+		width: 100%;
+	}
+
+	/*** formular_serviciu.html ***/
+	.service-form-blk .form-group{
+		display: inline-block;
+		margin-bottom: 25px;
+	}
+	.service-form-blk .form-group label{
+		width: 100%;
+		margin-bottom: 5px;
+		text-align: center;
+		display: block;
+	}
+	.service-form-blk .form-group input{
+		width: 100%;
+		margin: 0;
+		float: right;
+	}
+	.service-form-blk .confirm-list li:nth-child(2) label{width: auto;}
+	.service-form-blk .capcha-block{margin: 0;}
+	.service-form-blk .capcha-block li:last-child{margin-bottom: 0}
+	.service-form-blk .form-group .btn{
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.service-form-blk .form-group .btn-default{margin-bottom: 30px;}
+	.form-info{margin-bottom: 30px;}
+
+	/*** verificares_eroare.html ***/
+	.status.alert{float: left;}
+
+}
+
+/* Landscape */
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+	/*logo*/
+	.main-navbar .navbar-brand{background-size: 75px;}
+	/*** index.html ***/
+	/* header */
+    .big-bg{height: 100vh;}
+    .big-bg .center-content{top: 60%;}
+    .big-bg .center-content .btn{margin-bottom: 30px;}
+
+	/*** services.html ***/
+	.section-intro .breadcrumb.withCheck{padding-bottom: 25px;}
+	.breadcrumb.withCheck li.active, 
+	.breadcrumb.withCheck li{margin-bottom: 10px;}
+	.search-intro .services-search-box{width: 280px;}
+	.services-list{
+		text-align: center;
+		margin: 30px 0 0 0;
+	}
+	.services-list li{
+		float: none;
+		margin: 0 15px 25px;
+		width: 200px;
+	}
+
+	/*** services_selected.html ***/
+	.service-selected-block,
+	.service-pay-result{
+		width: 50%;
+		margin: 0 auto 30px;
+	}
+	.service-selected-block .service-selected-bg{width: 100%;}
+	.service-pay-block{
+		margin-bottom: 30px;
+		max-height: 100%;
+	}
+	.capcha-block{width: 100%;}
+	.confirm-list li:nth-child(2) input{
+		width: 100px;
+		float: right;
+	}
+	.service-pay-block .controls{margin-bottom: 30px;}
+	.select-block{min-height: 100%;}
+	.select-block span{margin-bottom: 0;}
+	.select-block .btn{margin-bottom: 30px;}
+	.bill-section{margin-bottom: 30px;}
+	.bill-section .form-inline .form-control{
+		width: 100px;
+		float: right;
+	}
+	.bill-section .form-inline span{line-height: 40px;}
+
+	/*** pay methods ***/
+	.pay-method{margin-bottom: 10px;}
+	.payment-list,
+	.banks-list{text-align: center;}
+	.download-bill-block{margin: 30px 0;}
+	.respond-alert{bottom: -45px;}
+	#emailCollapse.withMargin .respond-alert{bottom: 15px;}
+
+	/*** detalii card ***/
+	.bankLogo{
+		position: relative;
+		right: 0;
+		bottom: auto;
+		margin-bottom: 30px;
+	}
+	.tranzaction-info{margin-top: 30px;}
+	#payBtn, #sendEmail{margin-bottom: 30px;}
+
+	/*** formular_serviciu.html ***/
+	.form-info,
+	.status.alert{margin-bottom: 30px;}
+
+	/*** verificares_eroare.html ***/
+	.status.alert{float: left;}
+
+}
+
+/* -----Tablets----- */
+
+/* Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait){
+
+	/*** services.html ***/
+	.breadcrumb.withCheck li{margin-right: 30px;}
+	.services-list li{width: 215px;}
+	.search-intro .services-search-box{
+		width: 64%;
+		margin-left: 5px;
+	}
+
+	/*** services_selected.html ***/
+	.service-selected-block{
+		width: 38%;
+		margin: 30px auto 0;
+	}
+	.service-pay-result, .select-block{
+		width: 38%;
+		margin: 0 auto 30px;
+	}
+
+	/*** formulr_serviciu.html ***/
+	.form-info{margin-top: 0; margin-bottom: 30px;}
+
+	/*** pay_method.html ***/
+	.payment-list,
+	.banks-list{text-align: center;}
+	.pay-method{margin: 25px 25px 0 0;}
+
+	/*** pay_method_e-banking.html ***/
+	.download-bill-block{margin-top: 30px;}
+	
+	/*** detalii_card.html ***/
+	.bankLogo{
+		width: 170px;
+		bottom: 25px;
+		background-size: contain;
+	}
+	.card-info .form-group.md-input{width: 45.5%;}
+	.card-info .form-group.sm-input{width: 28.9%;}
+	.tranzaction-info{margin-top: 30px;}
+	#payBtn{margin-bottom: 30px;}
+
+	/*** bank_respond.html ***/
+	.tranzactie-blk .bordered{border: none;}
+	.tranzactie-blk .bordered ul {
+	    padding: 20px 15px 30px 15px;
+	    border-bottom: 1px solid #eee;
+	}
+	#emailCollapse{margin-bottom: 70px;}
+	.respond-alert{bottom: 30px;}
+
+	/*** verificarea.html ***/
+	.bill-status.none .btn{margin-right: 50px;}
+	#emailCollapse.withMargin .respond-alert{bottom: 15px;}
+
+	/*** verificares_eroare.html ***/
+	.status.alert{
+		margin-bottom: 30px;
+		float: left;
+	}
+
+}
+
+/* Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1280px) and (orientation: landscape){
+	/*breadcrumbs*/
+	.breadcrumb.withCheck li{margin-right: 30px;}
+	
+	/*services.html*/
+	.search-intro .services-search-box{
+		width: 50%;
+		margin-right: 30px;
+		margin-left: 0;
+	}
+	.search-intro .select2-container{min-width: 43%;}
+	.services-list li{
+		float: none;
+		margin-right: 27px;
+	}
+	.services-list li:last-child{margin-right: 27px;}
+
+	/*** service_selected.html ***/
+	.service-selected-block{padding: 25px 16px;}
+	.service-selected-block .service-selected-bg{width: 100%;}
+	.service-pay-block h4,
+	.service-pay-block .form-inline{padding: 0 25px 20px;}
+	.service-pay-block #codeInput {width: 210px;}
+	.capcha-block{padding: 25px;}
+	.capcha-block h5{
+		margin-left: 5px;
+		width: 145px;
+	}
+	.capcha-block li:first-child span{
+		width: 90px;
+		margin: 0 !important;
+	}
+	.confirm-list li:nth-child(2) input{width: 110px;}
+	.select-block h4{padding: 0 20px 20px;}
+	.select-block a{
+		margin-top: 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.service-pay-result h4{padding: 0 20px 20px}
+	
+	/*** formular_serviciu.html ***/
+	.service-form-blk .btn-default{
+		width: 50%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.alert h4{
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	/*pay method*/
+	.payment-list{margin-top: 30px;}
+	.payment-list li{
+		margin-top: 0;
+		margin-bottom: 25px;
+	}
+	.payment-list,
+	.banks-list{text-align: center;}
+	.cash-pay-instructions .btn{margin-bottom: 30px;}
+
+	/*** verificarea.html ***/
+	.bill-status.none .btn{margin: 0 0 30px 30px;}
+	.bill-status.none ul{margin-bottom: 20px;}
+	.bill-section .form-group .input-group{width: 50%;}
+
+	/*** verificarea_eroare.html ***/
+	.status.alert{margin-bottom: 30px;}
+	#unpayedBill h1.error{padding: 10px;}
+
+	/*** verificare_partial.html ***/
+	.bill-status .view-more{margin-bottom: 0;}
+
+}
+

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+    
+    <title>MPay Selectează Serviciu</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- select2 stylesheets -->
+    <link href="css/select2.css" rel="stylesheet">
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/mpay.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header >
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Serviciul Guvernamental de Plăți Electronice
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active">
+                    <a href="services.html">Achitare serviciu<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li><a href="verificarea.html">Verificare notă</a></li>
+                  <li><a href="#">Despre MPay</a></li>
+                  <li><a href="#">Întrebări frecvente</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="#">Parteneri de implementare </a></li>
+                  <li><a href="#">Contacte</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+      <!-- continutul paginii -->
+      <main>
+        <div class="container">
+          <!-- section-intro -->
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <h1>Achitare serviciu public</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <ol class="breadcrumb withCheck">
+                <li class="active"><span>1. Selectare serviciu</span></li>
+                <li><span>2. Codul cererii</span></li>
+                <li><span>3. Modalitatea de achitare</span></li>
+                <li><span>4. Confirmare achitare</span></li>
+              </ol>
+            </div>
+          </div>
+          <!-- section-intro -->
+          <!-- search intro block -->
+          <div class="row search-intro">
+            <div class="col-md-6">
+              <h3>1. Selectare serviciu public spre achitare</h3>
+            </div>
+            <div class="col-md-6">
+              <form class="services-search-box">
+                <div class="input-group default-state">
+                  <input class="form-control" type="search" placeholder="Introdu denumirea serviciului ...">
+                  <span class="input-group-addon">
+                    <i class="fa fa-search"></i>  
+                  </span>
+                </div>
+              </form>
+              <select class="category-select">
+                <option></option>
+                <option value="category 1">Categorie 1</option>
+                <option value="category 2">Categorie 2</option>
+                <option value="category 3">Categorie 3</option>
+                <option value="category 4">Categorie 4</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.search intro block -->
+          <!-- services block -->
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="list-inline text-center services-list">
+                <li class="newService">
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/fisc_logo.png"></div>
+                    <p class="service-title">Abonament Monitorul fiscal FISC.MD</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo1.png"></div>
+                    <p class="service-title">Amenzi Poliție</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo3.png"></div>
+                    <p class="service-title">Autorizație de transport auto</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo1.png"></div>
+                    <p class="service-title">Cazier judiciar</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo4.png"></div>
+                    <p class="service-title">Formulare tipizate</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo4.png"></div>
+                    <p class="service-title">Impozit pe bunuri imobiliare</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo4.png"></div>
+                    <p class="service-title">Impozite pe Venit</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo5.jpg"></div>
+                    <p class="service-title">Î.S. Camera Înregistrării de Stat</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo4.png"></div>
+                    <p class="service-title">Licențe de activitate</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo6.png"></div>
+                    <p class="service-title">Mijloace de identificare animale domestice</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo7.png"></div>
+                    <p class="service-title">Registrul Garanțiilor Reale Mobiliare</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo8.png"></div>
+                    <p class="service-title">Semnătura electronică</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo9.png"></div>
+                    <p class="service-title">Servicii AGEPI</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo10.png"></div>
+                    <p class="service-title">Servicii de Stare Civilă</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo11.png"></div>
+                    <p class="service-title">Servicii Î.S. Cadastru</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo12.png"></div>
+                    <p class="service-title">Servicii Î.S. CRIS REGISTRU</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo13.png"></div>
+                    <p class="service-title">Servicii de Apostilare</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-block small">
+                    <div class="service-bg" data-bg="images/logo14.png"></div>
+                    <p class="service-title">Taxă e-Visa</p>
+                    <a href="services_selected.html" class="btn btn-primary btn-sm">
+                      <i class="fa fa-check"></i>
+                      Selectare
+                    </a>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- /.services block -->
+        </div>
+      </main>
+      <!-- continutul paginii -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-4">
+              <h5 class="text-uppercase">Centru de asistență</h5>
+              <span>servicii publice electronice</span>
+            </div>
+            <div class="col-md-3 text-left col-sm-4">
+                <a href="tel:+37322820000" class="contact-tel"><span>022 </span><b>820 000</b></a>
+            </div>
+            <div class="col-md-offset-2 col-md-5 text-right copyright col-sm-4">
+              <a href="terms_conditions.html">Termeni și condiții</a> <br>
+              <span>
+                &copy;&nbsp;2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> Toate drepturile rezervate
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

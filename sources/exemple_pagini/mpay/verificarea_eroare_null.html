@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Descrierea serviciului">
+    <meta name="keywords" content="guvern, e-serviciu, exemplu,">
+    <meta name="author" content="Autor Proiect">
+
+    <title>Verificarea Statutului Eroare</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- select2 stylesheets -->
+    <link href="css/select2.css" rel="stylesheet">
+    <!-- Our styles -->
+    <link href="css/mstyle.css" rel="stylesheet">
+    <link href="css/mpay.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="page-content">
+      <header>
+        <!-- navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <!-- black small navbar -->
+          <div class="navbar-inverse">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <a href="#" class="gov_logo text-capitalize">Guvernul republicii moldova</a>
+                </div>
+                <div class="col-md-offset-4 col-md-5 col-sm-6">
+                  <ul class="list-inline pull-right hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <span id="fontChange">A<sup>+</sup></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.black small navbar -->
+          <!-- page navbar -->
+          <div class="main-navbar">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span>
+                    Serviciul Guvernamental de Plăți Electronice
+                  </span>
+                </a>
+              </div>
+
+              <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                    <a href="services.html">Achitare serviciu<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="active"><a href="verificarea.html">Verificare notă</a></li>
+                  <li><a href="#">Despre MPay</a></li>
+                  <li><a href="#">Întrebări frecvente</a></li>
+                  <li><a href="news.html">Noutăți</a></li>
+                  <li><a href="#">Parteneri de implementare </a></li>
+                  <li><a href="#">Contacte</a></li>
+                  <!-- visible only on mobile site version -->
+                  <div class="hidden-lg hidden-md hidden-sm">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe" aria-hidden="true"></i>Română
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Rusă
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-globe" aria-hidden="true"></i>Engleză
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user" aria-hidden="true"></i>Contul meu
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-sign-in" aria-hidden="true"></i>Autentificare
+                          </a>
+                        </li>
+                        <li>
+                          <a href="inregistrare.html">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>Creare cont
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i class="fa fa-th-list" aria-hidden="true"></i>Profil Portal
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="font_control">
+                      <span id="fontChange2">Mărire / micșorare font</span>
+                    </li>
+                  </div>
+                  <!-- /.visible only on mobile site version -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.page navbar -->
+        </nav>
+        <!-- /.navigation -->
+      </header>
+      <!-- continutul paginii -->
+      <main>    
+        <div class="container">
+          <!-- section-intro -->
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <h1>Verificarea statutului notei de plată </h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 section-intro">
+              <ol class="breadcrumb withCheck">
+                  <li class="checked"><a href="#">1. Introducerea numărului notei de plată </a></li>
+                  <li class="unchecked"><b>2. Primirea confirmării</b></li>
+              </ol>
+            </div>
+          </div>
+          <!-- /.section-intro -->
+          <div class="row">
+            <!-- bill section -->
+            <div class="col-md-6">
+              <div class="bill-section">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label for="billNr">Numărul notei de plată MPay
+                      <button type="button" class="tooltip-view" data-toggle="tooltip" 
+                              data-placement="bottom" title="<img src='images/hint.jpg'/>">
+                          Vezi exemplu
+                      </button>
+                    </label>
+                    <div class="input-group">
+                      <input type="text" class="form-control pull-right" id="billNr" maxlength="14" placeholder="00 1234 5678 9012">
+                      <div class="input-group-addon">
+                        <button type="button" class="tooltip-view" data-toggle="tooltip" data-placement="bottom" title="Numărul notei de plată">
+                          <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="clearfix"></div>
+                <ul class="list-inline confirm-list capcha-block">
+                  <li>
+                    <span>Cod imagine de verificare:</span>
+                    <img src="images/capcha.jpg" title="captcha" alt="captcha-img">
+                    <a href="#"><i class="fa fa-refresh"></i></a>
+                  </li>
+                  <li class="pull-right">
+                    <div class="form-inline">
+                      <span>Cod:</span>
+                      <input type="text" class="form-control" maxlength="6">
+                      <label for="verify-code">
+                        <button type="button" class="tooltip-view" data-toggle="tooltip" data-placement="bottom" title="Introdu codul de verificare din imagine">
+                          <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </button>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+                <button id="verifyNote"  class="btn disabled">
+                  <i class="fa fa-check" aria-hidden="true"></i>
+                  Verificare statut notă de plată MPay
+                </button>
+              </div>
+            </div>
+            <!-- /.bill section -->
+
+            <div class="col-md-6">
+              <!-- loading circle -->
+              <div class="loading-img text-center">
+                <i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+              </div>
+              <!-- /.loading circle -->
+              <!-- bill status -->
+              <div class="bill-status none" id="unpayedBill">
+                <h3>Statutul notei de plată 
+                 <span id="noteNr">00 7541 5678 1189:</span>
+                 </h3>
+                <h1 class="pull-right error">
+                  <i class="fa fa-times-circle" aria-hidden="true"></i>
+                  Nu există
+                </h1>
+                <div class="clearfix"></div>
+                <div class=" status alert alert-info">
+                  <h4>
+                    <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    Informații suplimentare
+                  </h4>
+                  <p>
+                    Se pare că notă de plată cu așa identificator nu există sau a expirat.
+                  </p>
+                </div>
+              </div>
+              <!-- /.bill status -->
+            </div>
+          </div>
+        </div><!-- /.container -->
+      </main>
+      <!-- /.continutul paginii -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-sm-4">
+              <h5 class="text-uppercase">Centru de asistență</h5>
+              <span>servicii publice electronice</span>
+            </div>
+            <div class="col-md-3 col-sm-4 text-left">
+                <a href="tel:+37322820000" class="contact-tel"><span>022 </span><b>820 000</b></a>
+            </div>
+            <div class="col-md-offset-2 col-md-5 text-right copyright col-sm-4">
+              <a href="terms_conditions.html">Termeni și condiții</a> <br>
+              <span>
+                &copy;&nbsp;2016 <a href="http://gov.md" target="_blank">Guvernul Republicii Moldova.</a> Toate drepturile rezervate
+              </span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
